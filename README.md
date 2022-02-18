@@ -8,3 +8,12 @@
 - git add .
 - git commit -m {message}
 - git push --set-upstream origin {your new branch}
+
+## TO MERGE MASTER BRANCH TO YOUR BRANCH
+
+- git checkout {newbranch}
+- git merge master
+
+## GET THE UPDATE BEFORE WORK
+
+- git pull
