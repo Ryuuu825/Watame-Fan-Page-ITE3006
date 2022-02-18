@@ -11,6 +11,7 @@
 
 ## TO MERGE MASTER BRANCH TO YOUR BRANCH
 
+- git fetch origin
 - git checkout {newbranch}
 - git merge master
 
