@@ -1,0 +1,39 @@
+body {
+
+}
+
+#container {
+    background-color: white;
+
+    margin-left: auto;
+    margin-right:auto;
+}
+
+#header {
+    background-color: white;
+    text-align:center;
+}
+
+#contact {
+    padding: 10px;
+}
+
+#menu {
+    width:10%;
+    float:left;
+}
+
+#main {
+    width:80%;
+    float:right;
+}
+
+#footer {
+    clear:both;
+}
+
+.selected:visited {
+    color:red;
+}
+
+
