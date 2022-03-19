@@ -1,44 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style/i_am_watame.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Template</title>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Montserrat:wght@200&display=swap"
+            rel="stylesheet"
+        />
 
+        <!-- for page structure -->
+        <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript" src="main.js"></script>
 
-    
-    <script>
+        <style>
+            .title {
+                text-align: center;
+                font-size: 4vw;
+            }
 
-    </script>
-</head>
-<body>
-    <div class="container">
-        <ul class="sound">
-            <li><span>Dog goes "woof"</span></li>
-            <li><span>Cat goes "meow"</span></li>
-            <li><span>Bird goes "tweet"</span></li>
-            <li><span>and mouse goes "squeek"</span></li>
-            <li><span>Cow goes "moo"</span></li>
-            <li><span>Frog goes "croak"</span></li>
-            <li><span>Elephant goes "toot"</span></li>
-            <li><span>Ducks say "quack"</span></li>
-            <li><span>Fish go "blub"</span></li>
-            <li><span>Seal goes "ow ow ow"</span></li>
-            <li><span>What does Watame say?</span></li>
-        </ul>
+            .watame_image {
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+                margin-bottom: 20px;
+            }
 
-        <div class="click">
-            <p id="watame_sound">Click on the sound to hear it!</p>
-            <img class="loading" src="./image/loading.png" alt="">
+            .interact .bk_btn {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px;
+            }
+
+            .interact #watame_sound_text {
+                font-size: 3vw;
+                margin: 30px;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .interact .bk_btn button {
+                font-size: 2vw;
+                border: 1px solid rgb(82, 81, 81);
+                margin-top: 10px;
+                border-radius: 10px;
+                background-color: rgba(255, 255, 255, 0.6);
+                padding: 10px;
+            }
+
+            .interact .bk_btn button:hover {
+                background-color: #ffdb83;
+            }
+
+            .watame_face {
+                margin: 0 auto;
+                width: 800px;
+                height: 500px;
+                text-align: center;
+            }
+
+            .watame_face img {
+                width: auto;
+                height: 500px;
+            }
+
+            @media screen and (max-width: 750px) {
+                .watame_face {
+                    width: 80%;
+                    height: auto;
+                }
+
+                .watame_face img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+
+        <script>
+            var is_clicked = false;
+            function watame_say() {
+                var image = document.getElementById("watame_face_photo");
+                var text = document.getElementById("watame_sound_text");
+                var audio = document.getElementById("watame_sound");
+                var button = document.getElementById("btn_change_sound");
+
+                if (is_clicked) {
+                    text.innerText = "baa?";
+                    button.innerText = "Click me to listen";
+                    image.src = "./image/watame.png";
+                    is_clicked = false;
+                } else {
+                    audio.volume = 0.1;
+                    audio.play();
+                    button.innerText = "back";
+                    text.innerText = "悪くないよねぇ わため!";
+                    image.src = "./image/face2.png";
+                    is_clicked = true;
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <!--	Header	-->
+            <div class="header">
+                <a href="javascript:void(0)">
+                    <div
+                        class="menu_button"
+                        onclick="changeIcon(this);toggleNav()"
+                    >
+                        <img class="" src="image/u36.png" alt="" />
+                        <div class="menu_icon">
+                            <span class="bar" id="bar1"></span>
+                            <span class="bar" id="bar2"></span>
+                        </div>
+                    </div>
+                </a>
+                <div class="side_nav" id="sideNav">
+                    <ul>
+                        <li class="nav"><a href="#">HOME</a></li>
+                        <li class="nav"><a href="#">PROFILE</a></li>
+                        <li class="nav"><a href="#">SONGS</a></li>
+                        <li class="nav"><a href="#">I AM WATAME</a></li>
+                        <li class="nav"><a href="#">ABOUT</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--	Main	-->
+            <div class="main">
+                <div class="title">What does watame say?</div>
+
+                <div class="watame_face">
+                    <img
+                        id="watame_face_photo"
+                        src="./image/watame.png"
+                        alt=""
+                    />
+                </div>
+
+                <div class="interact">
+                    <div id="watame_sound_text">baa?</div>
+
+                    <div class="bk_btn">
+                        <button id="btn_change_sound" onclick="watame_say()">
+                            Click me to listen
+                        </button>
+                    </div>
+
+                    <audio
+                        src="./image/Tsunomaki Watame - I'm sorry for my internet_Trim.mp3"
+                        id="watame_sound"
+                    ></audio>
+                </div>
+            </div>
+
+            <!--	Footer	-->
+            <div class="footer">
+                <div class="footer_nav">
+                    <ul>
+                        <li class="nav"><a href="#">HOME</a></li>
+                        <li class="nav"><a href="#">PROFILE</a></li>
+                        <li class="nav"><a href="#">SONGS</a></li>
+                        <li class="nav"><a href="#">I AM WATAME</a></li>
+                        <li class="nav"><a href="#">ABOUT</a></li>
+                    </ul>
+                </div>
+                <div class="footer_sns">
+                    <ul>
+                        <li class="sns">
+                            <a
+                                href="https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA"
+                                id="youtube"
+                                ><img src="image/youtube.png" alt=""
+                            /></a>
+                        </li>
+                        <li class="sns">
+                            <a href="https://twitter.com/tsunomakiwatame"
+                                ><img src="image/twitter.png" alt=""
+                            /></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_Inner">
+                    <p>©2022 IVE(TY) SE1B BKen</p>
+                </div>
+            </div>
         </div>
-
-        <audio src=""></audio>
-    </div>
-</body>
+    </body>
 </html>

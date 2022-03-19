@@ -1,45 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-
-    <link rel="stylesheet" href="style/style.css">
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="main.js"></script>
 </head>
+
 <body>
-    <div id="container">
-        <div id="header">
-            <h1>Watame</h1>
-        </div>
-
-        <div id="content">
-            <div id="menu">
-                <h3>Navigation</h3>
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                    <a class="selected" href="https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA" target="_blank">
-                        <li >Youtube</li>
-                    </a>
-                </ul>
-            </div>
-
-            <div id="main">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque est ex id! Adipisci, amet aperiam aut, eius est ipsum libero maiores minus molestias neque, porro possimus quaerat quidem quod veniam!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque est ex id! Adipisci, amet aperiam aut, eius est ipsum libero maiores minus molestias neque, porro possimus quaerat quidem quod veniam!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque est ex id! Adipisci, amet aperiam aut, eius est ipsum libero maiores minus molestias neque, porro possimus quaerat quidem quod veniam!</p>
-            </div>
-        </div>
-
-        <div id="footer">
-            IVE SE Group BKen &copy;
-        </div>
-    </div>
-
-
-
-</body>
-</html>
+	<div class="container">
+		<div class="header">
+			<a href="javascript:void(0)">
+				<div class="menu_button" onclick="changeIcon(this);toggleNav()">
+					<img src="source/u36.png" alt="">
+					<div class="menu_icon">
+						<span class="bar" id="bar1"></span>
+						<span class="bar" id="bar2"></span>
+					</div>
+				</div>
+			</a>
+			<div class="side_nav" id="sideNav">
+				<div class="side_role1">
+					<img src="source/u12.png" alt="">
+				</div>
+				<div class="side_menu">
+				<ul>
+					<li class="nav"><a href="#">HOME</a></li>
+					<li class="nav"><a href="#">PROFILE</a></li>
+					<li class="nav"><a href="#">SONGS</a></li>
+					<li class="nav"><a href="#">I AM WATAME</a></li>
+					<li class="nav"><a href="#">ABOUT</a></li>
+				</ul>
+				</div>
+				<div class="side_role2">
+					<img src="source/wnf.jpg" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="role"><img src="source/u6.png" alt=""></div>
+			<div class="banner"><img src="source/homepage.png" alt=""></div>
+			<div class="role_thumbnail"><img src="source/Tsunomaki_Watame.png" alt=""></div>
+		</div>
+		<div class="footer">
+			<div class="footer_nav">
+				<ul>
+					<li class="nav"><a href="#">HOME</a></li>
+					<li class="nav"><a href="#">PROFILE</a></li>
+					<li class="nav"><a href="#">SONGS</a></li>
+					<li class="nav"><a href="#">I AM WATAME</a></li>
+					<li class="nav"><a href="#">ABOUT</a></li>
+				</ul>
+			</div>
+			<div class="footer_sns">
+				<ul>
+					<li class="sns">
+						<a href="https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA" id="youtube"><img src="source/youtube.png" alt=""></a>
+					</li>
+					<li class="sns">
+						<a href="https://twitter.com/tsunomakiwatame"><img src="source/twitter.png" alt=""></a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer_Inner">
+				<p>©2022 IVE(TY) SE1B BKen</p>
+			</div>
+		</div>
+	</div>
+</body></html>
