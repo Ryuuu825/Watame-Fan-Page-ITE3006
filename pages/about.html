@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="stylesheet" href="../style/style.css">
+	<link rel="stylesheet" href="../style/about.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="../script/main.js"></script>
+	<script type="text/javascript" src="../script/about.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<!--	header	-->
+		<header>
+			<a href="javascript:void(0)">
+				<div class="menu_container" onclick="changeIcon(this);toggleNav()">
+					<div class="menu_btn">
+						<img src="../source/u36.png" alt="">
+						<div class="menu_icon">
+							<span class="bar" id="bar1"></span>
+							<span class="bar" id="bar2"></span>
+						</div>
+					</div>
+				</div>
+			</a>
+			<div class="side_nav" id="sideNav">
+				<div class="side_role1">
+					<img src="../source/u12.png" alt="" id="role_shadow">
+					<img src="../source/u12.png" alt="" id="role">
+				</div>
+				<div class="side_menu">
+					<ul>
+						<li><a href="../index.html">HOME</a></li>
+						<li><a href="./profile.html">PROFILE</a></li>
+						<li><a href="./songs.html">SONGS</a></li>
+						<li><a href="./watame.html">I AM WATAME</a></li>
+						<li><a href="./about.html">ABOUT</a></li>
+					</ul>
+				</div>
+				<div class="side_role2">
+					<img src="../source/wnf.jpg" alt="">
+				</div>
+			</div>
+			<div class="page_title">
+				<h1>About Us</h1>
+			</div>
+		</header>
+
+		<!--	main	-->
+		<main>
+			<div class="content_container">
+				<p>This is an unofficial fansite created for the Vtuber Tsunomaki Watame.
+				<img src="../source/watabee.webp" alt="">
+				</p>
+				<p>In here, all of us love Watame. We hope more people recognize the hard-working, talented Sheep that we love.<img src="../source/mv1.gif" alt=""></p>
+				<p>If you’re interested in joining us. Please use the form below to contact us. Worry not, we will not eat you. At least not on the first day...
+					<img src="../source/mv2.gif" alt="">
+				</p>
+			</div>
+			<h1>Contact Us</h1>
+			<div class="contact_container">
+				<form name="contact_form" action="#" autocomplete="on" method="get" onsubmit="return checkForm()">
+					<label class="form_label">
+					<span>Name:</span>
+					<input type="text" name="name" value size="40" ><br />
+					</label>
+					<label class="form_label" for="email">
+					<span>E-mail: </span><input type="email" name="email" value size="40" ><br />
+					</label>
+					<label class="form_label" for="phone">
+					<span>Phone:</span>
+					<input type="tel" name="phone" value size="8" autocomplete="off"><br />
+					</label>
+					<label class="form_label" for="message">
+					<span>Message:</span>
+					<textarea name="message" rows="5" cols="30" placeholder="Enter your message..."></textarea><br />
+					</label>
+					<input id="submit_btn" type="submit" value="Send">
+				</form>
+			</div>
+		</main>
+
+
+		<!--	footer	-->
+		<footer>
+
+			<div class="footer_nav">
+				<ul>
+					<li><a href="../index.html">HOME</a></li>
+					<li><a href="./profile.html">PROFILE</a></li>
+					<li><a href="./songs.html">SONGS</a></li>
+					<li><a href="./watame.html">I AM WATAME</a></li>
+					<li><a href="./about.html">ABOUT</a></li>
+				</ul>
+			</div>
+			<div class="footer_sns">
+				<ul>
+					<li class="sns">
+						<a href="https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA" id="youtube"><img src="../source/youtube.png" alt=""></a>
+					</li>
+					<li class="sns">
+						<a href="https://twitter.com/tsunomakiwatame"><img src="../source/twitter.png" alt=""></a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer_Inner">
+				<p>©2022 IVE(TY) SE1B BKen</p>
+			</div>
+
+		</footer>
+	</div>
+</body>
+
+</html>
