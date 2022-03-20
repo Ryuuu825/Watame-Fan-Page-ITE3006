@@ -21,10 +21,7 @@ ul {
 }
 
 .container {
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
+	margin: 0;
 	width: 100%;
 	height: auto;
 	background-color: #FFDF8D;
@@ -57,12 +54,13 @@ footer {
 	text-align: center;
 }
 
-.page_title h1{
+.page_title h1 {
 	margin-top: 0;
 	padding-top: 8vw;
 }
 
-.menu_container {
+.menu_btn_container {
+	cursor: pointer;
 	position: fixed;
 	width: auto;
 	height: auto;
@@ -130,8 +128,8 @@ footer {
 }
 
 .side_nav {
-	display: flex;
-	flex-direction: row;
+	display: inline-block;
+	vertical-align: bottom;
 	font-size: 5vw;
 	padding: 0;
 	height: 0;
@@ -139,20 +137,61 @@ footer {
 	position: fixed;
 	z-index: 10;
 	background-color: #FFD466;
-	overflow-x: hidden;
-	text-align: center;
+	overflow: hidden;
 	visibility: hidden;
-	justify-content: center;
 	transition: all 0.5s;
+	font-size: 0;
+}
+
+.side_role1 {
+	display: inline-block;
+	width: 35%;
+	vertical-align: middle;
 }
 
 .side_menu {
-	display: flex;
+	display: inline-block;
 	width: 30%;
-	height: auto;
-	justify-content: center;
-	align-items: center;
-	z-index: 11;
+	vertical-align: middle;
+}
+
+.side_role2 {
+	display: inline-block;
+	width: 35%;
+	vertical-align: middle;
+}
+
+.role_container {
+	position: relative;
+	width: 100%
+}
+
+.role {
+	width: 100%;
+}
+
+.side_role1 #role {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: auto;
+	height: 60vh;
+	z-index: 1;
+}
+
+.shadow {
+	width: 100%;
+}
+
+.side_role1 #role_shadow {
+	opacity: 30%;
+	width: auto;
+	height: 100vh;
+}
+
+.menu_list_container {
+	position: relative;
+	width: 100%;
 }
 
 .side_menu ul {
@@ -160,14 +199,14 @@ footer {
 }
 
 .side_menu a {
-	transform: rotateY(360deg);
-	display: block;
-	margin: 10px auto;
 	text-decoration: none;
+	margin: 10px auto;
+	display: block;
 	width: auto;
 	color: black;
 	transition: 0.3s;
 	font-size: 4vw;
+	z-index: 200;
 }
 
 .side_menu a:hover {
@@ -175,54 +214,70 @@ footer {
 	color: floralwhite;
 }
 
-.side_role1 {
+.role2_container {
+	position: relative;
 	display: flex;
-	align-items: flex-end;
-	margin: 0 auto;
-	width: 35%;
-	height: auto;
-}
-
-.side_role1 #role {
-	transition: none;
-	max-height: 100%;
-	min-height: 60%;
 	width: auto;
-	height: 70vh;
-	bottom: 0;
-	left: 0;
-}
-
-.side_role1 #role_shadow {
-	opacity: 30%;
-	transition-duration: 0.5s;
-	position: absolute;
-	max-height: 100%;
-	min-height: 80%;
-	width: auto;
-	height: 90vh;
-	bottom: 0;
-	left: 7vw;
-	z-index: -1;
-}
-
-.side_role2 {
-	display: flex;
 	justify-content: center;
-	align-items: center;
-	width: 35%;
-	height: auto;
+}
+
+.role2 {
+	width: 80%;
+	text-align: center;
+}
+
+.side_role2 #role2 {
+	width: 100%;
 }
 
 .side_role2 img {
 	transform: scaleX(-1);
-	width: auto;
-	max-width: 90%;
-	min-width: 50%;
-	bottom: 0;
-	right: 0;
 }
 
+@media screen and (max-width:1000px) {
+	.side_nav {
+		overflow: auto;
+	}
+
+	.side_role1 {
+		width: 100%;
+	}
+
+	.shadow {
+		display: none;
+	}
+
+	.side_menu {
+		margin: 5vw auto;
+		width: 100%;
+	}
+
+	.side_menu a {
+		font-size: 5vw;	
+	}
+
+	.side_role2 {
+		width: 100%;
+	}
+
+	.side_role2 #role2 {
+		width: 80%;
+	}
+	
+	.side_role2 img {
+		content: url(../source/u12.png)
+	}
+}
+
+@media screen and (max-width:400px){
+	.side_role2 #role2 {
+		width: 100%;
+	}
+	.side_menu {
+		margin: 8vw auto;
+		width: 100%;
+	}
+}
 .footer_nav {
 	display: block;
 	width: inherit;
@@ -301,3 +356,12 @@ footer {
 	padding: 10px;
 	font-size: 1vw;
 }
+
+.role_container {
+	width: 100%;
+}
+
+.role2_container {
+	width: 100%;
+}
+
