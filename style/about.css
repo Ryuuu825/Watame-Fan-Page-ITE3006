@@ -15,7 +15,6 @@
 }
 
 .content_container img {
-	vertical-align: middle;
 	width: 6vw;
 	height: auto;
 	margin: 0 auto;
@@ -74,7 +73,7 @@ h1 {
 	padding: 1vw;
 	width: 40%;	
 	height: auto;
-	background-color: #FFFBF1	;
+	background-color: #FFFBF1;
 	margin-bottom: 2vw;
 	border-radius: 3vw;
 	font-size: 2vw;
