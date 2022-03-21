@@ -153,6 +153,7 @@ footer {
 	display: inline-block;
 	width: 30%;
 	vertical-align: middle;
+	z-index: 10;
 }
 
 .side_role2 {
@@ -364,3 +365,12 @@ footer {
 	width: 100%;
 }
 
+
+.watame_welcome {
+	width: 80%;
+	display: inline-block;
+	position: absolute;
+}
+
+.watame_welcome img {
+}
