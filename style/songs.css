@@ -1,0 +1,174 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 5vw;
+    background-color: #FFDB83;
+}
+
+.menu_flex_container {
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.song_option {
+    background-color: #FFDB83;
+    padding:2vw;
+    border:2px solid black;
+    border-radius: 20px;
+}
+
+.song_option:last-child {
+    border-right: 2px solid black;
+}
+
+.song_option:hover {
+    background-color: #FFE0B2;
+}
+
+.content_title {
+    text-align: center;
+}
+
+.content_title h2 {
+    font-size: 4vw;
+}
+
+.recommend_content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.recommend_list {
+    border: 3px solid black;
+    border-radius: 50px;
+}
+
+.song_title {
+    text-align: center;
+}
+
+.song_box {
+    padding: 2vw;
+}
+
+.cat_br {
+    width: 80%;
+    border: 2px solid black;
+    margin: 10%;
+}
+
+.song_title {
+   font-size: 1.8vw;
+}
+
+.song_box {
+   position: relative;
+   border-radius: 50px;
+}
+
+.song_box iframe {
+    width:44vw;
+    height:30vw;
+}
+
+/* The position of submenu is absolute */
+.submenu {
+    position: absolute;
+    display: block;
+    margin-top: 2.1vw;
+}
+
+.menu_box_5 ul li a{
+    text-align: center;
+    display: hidden;
+    height: 0vw;
+    padding:0px;
+    font-size: 0vw;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #FFDB83;
+    transition: height 1s ;
+}
+
+.menu_box_5:hover ul li a{
+    display: block;
+    height: 2vw;
+    padding: 20px;
+    border: 1px solid black;
+    font-size: 2vw;
+}
+
+
+
+/* respondive part */
+@media screen and (max-width:1200px) {
+
+    .menu_flex_container {
+        flex-direction: column;
+        width:100%;
+        margin-left:0;
+
+    }
+
+    .song_option {
+        border-left: none;
+        border-top: none;
+        border-bottom: 1px solid black;
+    }
+
+    .song_option:last-child {
+        border-right: none;
+    }
+
+    .song_option:hover {
+        background-color: #FFE0B2;
+    }
+
+    .recommend_content {
+        display: block;
+    }
+
+    .recommend_list {
+        border: 3px solid black;
+        border-radius: 50px;
+        width: 80%;
+        margin:10%;
+    }
+
+    .song_title {
+        text-align: center;
+    }
+
+    .song_box {
+        padding: 2vw;
+    }
+
+    .song_box iframe {
+        width:100%;
+        height:100%;
+    }
+
+    .menu_box_5 ul {
+        position: static;
+        display: hidden;
+        margin-top: 0;
+        height:0px;
+        transition: height 1s; ;
+    }
+
+    .menu_box_5:hover ul {
+        display: block;
+        height: auto;
+        margin:10px;
+    }
+
+}
+
