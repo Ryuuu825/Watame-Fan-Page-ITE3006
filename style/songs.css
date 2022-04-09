@@ -1,174 +1,430 @@
-a {
+/* The stop button */
+.stop_button {
+    height: 30px;
+    width: 150px;
+    border: 1px solid black;
+    background-color: #063f5c;
+    position: fixed;
+    top: 0;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.stop_button:hover {
+    background-color: #0f4c75;
+}
+/* The CSS menu */
+.css_menu ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.css_menu ul li {
+    border: 1px solid black;
+    border-radius: 5px;
+    background: linear-gradient(to right, #063f5c 50%, #ffdf8db9 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.css_menu ul li:hover {
+    background-position: left bottom;
+}
+
+/* 
+    Clear the default decoration of the a tag 
+    and the text inside it.
+*/
+.css_menu ul li a {
+    text-decoration: none;
+    color: black;
+    transition: font-size 0.3s ease-in-out;
+    padding: 20px;
+    font-size: 40px;
+
+}
+
+/* Change the text color and size when the user hover on it */
+.css_menu ul li a:hover {
+    font-size:  45px;
+    color: rgb(197, 206, 80);
+}
+
+
+/* The CSS sub menu, which is hided */
+.sub_menu ul {
+    display: none;
+    height: 0px;
+    transition: height 0.3s ease-in-out;
+    border: 1px solid black;
+    background-color: #FFDF8D;
+}
+
+/* clear the animation */
+.sub_menu ul li:hover {
+    background-position: right bottom;
+}
+
+/* Display the sub menu when the user hover on only one of the option */
+.css_menu ul li:hover .sub_menu ul {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    position: absolute;
+    border-radius: 10px;
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+}
+.sub_menu ul li a {
+    font-size: 20px;
+}
+/* clear the transition */
+.sub_menu ul li a:hover {
+    font-size: 30px;
+}
+
+
+.sub_menu ul li {
+    padding-top: 10px;
+    border: none;
+}
+
+#recommend {
+    max-width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+#recommend iframe {
+    padding-top: 50px;
+}
+
+
+.slide {
+    display: none;
+    /* The slide will shown as "flex" */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.song_title {
+    text-align: center;
+    border-bottom: 1px solid black;
+    color:rgb(255, 14, 14);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.song_desciption .song_title {
+    border: none;
+}
+
+.prev , .next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%; 
+    width: auto;
+    font-weight: bold;
+    transition: 0.6s ease;
+}
+
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+
+
+.section_title {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+.slide .song_desciption {
+    clear: both;
+    padding-top: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.slide iframe {
+    display: block;
+    margin: auto;
+}
+
+#bar {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+}
+#album1 #bar {
+    background-color: #72BEA3;
+    padding-right: 10px;
+    text-align: right;
+}
+
+#album2 #bar {
+    background-color: #D44FDF;
+    padding-left: 10px;
+    text-align: left;
+    margin-left:20%;
+}
+
+.album_content {
+    display: flex;
+}
+
+.song_desciption {
+    display: flex;
+    flex-direction: column;
+    /* center the two div */
+    align-items: center;
+    justify-content: center;
+}
+
+/* .album_content iframe {
+    width:500px;
+    height:500px;
+} */
+
+.song_desciption .title {
+    text-align: center;
+    display: block;
+    font-size: 40px;
+}
+
+.song_desciption .text {
+    font-size: 20px;
+    padding-left: 10%;
+    padding-top: 10px;
+    display: block;
+    overflow-y: hidden;
+}
+
+
+
+#album2 .cover {
+    display: flex;
+    justify-content: right;
+    margin-left: 20%;
+}
+
+/* .album_video iframe {
+    width: 560px;
+    height: 315px;
+} */
+
+.left {
+    width: 50%;
+    order: 1;
+}
+
+.right {
+    width: 50%;
+    order: 2;
+}
+
+/* The start of the cover */
+.cover {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover .section_title {
+    display: block;
+}
+
+.cover ul {
+    display: inline;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+.cover ul li {
+    padding-top: 20px;
+}
+
+.cover ul li a {
+    color: black;
+    transition: font-size 0.3s ease-in-out;
+    font-size: 30px;
+}
+
+.cover ul li a:hover {
+    color: white;
+}
+
+
+.iframe-container {
+    width: 80%;
+    margin-left: 10%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 50%;
+ }
+ .iframe-responsive {
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+ }
+
+ 
+ .album_video .iframe-container {
+     width: 90%;
+ }
+
+.back {
+    position: sticky;
+    bottom:0;
+    right:0;
+    margin-left: 90%;
+    width: 10%;
+    height: 10%;
+    border: 1px solid black;
+    z-index: 1;
+    text-align: center;
+    background-color: #FFDF8D;
+    border-radius: 5px;
+}
+
+
+.back a:hover {
+    color: white;
+}
+
+.back a {
     text-decoration: none;
     color: black;
 }
 
-.menu {
-    margin-left:auto;
-    margin-right: auto;
-    margin-bottom: 5vw;
-    background-color: #FFDB83;
+
+
+@media screen and (max-width: 900px) {
+    .prev , .next {
+        display: none;
+    }
+
+    /* show all hided slide */
+    .slide {
+        display: flex;
+    }
+
+    .slide iframe {
+        width: 100%;
+    }
 }
 
-.menu_flex_container {
-    width:80%;
-    margin-left:10%;
-    margin-right:10%;
-    display: flex;
-    justify-content: space-between;
-}
+@media screen and (max-width:800px) {
+    .slide .song_title {
+        margin-top: 50px;
+    }
+    .slide .song_desciption {
+        font-size: 15px;
+    }
+    .album_video iframe {
+        width: 400px;
+        height: 315px;
+    }
 
-.song_option {
-    background-color: #FFDB83;
-    padding:2vw;
-    border:2px solid black;
-    border-radius: 20px;
-}
-
-.song_option:last-child {
-    border-right: 2px solid black;
-}
-
-.song_option:hover {
-    background-color: #FFE0B2;
-}
-
-.content_title {
-    text-align: center;
-}
-
-.content_title h2 {
-    font-size: 4vw;
-}
-
-.recommend_content {
-    display: flex;
-    justify-content: space-around;
-}
-
-.recommend_list {
-    border: 3px solid black;
-    border-radius: 50px;
-}
-
-.song_title {
-    text-align: center;
-}
-
-.song_box {
-    padding: 2vw;
-}
-
-.cat_br {
-    width: 80%;
-    border: 2px solid black;
-    margin: 10%;
-}
-
-.song_title {
-   font-size: 1.8vw;
-}
-
-.song_box {
-   position: relative;
-   border-radius: 50px;
-}
-
-.song_box iframe {
-    width:44vw;
-    height:30vw;
-}
-
-/* The position of submenu is absolute */
-.submenu {
-    position: absolute;
-    display: block;
-    margin-top: 2.1vw;
-}
-
-.menu_box_5 ul li a{
-    text-align: center;
-    display: hidden;
-    height: 0vw;
-    padding:0px;
-    font-size: 0vw;
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: #FFDB83;
-    transition: height 1s ;
-}
-
-.menu_box_5:hover ul li a{
-    display: block;
-    height: 2vw;
-    padding: 20px;
-    border: 1px solid black;
-    font-size: 2vw;
-}
-
-
-
-/* respondive part */
-@media screen and (max-width:1200px) {
-
-    .menu_flex_container {
+    .album_content {
         flex-direction: column;
-        width:100%;
-        margin-left:0;
-
+        justify-content: center;
+        align-items: center;
     }
 
-    .song_option {
-        border-left: none;
-        border-top: none;
-        border-bottom: 1px solid black;
+    .iframe-container {
+        margin-left:auto;
+        margin-right: auto;
+        width: 90%;
+    }
+    
+    .iframe-container iframe {
+        width: 100%;
+        height: 100%;
     }
 
-    .song_option:last-child {
-        border-right: none;
+    .left {
+        width: 100%;
+    }
+    .right {
+        width: 100%;
+        order: 1;
     }
 
-    .song_option:hover {
-        background-color: #FFE0B2;
-    }
 
-    .recommend_content {
-        display: block;
-    }
-
-    .recommend_list {
-        border: 3px solid black;
-        border-radius: 50px;
-        width: 80%;
-        margin:10%;
-    }
-
-    .song_title {
+    #album1 #bar , #album2 #bar {
+        width: 100%;
+        padding: 0px;
         text-align: center;
+        margin-left: 0px;
+        margin-bottom: 10px;
     }
 
-    .song_box {
-        padding: 2vw;
-    }
-
-    .song_box iframe {
-        width:100%;
-        height:100%;
-    }
-
-    .menu_box_5 ul {
-        position: static;
-        display: hidden;
-        margin-top: 0;
-        height:0px;
-        transition: height 1s; ;
-    }
-
-    .menu_box_5:hover ul {
+    .album_content {
         display: block;
-        height: auto;
-        margin:10px;
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+        border-top: 1px solid black;
     }
+
+    .song_desciption .title {
+        font-size: 30px;
+        padding-top: 10px;
+    }
+
+    .cover {
+        display: block;
+    }
+
+    .cover iframe {
+        margin-left: 10%;
+        width: 80%;
+        height: 315;
+    }
+
+    .cover ul li {
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        padding-top: 5px;
+    }
+
+   
 
 }
 
+@media screen and (min-width: 1300px) {
+    .main_container {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}

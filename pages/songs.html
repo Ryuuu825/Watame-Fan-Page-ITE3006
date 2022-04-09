@@ -11,9 +11,13 @@
 	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Montserrat:wght@200&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="../script/main.js"></script>
     <link rel="stylesheet" href="../style/songs.css">
+	<script src="../script/songs.js"></script>	
+
 </head>
 
-<body>
+<body onload="load_youtube_video()">
+	
+
 	<div class="container">
 		<!--	header	-->
 		<header>
@@ -56,82 +60,275 @@
 					</div>
 				</div>
 			</div>
-			<div class="page_title">
+			<div class="page_title" id="main">
 				<h1>Songs</h1>
 			</div>
 		</header>
 
 		<!--	main	-->
 		<main>
-			<div class="main_container">
+			<div class="main_container" >
+				<div class="stop_button" onclick="stopAllVideo()">Stop All Music</div>
 
-                <!-- The css enable menu -->
-                <div class="menu">
-                    <ul class="menu_flex_container">
-                        <li class="song_option menu_box_5" >
-                            <a href="#recommend">Recommend</a>
-                            <ul class="submenu">
-                                <li><a href="#tambourine_club">Tambourine Club</a></li>
-                                <li><a href="#my_song">My Song</a></li>
-                            </ul>
-                        </li>
+				<div class="css_menu">
+					<ul>
+						<li class="option">
+							<a href="#recommend" onclick="setBG(0)">Recommend</a>
+							<div class="sub_menu">
+								<ul>
+									<li>
+										<a href="#recommend2" onclick="showSlide(0)">Tambourine Club</a>
+									</li>
+									<li>
+										<a href="#recommend1" onclick="showSlide(1);">My Song</a>
+									</li>
+									
+									<li>
+										<a href="#recommend1" onclick="showSlide(2)">クソザコ回線でも</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="option">
+							<a href="#album">Album</a>
+							<div class="sub_menu">
+								<ul id="recommend_sub">
+									<li>
+										<a href="#album1">Album 1</a>
+									</li>
+									<li>
+										<a href="#album2">Album 2</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="option">
+							<a href="#recommend">Recommend</a>
+							<div class="sub_menu">
+								<ul id="recommend_sub">
+									<li><a href="#my_iframe" onclick="foucsOn(0)">怪物</a></li>
+									<li><a href="#my_iframe" onclick="foucsOn(1)">ハロ／ハワユ</a></li>
+									<li><a href="#my_iframe" onclick="foucsOn(2)">King</a></li>
+									<li><a href="#my_iframe" onclick="foucsOn(3)">わため工場</a></li>
+									<li><a href="#my_iframe" onclick="foucsOn(4)">Balalaika</a></li>
+								</ul>
+							</div>
+						</li>
+						
+					</ul>
+				</div> <!-- css_menu -->
 
-                        <li class="song_option menu_box_1">
-                            <a href="">Album</a>
-                            <ul class="submenu">
+				<div class="main_content">
+					<div id="recommend">
+						<h2 class="section_title" style="padding-top:0px;">Recommend</h2>
 
-                            </ul>
-                        </li>
-                        <li class="song_option menu_box_2" >
-                            <a href="">Original Songs</a>
-                            <ul class="submenu">
-                                
-                            </ul>
-                        </li>
-                        
-                        
-                    </ul>
-                </div>
+						<div id="recommend1"  class="slide" style="display:block">
+							<div class="song_title">
+								Tambourine Club
+							</div>
+							<div class="iframe-container" >
+								<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<div class="song_desciption">
+								We miss rushia
+							</div>
+						</div>
 
-                <hr>
-                <!-- The content -->
-                <div class="song_container">
-                    <div id="recommend">
-                        <div class="content_title">
-                            <h2>Recommend</h2>
-                        </div>
-                        
-                        <div class="recommend_content">
+						<div id="recommend2" class="slide">
+							<div class="song_title">
+								My Song
+							</div>
+							<div class="iframe-container" >
+								<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<div class="song_desciption">
+								Lastest release song~
+							</div>
+						</div>
 
-                            <div class="recommend_list" id="tambourine_club">
-                                <div class="song_title">
-                                    Tambourine Club
-                                </div>
-                                <div class="song_box">
-                                    <iframe class="out_video"  src="https://www.youtube.com/embed/DiNsCKqybcU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </div>
+						<div id="recommend3" class="slide">
+							<div class="song_title">
+								クソザコ回線でも
+							</div>
+							<div class="iframe-container" >
+								<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+							<div class="song_desciption">
+								WATAME use rap to introduce herself
+							</div>
+						</div>
+						
 
-                            <div class="recommend_list" id="my_song">
-                                <div class="song_title">
-                                    My Song
-                                </div>
-                                <div class="song_box">
-                                    <iframe  src="https://www.youtube.com/embed/6VGkeUaX-zk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                </div>
-                            </div>
+						<a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+						<a class="next" onclick="nextSlide(1)">&#10095;</a>
+					</div>
 
-                        </div>
-                        
-                    </div>
+					<div id="album">
+						<h2 class="section_title">Album</h2>
 
-                    <div class="album">
-                        <hr class="cat_br">
-                        <div class="content_title">
-                            <h2>Album</h2>
-                        </div>
-                    </div>
-                </div>
+						<div id="album1">
+							<div id="bar">
+								わためのうた vol.1
+							</div>
+
+							<div class="album_content">
+								<div class="album_video left">
+									<div class="iframe-container" >
+										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+
+								<div class="song_desciption right">
+									<span class="song_title">クソザコ回線卒業</span>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+								</div>
+							</div>
+							<br>
+							<div class="album_content">
+								<div class="album_video right">
+									<div class="iframe-container" >
+										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+
+								<div class="song_desciption left">
+									<span class="song_title">わための子守唄</span>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+								</div>
+							</div>
+							<br>
+							<div class="album_content">
+								<div class="album_video left">
+									<div class="iframe-container" >
+										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+
+								<div class="song_desciption right">
+									<span class="song_title">曇天羊 °∆°</span>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+								</div>
+							</div>
+
+							<div class="album_content">
+								<div class="album_video right">
+									<div class="iframe-container" >
+										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+
+								<div class="song_desciption left">
+									<span class="song_title" style="font-size:40px;">ホロライブ言えるかな？</span>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+								</div>
+							</div>
+						</div>  <!-- The end of album 1 -->
+
+						<br>
+						<div id="album2">
+							<div id="bar">
+								わためのうた vol.2
+							</div>
+							
+
+							<div class="album_content">
+								<div class="album_video left">
+									<div class="iframe-container">
+										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+
+								<div class="song_desciption right">
+									<span class="song_title">おはようのうた</span>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+								</div>
+							</div>
+
+							<div class="album_content">
+								<div class="album_video left">
+									<div class="iframe-container" >
+										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+
+								<div class="song_desciption right">
+									<span class="song_title">mayday,mayday</span>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+								</div>
+							</div>
+
+							<div class="album_content">
+								<div class="album_video right">
+									<div class="iframe-container" >
+										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+
+								<div class="song_desciption left">
+									<span class="song_title">キミだけのメロディ</span>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+								</div>
+							</div>
+
+							<div class="album_content">
+								<div class="album_video right">
+									<div class="iframe-container" >
+										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+
+								<div class="song_desciption left">
+									<span class="song_title">キミだけのメロディ</span>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+								</div>
+							</div>
+
+							<div class="album_content">
+								<div class="album_video left">
+									<div class="iframe-container" >
+										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+
+								<div class="song_desciption right">
+									<span class="song_title">御伽の詩と永久なるミライ</span>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+								</div>
+							</div>
+
+							<div class="album_content">
+								<div class="album_video left">
+									<div class="iframe-container" >
+										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+									</div>
+								</div>
+
+								<div class="song_desciption right">
+									<span class="song_title">御伽の詩と永久なるミライ</span>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+								</div>
+							</div>
+
+						</div>	<!-- The end of album 2 -->
+
+
+
+					</div>
+
+					<h2 class="section_title" style="padding-top:0px;">Cover</h2>
+					<div class="cover">
+						<iframe id="my_iframe" name="cover_iframe" width="560" height="315" src="my_iframe.html" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						
+						<ul>
+							<li><a class="cover_option" href="https://www.youtube.com/embed/6K-LSyE1Ywg" target="cover_iframe">怪物</a></li>
+							<li><a class="cover_option" href="https://www.youtube.com/embed/Um7SFkR-fEg" target="cover_iframe">ハロ／ハワユ</a></li>
+							<li><a class="cover_option" href="https://www.youtube.com/embed/OR1Epbc_NNE" target="cover_iframe">King</a></li>
+							<li><a class="cover_option" href="https://www.youtube.com/embed/K2Svy59O-KA" target="cover_iframe">わため工場</a></li>
+							<li><a class="cover_option" href="https://www.youtube.com/embed/E3oy7AxOHrI" target="cover_iframe">Balalaika </a></li>
+						</ul>
+					</div>
+				</div>
+                
                
             </div>
 		</main>
@@ -165,5 +362,10 @@
 			</div>
 
 		</footer>
+
+		<!-- Back to the upper -->
+		<div class="back" >
+			<a href="#main">Top</a>
+		</div>
 	</div>
 </body></html>
