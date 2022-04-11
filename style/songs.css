@@ -273,14 +273,14 @@
 }
 
 
-.iframe_container {
+.iframe-container {
     width: 80%;
     margin-left: 10%;
     position: relative;
     overflow: hidden;
     padding-top: 50%;
  }
- .iframe_responsive {
+ .iframe-responsive {
     position: absolute;
     width: 90%;
     height: 90%;
@@ -294,7 +294,7 @@
  }
 
  
- .album_video .iframe_container {
+ .album_video .iframe-container {
      width: 90%;
  }
 
@@ -357,13 +357,13 @@
         align-items: center;
     }
 
-    .iframe_container {
+    .iframe-container {
         margin-left:auto;
         margin-right: auto;
         width: 90%;
     }
     
-    .iframe_container iframe {
+    .iframe-container iframe {
         width: 100%;
         height: 100%;
     }
