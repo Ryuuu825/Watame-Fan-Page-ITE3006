@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<link rel="stylesheet" href="../style/style.css">
+	<link rel="stylesheet" href="../style/font.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="../script/main.js"></script>
+    <link rel="stylesheet" href="../style/profile.css">
+    <script>
+        function askForward(id)
+        {
+            var tag = document.getElementsByClassName("askable")[id];
+            var isForward = confirm(`Are you sure go to ${tag.href}?`);
+            return isForward;
+        }
+
+        function calculatePrice()
+        {
+            var price;
+            // to jpy
+            var region = document.getElementById("regionSelector").value;
+            switch (region)
+            {
+                case "Hong Kong":
+                    price = 28;
+                    break;
+                case "Taiwan":
+                    price = 92.74;
+                    break;
+                case "Japan":
+                    price = 400;
+                    break;
+            }
+
+            var output = document.getElementById("output");
+            output.innerText = price;
+
+
+        }
+    </script>
+</head>
+
+<body>
+	<div class="container">
+		<!--	header	-->
+		<header>
+			<div class="menu_btn_container" onclick="changeIcon(this);toggleNav()">
+				<div class="menu_btn">
+					<img src="../source/u36.png" alt="">
+					<div class="menu_icon">
+						<span class="bar" id="bar1"></span>
+						<span class="bar" id="bar2"></span>
+					</div>
+				</div>
+			</div>
+			<div class="side_nav" id="sideNav">
+				<div class="side_role1">
+					<div class="role_container">
+						<div class="shadow">
+							<img src="../source/u12.png" alt="" id="role_shadow">
+						</div>
+						<div class="role">
+							<img src="../source/u12.png" alt="" id="role">
+						</div>
+					</div>
+				</div>
+				<div class="side_menu">
+					<div class="menu_list_container">
+						<ul>
+							<li><a href="../index.html">HOME</a></li>
+							<li><a href="profile.html">PROFILE</a></li>
+							<li><a href="songs.html">SONGS</a></li>
+							<li><a href="watame.html">I AM WATAME</a></li>
+							<li><a href="about.html">ABOUT</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="side_role2">
+					<div class="role2_container">
+						<div class="role2">
+							<img src="../source/wnf.jpg" alt="" id="role2">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page_title">
+				<h1>Profile</h1>
+			</div>
+		</header>
+
+		<!--	main	-->
+		<main>
+			<div class="main_container">
+                <div class="desc_container">
+                    <div class="left_container">
+                        <div class="text">
+                            <p class="name">
+                                <span class="eng">Tsunomaki Watame</span>
+                                <span class="jp">角巻 わため</span>
+                                <span class="zh">角卷綿芽</span>
+                            </p>
+                            <p class="desc">
+                                Loves singing, and as she continued uploading song covers and having weekly singing streams titled "Watameh Night Fever!!," she started wanting to stand on Tokyo Budokan's stage someday.
+                            </p>
+                        </div>
+
+                        <div class="social_media_container">
+                            <div class="social_media">
+                                <a href="https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA" target="_blank" onclick="return askForward(0)" class="askable">
+                                    <img src="../source/youtube.png" alt="">
+                                </a>
+                            </div>
+                            <div class="social_media">
+                                <a href="https://twitter.com/tsunomakiwatame" target="_blank" onclick="return askForward(1)" class="askable">
+                                    <img src="../source/twitter.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right_container">
+                        <img src="../source/u6.png" alt="" style="display:none" >
+                        <img src="../source/u6.png" alt="" class="img_fg" >
+                        <img src="../source/u6.png" alt="" class="img_bg">
+                    </div>
+                </div>
+
+
+                <div class="card">
+                   <div class="left">
+                        <ul class="info">
+                            <li class="header">Detail</li>
+                            <li>
+                                <span class="title">Birthday:</span> 
+                                <span class="info_value">June 6th</span>
+                            </li>
+                            <li>
+                                <span class="title">Heigth:</span>
+                                <span class="info_value">151 cm</span>
+                            </li>
+                            <li>
+                                <span class="title">Weight:</span>
+                                <span class="info_value">Unknown ;)</span>
+                            </li>
+                            <li>
+                                <span class="title">Debut Date:</span>
+                                <span class="info_value">December 29 , 2019</span>
+                            </li>
+                        </ul>
+                   </div>
+
+                   <div class="right_container">
+                       <div class="img_container">
+                           <img src="../source/profile_icon.jpg" alt="">
+                        </div>
+                   </div>
+                </div>
+
+                <div class="membersheep">
+                    <div class="title">
+                        <p>
+                            Wanna Join the fun?
+                            <br>
+                            Sipn up for MemberSheep!
+                        </p>
+                    </div>
+
+                    <ul class="member_type">
+                        <li><img src="../source/member1.png" alt=""></li>
+                        <li><img src="../source/member2.png" alt=""></li>
+                        <li><img src="../source/member3.png" alt=""></li>
+                        <li><img src="../source/member4.png" alt=""></li>
+                        <li><img src="../source/member5.png" alt=""></li>
+                    </ul>
+
+                    <div class="text">
+                        &nbsp&nbsp&nbsp&nbspSign up for Membersheep if you want to send some support to Watame. As a member, you can gain access to current and pass member-only content: monthly wallpapers from well known artist, video, ASMR and able to access to the channel emoji showcased above!
+                    </div>
+                </div>
+
+                <div class="pricing">
+                    <span style="font-size: 20px;">See the pricing:</span>
+                    <span id="output"></span>
+                    <input list="region" id="regionSelector" onchange="calculatePrice()">
+                </div>
+
+                <datalist id="region">
+                    <option value="Hong Kong"></option>
+                    <option value="Japan"></option>
+                    <option value="Taiwan"></option>
+                </datalist>
+			</div>
+		</main>
+
+
+		<!--	footer	-->
+		<footer>
+
+			<div class="footer_nav">
+				<ul>
+					<li><a href="../index.html">HOME</a></li>
+					<li><a href="pageprofile.html">PROFILE</a></li>
+					<li><a href="songs.html">SONGS</a></li>
+					<li><a href="watame.html">I AM WATAME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+				</ul>
+			</div>
+			<div class="footer_sns">
+				<ul>
+					<li class="sns">
+						<a href="https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA" id="youtube"><img src="../source/youtube.png" alt=""></a>
+					</li>
+					<li class="sns">
+						<a href="https://twitter.com/tsunomakiwatame"><img src="../source/twitter.png" alt=""></a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer_Inner">
+				<p>©2022 IVE(TY) SE1B BKen</p>
+			</div>
+
+		</footer>
+	</div>
+</body></html>
