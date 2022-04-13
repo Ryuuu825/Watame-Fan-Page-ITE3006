@@ -299,30 +299,25 @@
  }
 
 .back {
-    position: sticky;
-    bottom:0;
-    right:0;
-    margin-left: 90%;
-    width: 10%;
-    height: 10%;
-    border: 1px solid black;
-    z-index: 1;
-    text-align: center;
-    background-color: #FFDF8D;
-    border-radius: 5px;
+    position: fixed;
+    bottom:20px;
+    left:20px;
 }
 
-
-.back a:hover {
-    color: white;
+.back img {
+    width: 100px;
+    height: 100px;
 }
 
-.back a {
-    text-decoration: none;
-    color: black;
+@media screen and (min-width: 1300px) {
+    .main_container {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
 }
-
-
 
 @media screen and (max-width: 900px) {
     .prev , .next {
@@ -416,15 +411,5 @@
     }
 
    
-
-}
-
-@media screen and (min-width: 1300px) {
-    .main_container {
-        width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
 
 }
