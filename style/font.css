@@ -1,15 +1,17 @@
 * {
 	font-family: 'Comic Neue', BOLD;
-	font-size: 48px;
+	font-size: 3vw;
 }
 
 h1 {
-	font-size: 84px;
-	text-align: center;
+	font-size: 5vw;
 }
 
-h2 {
-	font-size: 64px;
-	text-align: center;
+footer a {
+	font-size: 2vw;
 }
 
+
+footer p {
+	font-size: 1vw;
+}

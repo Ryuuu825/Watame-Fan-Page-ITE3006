@@ -1,7 +1,6 @@
 .content_container,
 .contact_container {
-	margin: auto;
-	margin-bottom: 10;
+	margin: 0 auto 5vw auto;
 	padding: 1vw 3vw;
 	width: 80%;
 	background-color: #FFECBB;
@@ -11,12 +10,12 @@
 }
 
 .content_container p {
-	text-align: left;
+	text-align:left;
 	margin: 1vw auto;
 }
 
 .content_container img {
-	width: 100px;
+	width: 6vw;
 	height: auto;
 	vertical-align: middle;
 }
@@ -26,76 +25,62 @@
 	text-align: center;
 }
 
-.contact_container table {
-	margin: auto;
-}
-
-.contact_container td {
-	height: 100px;
-	padding: 15px;
-	vertical-align: middle;
+h1 {
+	width: 100%;
+	text-align: center;
 }
 
 .contact_container label {
-	height: auto;
-	/* display: inline-block; */
-	vertical-align: middle;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	margin: 2vw;
 }
 
-.contact_container .info {
-	vertical-align: middle;
-	width: 100%;
-	height: 80px;
-	padding-left: 20px;
+.contact_container span {
+	width: 15%;
+	margin-right: 5%;
+	text-align: start;
+}
+
+.contact_container input {
+	width: 60%;
+	height: 3vh;
+	padding: 1vw;
 	border: 1px solid #F59A23;
-	border-radius: 20px;
-	font-size: 48px;
-	text-align: left;
+	border-radius: 2vw;
+	text-align: center;
 	background-color: #FFFBF1;
+	font-size: 2vw;
 }
 
-.contact_container #message {
-	resize: none;
-	height: 250px;
+.contact_container textarea {
+	resize:none;
+	width: 60%;
+	padding: 1vw;
+	height: 15vh;
+	margin: 10px;
+	border: 1px solid #F59A23;
+	border-radius: 2vw;
+	text-align: start;
+	background-color: #FFFBF1;
+	font-size: 2vw;
 }
 
 .contact_container #submit_btn {
 	cursor: pointer;
-	width: 50%;
-	height: 80px;
+	padding: 1vw;
+	width: 40%;	
+	height: auto;
 	background-color: #FFFBF1;
-	margin: auto;
-	border-radius: 50px;
-	border: 1px solid #F59A23;
-	font-size: 52px;
+	margin-bottom: 2vw;
+	border-radius: 3vw;
+	font-size: 2vw;
 }
 
 .contact_container #submit_btn:hover {
-	transform: scale(1.2);
-	transition: 0.3s;
+	transform: scale(1.05);
+	transition:  0.3s;
 	background-color: #FFDF8D;
-}
-
-@media screen and (max-width: 1256px) {
-
-
-	.contact_container td {
-		display: block;
-		height: auto;
-		margin: 15px 20px 15px 0px;
-		padding: 0px;
-	}
-
-	.contact_container {
-		text-align: left;
-	}
-	.contact_container .submit {
-		margin-top: 50px;
-		text-align: center;
-	}
-	.contact_container #submit_btn {
-		width: 80%;
-	}
-
-
 }
