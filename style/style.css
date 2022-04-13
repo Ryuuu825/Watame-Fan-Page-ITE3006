@@ -5,6 +5,15 @@ body {
 	margin: 0px;
 }
 
+* {
+	font-family: 'Comic Neue', BOLD;
+	/*	font-size: 3vw;*/
+}
+
+h1 {
+	font-size: 5vw;
+}
+
 ul {
 	padding: 0px;
 	margin: 0px;
@@ -31,7 +40,8 @@ main {
 }
 
 footer {
-	margin-top: 55px;
+	padding-top: 20px;
+	margin: 0px;
 	width: 100%;
 	height: auto;
 	background-color: #FFD466;
@@ -71,7 +81,7 @@ footer {
 
 .menu_btn img {
 	position: relative;
-	width: 150px;
+	width: 100px;
 	height: auto;
 	opacity: 80%;
 }
@@ -81,9 +91,9 @@ footer {
 	display: flex;
 	flex-direction: column;
 	position: absolute;
-	height: 150px;
+	height: 100px;
 	margin: 0 auto;
-	top: 45%;
+	top: 35%;
 	left: 28%;
 	bottom: 35%;
 	right: 28%;
@@ -92,8 +102,8 @@ footer {
 
 .menu_btn .bar {
 	position: relative;
-	width: 65px;
-	height: 10px;
+	width: 50px;
+	height: 7px;
 	background-color: white;
 	margin: 5px auto;
 	transition: 0.4s;
@@ -110,15 +120,17 @@ footer {
 }
 
 .change #bar1 {
-	transform: rotate(-45deg) translate(-6px, 7px);
+	transform: rotate(-45deg) translate(-5px, 7px);
 }
 
 .change #bar2 {
-	transform: rotate(45deg) translate(-6px, -7px);
+	transform: rotate(45deg) translate(-5px, -7px);
 }
 
 .side_nav {
-	display: flex wrap;
+	display: inline-block;
+	vertical-align: bottom;
+	font-size: 5vw;
 	padding: 0;
 	height: 0;
 	width: 100%;
@@ -193,7 +205,7 @@ footer {
 	width: auto;
 	color: black;
 	transition: 0.3s;
-	font-size: 82px;
+	font-size: 4vw;
 	z-index: 200;
 }
 
@@ -210,7 +222,7 @@ footer {
 }
 
 .role2 {
-	width: 500px;
+	width: 80%;
 	text-align: center;
 }
 
@@ -232,12 +244,12 @@ footer {
 }
 
 .footer_nav ul {
-	width: inherit;
+	width: inherit;	
 }
 
 .footer_nav li {
 	display: inline-flex;
-	padding: 10px 20px;
+	padding: 0px 20px;
 	justify-content: center;
 	align-items: center;
 }
@@ -246,7 +258,7 @@ footer {
 	text-decoration: none;
 	color: #000;
 	transition: 0.2s;
-	font-size: 42px;
+	font-size: 25px;
 }
 
 .footer_nav a:hover {
@@ -256,8 +268,8 @@ footer {
 }
 
 .footer_nav img {
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 }
 
 .footer_nav img:hover {
@@ -275,7 +287,7 @@ footer {
 
 .footer_Inner span {
 	margin: 5px;
-	font-size: 36px;
+	font-size: 12px;
 }
 
 .role_container {
@@ -287,16 +299,21 @@ footer {
 }
 
 
-@media screen and (max-width:1280px) {
+@media screen and (max-width:1000px) {
 	.side_nav {
 		overflow: hidden;
 	}
 
 	.side_role1 {
+		width: 100%;
+	}
+
+	.shadow {
 		display: none;
 	}
 
 	.side_menu {
+<<<<<<< HEAD
 		position: absolute;
 		display: flex;
 		margin:auto;
@@ -304,14 +321,19 @@ footer {
 		height: 100%;
 		justify-self: center;
 		align-items: center;
+=======
+		margin: 5vw auto;
+		width: 100%;
+>>>>>>> parent of 411fb0b (update font size)
 	}
 
 	.side_menu a {
-		font-size: 72px;
+		font-size: 5vw;
 	}
 
 	.side_role2 {
 		width: 100%;
+<<<<<<< HEAD
 		height: 100%;
 		display: flex;
 		align-items:flex-end;
@@ -321,12 +343,42 @@ footer {
 	.side_role2 #role2 {
 		content: url(../source/u6.png);
 		width: 500px;
+=======
 	}
 
+	.side_role2 #role2 {
+		width: 80%;
+>>>>>>> parent of 411fb0b (update font size)
+	}
+
+	.side_role2 img {
+		content: url(../source/u12.png)
+	}
 }
 
-@media screen and (max-width:680px) {
-	.side_menu a {
-		font-size: 52px;
+@media screen and (max-width:400px) {
+	.side_role2 #role2 {
+		width: 100%;
+	}
+
+	.side_menu {
+		margin: 8vw auto;
+		width: 100%;
+	}
+	
+	.side_menu {
+		margin: 8vw auto;
+		width: 100%;
+	}
+	
+	.footer_nav li {
+		width: 100%;
+		padding: 2px 0px;
+	}
+	
+	.footer_nav img {
+		width: 60px;
+		height: 60px;
+		padding: 2px 0px;
 	}
 }
