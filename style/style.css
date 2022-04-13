@@ -313,8 +313,18 @@ footer {
 	}
 
 	.side_menu {
+<<<<<<< HEAD
+		position: absolute;
+		display: flex;
+		margin:auto;
+		width: 100%;
+		height: 100%;
+		justify-self: center;
+		align-items: center;
+=======
 		margin: 5vw auto;
 		width: 100%;
+>>>>>>> parent of 411fb0b (update font size)
 	}
 
 	.side_menu a {
@@ -323,10 +333,22 @@ footer {
 
 	.side_role2 {
 		width: 100%;
+<<<<<<< HEAD
+		height: 100%;
+		display: flex;
+		align-items:flex-end;
+		opacity: 0.3;
+	}
+
+	.side_role2 #role2 {
+		content: url(../source/u6.png);
+		width: 500px;
+=======
 	}
 
 	.side_role2 #role2 {
 		width: 80%;
+>>>>>>> parent of 411fb0b (update font size)
 	}
 
 	.side_role2 img {
