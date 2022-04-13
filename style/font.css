@@ -1,6 +1,6 @@
 * {
 	font-family: 'Comic Neue', BOLD;
-	font-size: 48px;
+	font-size: 36px;
 }
 
 h1 {
@@ -13,3 +13,16 @@ h2 {
 	text-align: center;
 }
 
+@media screen and (max-width:680px) {
+	h1 {
+		font-size: 60px;
+	}
+
+	h2 {
+		font-size: 52px;
+	}
+
+	p {
+		font-size: 32px;
+	}
+}
