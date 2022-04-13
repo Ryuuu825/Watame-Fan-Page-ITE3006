@@ -19,4 +19,5 @@ function watame_say() {
         image.src = "../source/face2.png";
         is_clicked = true;
     }
+    
 }
