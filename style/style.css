@@ -193,7 +193,7 @@ footer {
 	width: auto;
 	color: black;
 	transition: 0.3s;
-	font-size: 82px;
+	font-size: 58px;
 	z-index: 200;
 }
 
@@ -246,7 +246,7 @@ footer {
 	text-decoration: none;
 	color: #000;
 	transition: 0.2s;
-	font-size: 42px;
+	font-size: 32px;
 }
 
 .footer_nav a:hover {
@@ -275,7 +275,7 @@ footer {
 
 .footer_Inner span {
 	margin: 5px;
-	font-size: 36px;
+	font-size: 28px;
 }
 
 .role_container {
@@ -320,7 +320,7 @@ footer {
 
 	.side_role2 #role2 {
 		content: url(../source/u6.png);
-		width: 500px;
+		width: 400px;
 	}
 
 }
@@ -328,5 +328,13 @@ footer {
 @media screen and (max-width:680px) {
 	.side_menu a {
 		font-size: 52px;
+	}
+
+	.footer_nav li {
+		width: 100%;
+	}
+
+	.footer_nav a {
+		font-size: 42px;
 	}
 }
