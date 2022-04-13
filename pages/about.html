@@ -39,7 +39,7 @@
 			</div>
 			<h2>Contact Us</h2>
 			<div class="contact_container">
-				<form name="contact_form" action="#" autocomplete="on" method="POST" onsubmit="checkForm()">
+				<form name="contact_form" action="#" autocomplete="on" method="POST" onsubmit="checkForm(); return false;">
 					<table>
 						<tr>
 							<td><label for="name">Name: </label></td>
@@ -50,18 +50,18 @@
 						</tr>
 						<tr>
 							<td><label for="email">E-mail: </label></td>
-							<td><input class="info" type="email" id="email" name="email" maxlength="40"
+							<td><input class="info" type="email" id="email" name="email" maxlength="40" title="e.g. abc@domain.com"
 									placeholder="Enter your E-mail..." required></td>
 						</tr>
 						<tr>
 							<td><label for="phone">Phone: </label></td>
-							<td><input class="info" type="tel" id="phone" name="phone" maxlength="8" placeholder="Enter your phone..."
+							<td><input class="info" type="tel" id="phone" name="phone" title="e.g. 1234-5678" pattern="^[1-9][0-9]*$" maxlength="8" placeholder="Enter your phone..."
 									required></td>
 						</tr>
 						<tr>
 							<td><label for="message">Message: </label></td>
-							<td><textarea class="info" name="message" id="message" rows="5" cols="30" title=""
-									placeholder="Enter your message no more than 200..." minlength="10" maxlength="200"
+							<td><textarea class="info" name="message" id="message" rows="5" cols="30" title="At least 10 letters"
+									placeholder="Enter your message no more than 200 letters..." minlength="10" maxlength="200"
 									required></textarea></td>
 						</tr>
 						<tr>

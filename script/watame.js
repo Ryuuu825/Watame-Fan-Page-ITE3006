@@ -14,7 +14,7 @@ function watame_say() {
     } else {
         audio.volume = 0.1;
         audio.play();
-        button.innerText = "back";
+        button.innerText = "Back";
         text.innerText = "悪くないよねぇ わため!";
         image.src = "../source/face2.png";
         is_clicked = true;
