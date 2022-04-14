@@ -71,14 +71,48 @@ function stopAllVideo()
 	
 }
 
-function foucsOn(num)
+function loadCoverSong(num)
 {
+	let coverList = [
+		"6K-LSyE1Ywg",
+		"Um7SFkR-fEg",
+		"OR1Epbc_NNE",
+		"K2Svy59O-KA",
+		"E3oy7AxOHrI"
+	]
 	let all_cover_option = document.getElementsByClassName("cover_option");
+	let cover_iframe = document.getElementById("cover_iframe");
 
 	// clear the color before foucs on
 	for (let i = 0; i < all_cover_option.length; i++)
 	{
 		all_cover_option[i].style.color = "black";
+		all_cover_option[i].style.fontWeight = "normal";
+		all_cover_option[i].style.fontSize = "30px";
 	}
 	all_cover_option[num].style.color = "blue";
+	all_cover_option[num].style.fontWeight = "bold";
+	all_cover_option[num].style.fontSize = "40px";
+	cover_iframe.src = "https://www.youtube.com/embed/" + coverList[num];
+}
+
+function showPopUp()
+{
+	let container = document.getElementsByClassName("pop_up_container")[0];
+	container.style.display = "flex";
+	
+}
+
+function hidePopUp()
+{
+	let container = document.getElementsByClassName("pop_up_container")[0];
+	container.style.display = "none";
+}
+
+function playSong(link)
+{
+	showPopUp();
+	let iframe = document.getElementById("pop_up");
+	iframe.src = "https://www.youtube.com/embed/" + link;
+
 }
