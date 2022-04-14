@@ -284,7 +284,7 @@
 
 .thrumbnail_container img:hover {
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 
@@ -466,7 +466,6 @@
         padding: 0px;
         text-align: center;
         margin-left: 0px;
-        margin-bottom: 10px;
     }
 
     .album_content {
