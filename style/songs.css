@@ -400,8 +400,9 @@
     }
 }
 
-@media screen and (max-width: 900px) {
 
+
+@media screen and (max-width:800px) {
     .prev,
     .next {
         display: none;
@@ -410,14 +411,12 @@
     /* show all hided slide */
     .slide {
         display: flex;
-    }
 
+    }
     .slide iframe {
         width: 100%;
     }
-}
-
-@media screen and (max-width:800px) {
+    
     .slide .song_title {
         margin-top: 50px;
     }
