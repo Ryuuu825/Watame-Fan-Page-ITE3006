@@ -73,7 +73,7 @@
 	background-color: #FFD466;
 }
 
-@media screen and (max-width: 1256px) {
+@media screen and (max-width: 1280px) {
 	.contact_container td {
 		display: block;
 		height: auto;
