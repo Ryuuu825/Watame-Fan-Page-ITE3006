@@ -91,6 +91,8 @@ function showPopUp()
 {
 	let container = document.getElementsByClassName("pop_up_container")[0];
 	container.style.display = "block";
+	document.getElementsByClassName("menu_btn_container")[0].style.display = "none";
+
 	
 }
 
@@ -101,6 +103,8 @@ function hidePopUp()
 	iframe.src = ""; // stop the video
 
 	container.style.display = "none";
+	document.getElementsByClassName("menu_btn_container")[0].style.display = "block";
+
 }
 
 function playSong(link)
