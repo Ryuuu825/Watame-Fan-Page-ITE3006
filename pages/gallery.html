@@ -17,7 +17,7 @@
 	<script type="text/javascript" src="../script/gallery.js"></script>
 </head>
 
-<body onload="w3.includeHTML();showDefaultImage();">
+<body onload="w3.includeHTML();showStartImage();">
 	<div class="container">
 		<div w3-include-html="Header.html"></div>
 		<main>
@@ -42,17 +42,17 @@
 					</div>
 				</div>
 				<div class="carousel_button">
-					<span class="car_btn">1</span>
-					<span class="car_btn">2</span>
-					<span class="car_btn">3</span>
-					<span class="car_btn">4</span>
-					<span class="car_btn">5</span>
-					<span class="car_btn">6</span>
-					<span class="car_btn">7</span>
+					<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(0)"></span>
+					<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(1)"></span>
+					<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(2)"></span>
+					<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(3)"></span>
+					<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(4)"></span>
+					<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(5)"></span>
+					<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(6)"></span>
 				</div>
 
-				<div class="bigImage_container" onclick="hideBigImage(this)">
-					<div class="closeButton" onclick="hideBigImage(this.parent)">
+				<div class="bigImage_container" onclick="hideBigImage()">
+					<div class="closeButton" onclick="hideBigImage()">
 						<img src="../source/close.png" alt="">
 					</div>
 					<div class="bigImage">
