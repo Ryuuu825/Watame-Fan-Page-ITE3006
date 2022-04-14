@@ -1,5 +1,5 @@
 .carousel_container {
-	width: 60%;
+	width: 80%;
 	margin: auto;
 	display: flex;
 	flex-direction: row;
@@ -7,5 +7,10 @@
 }
 
 .carousel_img {
+	display: none;
+	width: 100%;
+}
+
+.carousel_img img{
 	width: 100%;
 }
