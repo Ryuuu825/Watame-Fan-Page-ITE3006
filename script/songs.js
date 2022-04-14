@@ -22,11 +22,7 @@ function load_youtube_video()
 	
 }
 
-function setBG(num)
-{
-	menu_option[num].style.backgroundColor = "#063f5c";
-}
-
+// show next slide
 function nextSlide(num)
 {
 	index += num;
@@ -42,6 +38,7 @@ function nextSlide(num)
 	showSlide(index-1);
 }
 
+// show the slide
 function showSlide(num)
 {
 
@@ -51,6 +48,9 @@ function showSlide(num)
 				
 	}
 	slides[num].style.display = "block";
+
+	// stop the video
+	stopAllVideo();
 }
 
 function stopAllVideo()
@@ -83,7 +83,7 @@ function loadCoverSong(num)
 	}
 	all_cover_option[num].style.color = "blue";
 	all_cover_option[num].style.fontWeight = "bold";
-	all_cover_option[num].style.fontSize = "40px";
+	all_cover_option[num].style.fontSize = "35px";
 	cover_iframe.src = "https://www.youtube.com/embed/" + coverList[num];
 }
 
