@@ -12,41 +12,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Montserrat:wght@200&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="../script/main.js"></script>
     <link rel="stylesheet" href="../style/profile.css">
-    <script>
-        function askForward(id)
-        {
-            var tag = document.getElementsByClassName("askable")[id];
-            var isForward = confirm(`Are you sure go to ${tag.href}?`);
-            return isForward;
-        }
-
-        function calculatePrice()
-        {
-            var price;
-            // to jpy
-            var region = document.getElementById("input").value;
-            switch (region)
-            {
-                case "Hong Kong":
-                    price = 28;
-                    break;
-                case "Taiwan":
-                    price = 92.74;
-                    break;
-                case "Japan":
-                    price = 400;
-                    break;
-                default:
-                    price = "";
-                    break;
-            }
-
-            var output = document.getElementById("output");
-            output.innerText = price;
-
-
-        }
-    </script>
+    <script src="../script/profile.js"></script>
 </head>
 
 <body onload="w3.includeHTML();">
