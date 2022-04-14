@@ -1,0 +1,11 @@
+.carousel_container {
+	width: 60%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	overflow-x: hidden;
+}
+
+.carousel_img {
+	width: 100%;
+}
