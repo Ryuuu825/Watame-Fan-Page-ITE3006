@@ -1,8 +1,9 @@
 let index = 1;
 let slides = document.getElementsByClassName("slide");
 let menu_option = document.getElementsByClassName("option");
-let all_iframe = document.getElementsByTagName("iframe");
+let all_iframe = document.getElementsByTagName('iframe')
 
+// load all iframe when the page is loaded
 function load_youtube_video()
 {
 
@@ -10,23 +11,12 @@ function load_youtube_video()
 		'_T4euQ8qnn8' , 
 		'6VGkeUaX-zk' ,
 		'j5n1zqsvfXo' ,
-		'dLL6Z8LGFkQ' ,
-		'PaCYw28Ta-w' ,
-		'DGun2cWbPEM' ,
-		'P8OjkcLzYCM' ,
-		'dLL6Z8LGFkQ' ,
-		'L_JvgkZ04t0' ,
-		'l44ih2KWJAo' ,
-		'B3rZm2cN5ZY' ,
-		'ndNWnIAdhZo' ,
-		'5KsXVs8Vg7U'
+		'6K-LSyE1Ywg' 
 	]
 	for (i = 0; i < src.length; i++)
 	{
 		all_iframe[i].src = "https://www.youtube.com/embed/" + src[i] + "?enablejsapi=1";
 	}
-
-
 
 	
 }
@@ -106,6 +96,9 @@ function showPopUp()
 function hidePopUp()
 {
 	let container = document.getElementsByClassName("pop_up_container")[0];
+	let iframe = document.getElementById("pop_up");
+	iframe.src = ""; // stop the video
+
 	container.style.display = "none";
 }
 
@@ -115,4 +108,10 @@ function playSong(link)
 	let iframe = document.getElementById("pop_up");
 	iframe.src = "https://www.youtube.com/embed/" + link;
 
+}
+
+function showGif(num, link)
+{
+	var img_tag = document.getElementsByClassName("gif")[num];
+	img_tag.src = link;
 }

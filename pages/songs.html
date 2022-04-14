@@ -28,7 +28,7 @@
 				<h1>Song</h1>
 			</div>
 			<div class="main_container">
-				<div class="stop_button" onclick="playSong('6K-LSyE1Ywg'); /*stopAllVideo()*/">Stop All Music</div>
+				<div class="stop_button" onclick="stopAllVideo()">Stop All Music</div>
 
 				<div class="css_menu">
 					<ul>
@@ -82,14 +82,12 @@
 					<div id="recommend">
 						<h2 class="section_title" style="padding-top:0px;">Recommend</h2>
 
-						<div id="recommend1" class="slide" style="display:block">
+						<div id="recommend1"  class="slide" style="display:block">
 							<div class="song_title">
 								Tambourine Club
 							</div>
-							<div class="iframe-container">
-								<iframe class="iframe-responsive" title="YouTube video player" frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen></iframe>
+							<div class="iframe-container" >
+								<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<div class="song_desciption">
 								We miss rushia
@@ -100,10 +98,8 @@
 							<div class="song_title">
 								My Song
 							</div>
-							<div class="iframe-container">
-								<iframe class="iframe-responsive" title="YouTube video player" frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen></iframe>
+							<div class="iframe-container" >
+								<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<div class="song_desciption">
 								Lastest release song~
@@ -114,16 +110,14 @@
 							<div class="song_title">
 								クソザコ回線でも
 							</div>
-							<div class="iframe-container">
-								<iframe class="iframe-responsive" title="YouTube video player" frameborder="0"
-									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-									allowfullscreen></iframe>
+							<div class="iframe-container" >
+								<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 							</div>
 							<div class="song_desciption">
 								WATAME use rap to introduce herself
 							</div>
 						</div>
-
+						
 
 						<a class="prev" onclick="nextSlide(-1)">&#10094;</a>
 						<a class="next" onclick="nextSlide(1)">&#10095;</a>
@@ -138,12 +132,8 @@
 							</div>
 
 							<div class="album_content">
-								<div class="album_video left">
-									<div class="iframe-container">
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0"
-											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-											allowfullscreen></iframe>
-									</div>
+								<div class="thrumbnail_container left" onclick="playSong('dLL6Z8LGFkQ')">
+									<img src="https://i.ytimg.com/vi/dLL6Z8LGFkQ/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBbe-pOOsDw2OjA7_FclVt_n_RiJA" alt="">
 								</div>
 
 								<div class="song_desciption right">
@@ -153,14 +143,11 @@
 										praesentium animi explicabo recusandae. Soluta.</div>
 								</div>
 							</div>
-							<br>
+							<hr class="album_song_break">
+
 							<div class="album_content">
-								<div class="album_video right">
-									<div class="iframe-container">
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0"
-											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-											allowfullscreen></iframe>
-									</div>
+								<div class="thrumbnail_container right" onclick="playSong('lxx_nwm_8PU')">
+									<img src="https://i.ytimg.com/vi/lxx_nwm_8PU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCTiPwV1Lvb1OmpECdcPAc1CbDmVg" alt="">
 								</div>
 
 								<div class="song_desciption left">
@@ -170,14 +157,12 @@
 										praesentium animi explicabo recusandae. Soluta.</div>
 								</div>
 							</div>
-							<br>
+
+							<hr class="album_song_break">
+							
 							<div class="album_content">
-								<div class="album_video left">
-									<div class="iframe-container">
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0"
-											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-											allowfullscreen></iframe>
-									</div>
+								<div class="thrumbnail_container left" onclick="playSong('DGun2cWbPEM')">
+									<img src="https://i.ytimg.com/vi/DGun2cWbPEM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
 								</div>
 
 								<div class="song_desciption right">
@@ -188,17 +173,15 @@
 								</div>
 							</div>
 
+							<hr class="album_song_break">
+
 							<div class="album_content">
-								<div class="album_video right">
-									<div class="iframe-container">
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0"
-											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-											allowfullscreen></iframe>
-									</div>
+								<div class="thrumbnail_container right" onclick="playSong('mZ0sJQC8qkE')">
+									<img src="https://i.ytimg.com/vi/mZ0sJQC8qkE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCTeX2AERGzxkmyzlA1xxNmjRXfjw" alt="">
 								</div>
 
 								<div class="song_desciption left">
-									<span class="song_title" style="font-size:40px;">ホロライブ言えるかな？</span>
+									<span class="song_title" >ホロライブ言えるかな？</span>
 									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
 										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
 										praesentium animi explicabo recusandae. Soluta.</div>
@@ -214,12 +197,8 @@
 
 
 							<div class="album_content">
-								<div class="album_video left">
-									<div class="iframe-container">
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0"
-											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-											allowfullscreen></iframe>
-									</div>
+								<div class="thrumbnail_container left" onclick="playSong('PaCYw28Ta-w')">
+									<img src="https://i.ytimg.com/vi/PaCYw28Ta-w/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
 								</div>
 
 								<div class="song_desciption right">
@@ -230,13 +209,11 @@
 								</div>
 							</div>
 
+							<hr class="album_song_break">
+
 							<div class="album_content">
-								<div class="album_video left">
-									<div class="iframe-container">
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0"
-											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-											allowfullscreen></iframe>
-									</div>
+								<div class="thrumbnail_container right" onclick="playSong('L_JvgkZ04t0')">
+									<img src="https://i.ytimg.com/vi/L_JvgkZ04t0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
 								</div>
 
 								<div class="song_desciption right">
@@ -247,13 +224,11 @@
 								</div>
 							</div>
 
+							<hr class="album_song_break">
+
 							<div class="album_content">
-								<div class="album_video right">
-									<div class="iframe-container">
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0"
-											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-											allowfullscreen></iframe>
-									</div>
+								<div class="thrumbnail_container right" onclick="playSong('l44ih2KWJAo')">
+									<img src="https://i.ytimg.com/vi/l44ih2KWJAo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
 								</div>
 
 								<div class="song_desciption left">
@@ -264,13 +239,11 @@
 								</div>
 							</div>
 
+							<hr class="album_song_break">
+
 							<div class="album_content">
-								<div class="album_video right">
-									<div class="iframe-container">
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0"
-											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-											allowfullscreen></iframe>
-									</div>
+								<div class="thrumbnail_container right" onclick="playSong('P8OjkcLzYCM')">
+									<img src="https://i.ytimg.com/vi/P8OjkcLzYCM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
 								</div>
 
 								<div class="song_desciption left">
@@ -281,13 +254,11 @@
 								</div>
 							</div>
 
+							<hr class="album_song_break">
+
 							<div class="album_content">
-								<div class="album_video left">
-									<div class="iframe-container">
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0"
-											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-											allowfullscreen></iframe>
-									</div>
+								<div class="thrumbnail_container left" onclick="playSong('ndNWnIAdhZo')">
+									<img src="https://i.ytimg.com/vi/ndNWnIAdhZo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
 								</div>
 
 								<div class="song_desciption right">
@@ -298,13 +269,12 @@
 								</div>
 							</div>
 
+							<hr class="album_song_break">
+
 							<div class="album_content">
-								<div class="album_video left">
-									<div class="iframe-container">
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0"
-											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-											allowfullscreen></iframe>
-									</div>
+								
+								<div class="thrumbnail_container left" onclick="playSong('5KsXVs8Vg7U')">
+									<img src="https://i.ytimg.com/vi/5KsXVs8Vg7U/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
 								</div>
 
 								<div class="song_desciption right">
@@ -324,7 +294,7 @@
 					<h2 class="section_title" style="padding-top:0px;">Cover</h2>
 					<div class="cover">
 						<iframe id="cover_iframe" name="cover_iframe" width="560" height="315"
-							src="https://www.youtube.com/embed/6K-LSyE1Ywg" title="YouTube video player" frameborder="1"
+							src="" title="YouTube video player" frameborder="1"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 							allowfullscreen></iframe>
 
@@ -338,12 +308,12 @@
 					</div>
 				</div>
 
-				<div class="pop_up_container">
-					<div class="exit" style="z-index:2;" onclick="hidePopUp()">
+				<div class="pop_up_container" onclick="hidePopUp()">
+					<div class="exit" style="z-index:2;" onclick="hidePopUp()" >
 						X
 					</div>
 					<div class="pop_up_iframe_container">
-						<iframe id="pop_up" class="iframe-responsive" title="YouTube video player" frameborder="0"
+						<iframe id="pop_up" title="YouTube video player" frameborder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 							allowfullscreen></iframe>
 					</div>
