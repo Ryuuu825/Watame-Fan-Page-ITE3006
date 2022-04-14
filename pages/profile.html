@@ -24,7 +24,7 @@
         {
             var price;
             // to jpy
-            var region = document.getElementById("regionSelector").value;
+            var region = document.getElementById("input").value;
             switch (region)
             {
                 case "Hong Kong":
@@ -35,6 +35,9 @@
                     break;
                 case "Japan":
                     price = 400;
+                    break;
+                default:
+                    price = "";
                     break;
             }
 
@@ -144,15 +147,114 @@
                 <div class="pricing">
                     <span style="font-size: 20px;">See the pricing:</span>
                     <span id="output"></span>
-                    <input list="region" id="regionSelector" onchange="calculatePrice()">
+                    <select class="input" id="input" onchange="calculatePrice()">
+                        <option value="Hong Kong">Hong Kong</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Taiwan">Taiwan</option>
+                    </select>
                 </div>
 
-                <datalist id="region">
-                    <option value="Hong Kong"></option>
-                    <option value="Japan"></option>
-                    <option value="Taiwan"></option>
-                </datalist>
 			</div>
+
+
+            <div class="stream_icon">
+                <div class="section_title">Custom emoji in stream chat</div>
+                <ul class="stream_icon_container">
+                    <li>
+                        <div class="desc">
+                            Night Fever
+                        </div>
+
+                        <ul class="image">
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/light.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/eye.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/light.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="desc">
+                            Night Fever(2)
+                        </div>
+
+                        <ul class="image">
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/left.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/right.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/left.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="desc">
+                            Watame number one
+                        </div>
+                        
+                        <ul class="image">
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/one.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/smile.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/heart.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="desc">
+                            LOL
+                        </div>
+                        
+                        <ul class="image">
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/lmao.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/lmao.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/lmao.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
 		</main>
         <div w3-include-html="Footer.html"></div>
     </div>
