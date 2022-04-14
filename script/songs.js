@@ -99,7 +99,7 @@ function loadCoverSong(num)
 function showPopUp()
 {
 	let container = document.getElementsByClassName("pop_up_container")[0];
-	container.style.display = "flex";
+	container.style.display = "block";
 	
 }
 
