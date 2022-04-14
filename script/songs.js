@@ -83,7 +83,7 @@ function loadCoverSong(num)
 	}
 	all_cover_option[num].style.color = "blue";
 	all_cover_option[num].style.fontWeight = "bold";
-	all_cover_option[num].style.fontSize = "40px";
+	all_cover_option[num].style.fontSize = "35px";
 	cover_iframe.src = "https://www.youtube.com/embed/" + coverList[num];
 }
 

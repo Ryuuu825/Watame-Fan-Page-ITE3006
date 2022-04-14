@@ -12,41 +12,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Montserrat:wght@200&display=swap" rel="stylesheet">
 	<script type="text/javascript" src="../script/main.js"></script>
     <link rel="stylesheet" href="../style/profile.css">
-    <script>
-        function askForward(id)
-        {
-            var tag = document.getElementsByClassName("askable")[id];
-            var isForward = confirm(`Are you sure go to ${tag.href}?`);
-            return isForward;
-        }
-
-        function calculatePrice()
-        {
-            var price;
-            // to jpy
-            var region = document.getElementById("input").value;
-            switch (region)
-            {
-                case "Hong Kong":
-                    price = 28;
-                    break;
-                case "Taiwan":
-                    price = 92.74;
-                    break;
-                case "Japan":
-                    price = 400;
-                    break;
-                default:
-                    price = "";
-                    break;
-            }
-
-            var output = document.getElementById("output");
-            output.innerText = price;
-
-
-        }
-    </script>
+    <script src="../script/profile.js"></script>
 </head>
 
 <body onload="w3.includeHTML();">
@@ -140,7 +106,7 @@
                     </ul>
 
                     <div class="text">
-                        &nbsp&nbsp&nbsp&nbspSign up for Membersheep if you want to send some support to Watame. As a member, you can gain access to current and pass member-only content: monthly wallpapers from well known artist, video, ASMR and able to access to the channel emoji showcased above!
+                        &nbsp&nbsp&nbsp&nbspSign up for Membersheep if you want to send some support to Watame. As a member, you can gain access to current and pass member-only content: monthly wallpapers from well known artist, video, ASMR.
                     </div>
                 </div>
 
@@ -158,11 +124,11 @@
 
 
             <div class="stream_icon">
-                <div class="section_title">Custom emoji in stream chat</div>
+                <div class="section_title">Common emoji in stream chat</div>
                 <ul class="stream_icon_container">
                     <li>
                         <div class="desc">
-                            Night Fever
+                            Watame Singing
                         </div>
 
                         <ul class="image">
@@ -185,7 +151,7 @@
                     </li>
                     <li>
                         <div class="desc">
-                            Night Fever(2)
+                            Watame Singing(2)
                         </div>
 
                         <ul class="image">
