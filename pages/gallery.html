@@ -14,9 +14,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Montserrat:wght@200&display=swap"
 		rel="stylesheet">
 	<script type="text/javascript" src="../script/main.js"></script>
+	<script type="text/javascript" src="../script/gallery.js"></script>
 </head>
 
-<body onload="w3.includeHTML();">
+<body onload="w3.includeHTML();showDefaultImage();">
 	<div class="container">
 		<div w3-include-html="Header.html"></div>
 		<main>
@@ -24,14 +25,14 @@
 				<h1>Gallery</h1>
 			</div>
 			<div class="main_container">
-				<div class="carousel_container" onload="">
-					<img class="carousel_img" src="../source/watame_img/carousel/1.jpg" alt="">
-					<img class="carousel_img" src="../source/watame_img/carousel/2.jpg" alt="">
-					<img class="carousel_img" src="../source/watame_img/carousel/3.jpg" alt="">
-					<img class="carousel_img" src="../source/watame_img/carousel/4.jpg" alt="">
-					<img class="carousel_img" src="../source/watame_img/carousel/5.jpg" alt="">
-					<img class="carousel_img" src="../source/watame_img/carousel/6.jpg" alt="">
-					<img class="carousel_img" src="../source/watame_img/carousel/7.jpg" alt="">
+				<div class="carousel_container">
+					<div class="carousel_img"><img src="../source/watame_img/carousel/1.jpg" alt=""></div>
+					<div class="carousel_img"><img src="../source/watame_img/carousel/3.jpg" alt=""></div>
+					<div class="carousel_img"><img src="../source/watame_img/carousel/2.jpg" alt=""></div>
+					<div class="carousel_img"><img src="../source/watame_img/carousel/4.jpg" alt=""></div>
+					<div class="carousel_img"><img src="../source/watame_img/carousel/5.jpg" alt=""></div>
+					<div class="carousel_img"><img src="../source/watame_img/carousel/6.jpg" alt=""></div>
+					<div class="carousel_img"><img src="../source/watame_img/carousel/7.jpg" alt=""></div>
 				</div>
 			</div>
 		</main>
