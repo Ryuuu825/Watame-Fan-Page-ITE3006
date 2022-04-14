@@ -9,11 +9,12 @@
 	<link rel="stylesheet" href="../style/font.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Montserrat:wght@200&display=swap"
+		rel="stylesheet">
 	<script type="text/javascript" src="../script/main.js"></script>
-    <link rel="stylesheet" href="../style/songs.css">
+	<link rel="stylesheet" href="../style/songs.css">
 
-	<script src="../script/songs.js"></script>	
+	<script src="../script/songs.js"></script>
 
 </head>
 
@@ -26,7 +27,7 @@
 			<div id="title" class="page_title">
 				<h1>Song</h1>
 			</div>
-			<div class="main_container" >
+			<div class="main_container">
 				<div class="stop_button" onclick="stopAllVideo()">Stop All Music</div>
 
 				<div class="css_menu">
@@ -41,7 +42,7 @@
 									<li>
 										<a href="#recommend1" onclick="showSlide(1);">My Song</a>
 									</li>
-									
+
 									<li>
 										<a href="#recommend1" onclick="showSlide(2)">クソザコ回線でも</a>
 									</li>
@@ -62,18 +63,18 @@
 							</div>
 						</li>
 						<li class="option">
-							<a href="#recommend">Recommend</a>
+							<a href="#cover_iframe">Cover</a>
 							<div class="sub_menu">
 								<ul id="recommend_sub">
-									<li><a href="#my_iframe" onclick="foucsOn(0)">怪物</a></li>
-									<li><a href="#my_iframe" onclick="foucsOn(1)">ハロ／ハワユ</a></li>
-									<li><a href="#my_iframe" onclick="foucsOn(2)">King</a></li>
-									<li><a href="#my_iframe" onclick="foucsOn(3)">わため工場</a></li>
-									<li><a href="#my_iframe" onclick="foucsOn(4)">Balalaika</a></li>
+									<li><a href="#cover_iframe" onclick="loadCoverSong(0)">怪物</a></li>
+									<li><a href="#cover_iframe" onclick="loadCoverSong(1)">ハロ／ハワユ</a></li>
+									<li><a href="#cover_iframe" onclick="loadCoverSong(2)">King</a></li>
+									<li><a href="#cover_iframe" onclick="loadCoverSong(3)">わため工場</a></li>
+									<li><a href="#cover_iframe" onclick="loadCoverSong(4)">Balalaika</a></li>
 								</ul>
 							</div>
 						</li>
-						
+
 					</ul>
 				</div> <!-- css_menu -->
 
@@ -131,144 +132,160 @@
 							</div>
 
 							<div class="album_content">
-								<div class="album_video left">
-									<div class="iframe-container" >
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
+								<div class="thrumbnail_container left" onclick="playSong('dLL6Z8LGFkQ')">
+									<img src="https://i.ytimg.com/vi/dLL6Z8LGFkQ/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBbe-pOOsDw2OjA7_FclVt_n_RiJA" alt="">
 								</div>
 
 								<div class="song_desciption right">
 									<span class="song_title">クソザコ回線卒業</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+										praesentium animi explicabo recusandae. Soluta.</div>
 								</div>
 							</div>
-							<br>
+							<hr class="album_song_break">
+
 							<div class="album_content">
-								<div class="album_video right">
-									<div class="iframe-container" >
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
+								<div class="thrumbnail_container right" onclick="playSong('lxx_nwm_8PU')">
+									<img src="https://i.ytimg.com/vi/lxx_nwm_8PU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCTiPwV1Lvb1OmpECdcPAc1CbDmVg" alt="">
 								</div>
 
 								<div class="song_desciption left">
 									<span class="song_title">わための子守唄</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+										praesentium animi explicabo recusandae. Soluta.</div>
 								</div>
 							</div>
-							<br>
+
+							<hr class="album_song_break">
+							
 							<div class="album_content">
-								<div class="album_video left">
-									<div class="iframe-container" >
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
+								<div class="thrumbnail_container left" onclick="playSong('DGun2cWbPEM')">
+									<img src="https://i.ytimg.com/vi/DGun2cWbPEM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
 								</div>
 
 								<div class="song_desciption right">
 									<span class="song_title">曇天羊 °∆°</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+										praesentium animi explicabo recusandae. Soluta.</div>
 								</div>
 							</div>
 
+							<hr class="album_song_break">
+
 							<div class="album_content">
-								<div class="album_video right">
-									<div class="iframe-container" >
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
+								<div class="thrumbnail_container right" onclick="playSong('mZ0sJQC8qkE')">
+									<img src="https://i.ytimg.com/vi/mZ0sJQC8qkE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCTeX2AERGzxkmyzlA1xxNmjRXfjw" alt="">
 								</div>
 
 								<div class="song_desciption left">
-									<span class="song_title" style="font-size:40px;">ホロライブ言えるかな？</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+									<span class="song_title" >ホロライブ言えるかな？</span>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+										praesentium animi explicabo recusandae. Soluta.</div>
 								</div>
 							</div>
-						</div>  <!-- The end of album 1 -->
+						</div> <!-- The end of album 1 -->
 
 						<br>
 						<div id="album2">
 							<div id="bar">
 								わためのうた vol.2
 							</div>
-							
+
 
 							<div class="album_content">
-								<div class="album_video left">
-									<div class="iframe-container">
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
+								<div class="thrumbnail_container left" onclick="playSong('PaCYw28Ta-w')">
+									<img src="https://i.ytimg.com/vi/PaCYw28Ta-w/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
 								</div>
 
 								<div class="song_desciption right">
 									<span class="song_title">おはようのうた</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+										praesentium animi explicabo recusandae. Soluta.</div>
 								</div>
 							</div>
 
+							<hr class="album_song_break">
+
 							<div class="album_content">
-								<div class="album_video left">
-									<div class="iframe-container" >
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
+								<div class="thrumbnail_container right" onclick="playSong('L_JvgkZ04t0')">
+									<img src="https://i.ytimg.com/vi/L_JvgkZ04t0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
 								</div>
 
 								<div class="song_desciption right">
 									<span class="song_title">mayday,mayday</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+										praesentium animi explicabo recusandae. Soluta.</div>
 								</div>
 							</div>
 
+							<hr class="album_song_break">
+
 							<div class="album_content">
-								<div class="album_video right">
-									<div class="iframe-container" >
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
+								<div class="thrumbnail_container right" onclick="playSong('l44ih2KWJAo')">
+									<img src="https://i.ytimg.com/vi/l44ih2KWJAo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
 								</div>
 
 								<div class="song_desciption left">
 									<span class="song_title">キミだけのメロディ</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+										praesentium animi explicabo recusandae. Soluta.</div>
 								</div>
 							</div>
 
+							<hr class="album_song_break">
+
 							<div class="album_content">
-								<div class="album_video right">
-									<div class="iframe-container" >
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
+								<div class="thrumbnail_container right" onclick="playSong('P8OjkcLzYCM')">
+									<img src="https://i.ytimg.com/vi/P8OjkcLzYCM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
 								</div>
 
 								<div class="song_desciption left">
 									<span class="song_title">キミだけのメロディ</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+										praesentium animi explicabo recusandae. Soluta.</div>
 								</div>
 							</div>
 
+							<hr class="album_song_break">
+
 							<div class="album_content">
-								<div class="album_video left">
-									<div class="iframe-container" >
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
+								<div class="thrumbnail_container left" onclick="playSong('ndNWnIAdhZo')">
+									<img src="https://i.ytimg.com/vi/ndNWnIAdhZo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
 								</div>
 
 								<div class="song_desciption right">
 									<span class="song_title">御伽の詩と永久なるミライ</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+										praesentium animi explicabo recusandae. Soluta.</div>
 								</div>
 							</div>
 
+							<hr class="album_song_break">
+
 							<div class="album_content">
-								<div class="album_video left">
-									<div class="iframe-container" >
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</div>
+								
+								<div class="thrumbnail_container left" onclick="playSong('5KsXVs8Vg7U')">
+									<img src="https://i.ytimg.com/vi/5KsXVs8Vg7U/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
 								</div>
 
 								<div class="song_desciption right">
 									<span class="song_title">御伽の詩と永久なるミライ</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam, eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa praesentium animi explicabo recusandae. Soluta.</div>
+									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+										praesentium animi explicabo recusandae. Soluta.</div>
 								</div>
 							</div>
 
-						</div>	<!-- The end of album 2 -->
+						</div> <!-- The end of album 2 -->
 
 
 
@@ -276,30 +293,42 @@
 
 					<h2 class="section_title" style="padding-top:0px;">Cover</h2>
 					<div class="cover">
-						<iframe id="my_iframe" name="cover_iframe" width="560" height="315" src="my_iframe.html" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						
+						<iframe id="cover_iframe" name="cover_iframe" width="560" height="315"
+							src="" title="YouTube video player" frameborder="1"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+
 						<ul>
-							<li><a class="cover_option" href="https://www.youtube.com/embed/6K-LSyE1Ywg" target="cover_iframe">怪物</a></li>
-							<li><a class="cover_option" href="https://www.youtube.com/embed/Um7SFkR-fEg" target="cover_iframe">ハロ／ハワユ</a></li>
-							<li><a class="cover_option" href="https://www.youtube.com/embed/OR1Epbc_NNE" target="cover_iframe">King</a></li>
-							<li><a class="cover_option" href="https://www.youtube.com/embed/K2Svy59O-KA" target="cover_iframe">わため工場</a></li>
-							<li><a class="cover_option" href="https://www.youtube.com/embed/E3oy7AxOHrI" target="cover_iframe">Balalaika </a></li>
+							<li><a class="cover_option" onclick="loadCoverSong(0)">怪物</a></li>
+							<li><a class="cover_option" onclick="loadCoverSong(1)">ハロ／ハワユ</a></li>
+							<li><a class="cover_option" onclick="loadCoverSong(2)">King</a></li>
+							<li><a class="cover_option" onclick="loadCoverSong(3)">わため工場</a></li>
+							<li><a class="cover_option" onclick="loadCoverSong(4)">Balalaika </a></li>
 						</ul>
 					</div>
 				</div>
-                
-               
-            </div>
+
+				<div class="pop_up_container" onclick="hidePopUp()">
+					<div class="exit" style="z-index:2;" onclick="hidePopUp()" >
+						X
+					</div>
+					<div class="pop_up_iframe_container">
+						<iframe id="pop_up" title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
 		</main>
-
-
 
 		<!--	footer	-->
 		<div w3-include-html="Footer.html"></div>
 
 		<!-- Back to the upper -->
-		<div class="back" >
+		<div class="back">
 			<a href="#title"><img src="../source/up-arrow.png" alt=""></a>
 		</div>
 	</div>
-</body></html>
+</body>
+
+</html>
