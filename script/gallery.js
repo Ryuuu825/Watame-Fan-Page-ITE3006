@@ -47,6 +47,14 @@ function showCarouselImage() {
 	}
 }
 
-function diplayBigImage() {
-	
+function diplayBigImage(x) {
+	document.getElementById("bigImage").src = x.src;
+	document.getElementsByClassName("bigImage_container")[0].style.display = "block";
+	document.getElementsByClassName("menu_btn_container")[0].style.display = "none";
+}
+
+function hideBigImage(x) {
+	document.getElementById("bigImage").src = x.src;
+	document.getElementsByClassName("bigImage_container")[0].style.display = "none";
+	document.getElementsByClassName("menu_btn_container")[0].style.display = "block";
 }
