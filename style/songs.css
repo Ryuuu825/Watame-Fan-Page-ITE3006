@@ -359,6 +359,39 @@
     padding: 0px;
  }
 
+ .album_video .iframe-container {
+     width: 90%;
+ }
+
+.back {
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    bottom:0;
+    left:0;
+    padding: 0;
+    margin: 0;
+}
+
+.back a {
+    height: inherit;
+    width: inherit;
+}
+
+.back img {
+    width: 150px;
+    height: auto;
+    position: fixed;
+    bottom: 0;
+}
+
+.back img:hover {
+    height: auto;
+    width: 250px;
+    transform: scaleX(-1);
+    content: url("../source/Topbutton2.png");
+}
+
 @media screen and (min-width: 1300px) {
     .main_container {
         width: 1200px;

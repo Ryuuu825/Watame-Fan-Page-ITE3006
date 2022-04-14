@@ -1,16 +1,27 @@
 var currentIndex = 0;
 
+/**
+ * init the first image
+ */
 function showDefaultImage() {
 	var cImg = document.getElementsByClassName("carousel_img");
 	cImg[0].style.display = "inline-block";
 	currentIndex = 1;
 }
 
+/**
+ * set a system timer to show the carouse image
+ */
 var timer = setInterval(showCarouselImage, 3000);
 
+
+/**
+ * carouse image
+ */
 function showCarouselImage() {
 	var cImg = document.getElementsByClassName("carousel_img");
 	var imgLength = cImg.length;
+	
 	/**
 	 * the default order is "2", 
 	 * change the order value to "1" for showing the current image
@@ -20,16 +31,22 @@ function showCarouselImage() {
 	 */
 	if (currentIndex-1 >= 0){
 		cImg[currentIndex-1].style.order = "2";
-		cImg[currentIndex-1].style.display = "none";
+		cImg[currentIndex-1].style.display = "none"; //hide the perious image
 	}else {
 		cImg[cImg.length-1].style.order = "2";
-		cImg[cImg.length-1].style.display = "none";
+		cImg[cImg.length-1].style.display = "none"; //hide the perious image
 	}
 	cImg[currentIndex].style.order = "1";
-	cImg[currentIndex].style.display = "inline-block";
+	cImg[currentIndex].style.display = "inline-block"; //show the current image
+	
+	//set currently shown image index
 	if(currentIndex < imgLength-1){
-		currentIndex++;
+		currentIndex++; 
 	}else {
 		currentIndex = 0;
 	}
+}
+
+function diplayBigImage() {
+	
 }
