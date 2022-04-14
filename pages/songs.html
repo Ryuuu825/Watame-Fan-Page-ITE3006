@@ -28,7 +28,6 @@
 				<h1>Song</h1>
 			</div>
 			<div class="main_container">
-				<div class="stop_button" onclick="stopAllVideo()">Stop All Music</div>
 
 				<div class="css_menu">
 					<ul>
@@ -42,9 +41,12 @@
 									<li>
 										<a href="#recommend1" onclick="showSlide(1);">My Song</a>
 									</li>
+									<li>
+										<a href="#recommend1" onclick="showSlide(2);">Sololive</a>
+									</li>
 
 									<li>
-										<a href="#recommend1" onclick="showSlide(2)">クソザコ回線でも</a>
+										<a href="#recommend1" onclick="showSlide(3)">クソザコ回線でも</a>
 									</li>
 								</ul>
 							</div>
@@ -79,10 +81,14 @@
 				</div> <!-- css_menu -->
 
 				<div class="main_content">
-					<div id="recommend">
-						<h2 class="section_title" style="padding-top:0px;">Recommend</h2>
+					<h2>Recommend</h2>
 
-						<div id="recommend1"  class="slide" style="display:block">
+					<div id="recommend">
+
+						<div class="prev"><a onclick="nextSlide(-1)">&#10094;</a></div>
+
+
+						<div id="recommend1"  class="slide" style="display:flex">
 							<div class="song_title">
 								Tambourine Club
 							</div>
@@ -131,12 +137,11 @@
 						</div>
 						
 
-						<a class="prev" onclick="nextSlide(-1)">&#10094;</a>
-						<a class="next" onclick="nextSlide(1)">&#10095;</a>
+						<div class="next"><a onclick="nextSlide(1)">&#10095;</a></div>
 					</div>
 
 					<div id="album">
-						<h2 class="section_title">Album</h2>
+						<h2>Album</h2>
 
 						<div id="album1">
 							<div id="bar">
@@ -150,9 +155,13 @@
 
 								<div class="song_desciption right">
 									<span class="song_title">クソザコ回線卒業</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
-										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
-										praesentium animi explicabo recusandae. Soluta.</div>
+									<div class="text">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+											eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+											praesentium animi explicabo recusandae. Soluta.
+										</p>
+									</div>
 								</div>
 							</div>
 							<hr class="album_song_break">
@@ -164,9 +173,11 @@
 
 								<div class="song_desciption left">
 									<span class="song_title">わための子守唄</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
-										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
-										praesentium animi explicabo recusandae. Soluta.</div>
+									<div class="text"><p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+											eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+											praesentium animi explicabo recusandae. Soluta.
+									</p></div>
 								</div>
 							</div>
 
@@ -179,9 +190,11 @@
 
 								<div class="song_desciption right">
 									<span class="song_title">曇天羊 °∆°</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
-										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
-										praesentium animi explicabo recusandae. Soluta.</div>
+									<div class="text"><p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+											eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+											praesentium animi explicabo recusandae. Soluta.
+									</p></div>
 								</div>
 							</div>
 
@@ -194,9 +207,11 @@
 
 								<div class="song_desciption left">
 									<span class="song_title" >ホロライブ言えるかな？</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
-										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
-										praesentium animi explicabo recusandae. Soluta.</div>
+									<div class="text"><p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+											eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+											praesentium animi explicabo recusandae. Soluta.
+									</p></div>
 								</div>
 							</div>
 						</div> <!-- The end of album 1 -->
@@ -215,9 +230,11 @@
 
 								<div class="song_desciption right">
 									<span class="song_title">おはようのうた</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
-										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
-										praesentium animi explicabo recusandae. Soluta.</div>
+									<div class="text"><p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+											eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+											praesentium animi explicabo recusandae. Soluta.
+									</p></div>
 								</div>
 							</div>
 
@@ -230,9 +247,11 @@
 
 								<div class="song_desciption right">
 									<span class="song_title">mayday,mayday</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
-										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
-										praesentium animi explicabo recusandae. Soluta.</div>
+									<div class="text"><p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+											eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+											praesentium animi explicabo recusandae. Soluta.
+									</p></div>
 								</div>
 							</div>
 
@@ -245,9 +264,11 @@
 
 								<div class="song_desciption left">
 									<span class="song_title">キミだけのメロディ</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
-										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
-										praesentium animi explicabo recusandae. Soluta.</div>
+									<div class="text"><p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+											eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+											praesentium animi explicabo recusandae. Soluta.
+									</p></div>
 								</div>
 							</div>
 
@@ -260,9 +281,11 @@
 
 								<div class="song_desciption left">
 									<span class="song_title">キミだけのメロディ</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
-										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
-										praesentium animi explicabo recusandae. Soluta.</div>
+									<div class="text"><p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+											eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+											praesentium animi explicabo recusandae. Soluta.
+									</p></div>
 								</div>
 							</div>
 
@@ -275,9 +298,11 @@
 
 								<div class="song_desciption right">
 									<span class="song_title">御伽の詩と永久なるミライ</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
-										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
-										praesentium animi explicabo recusandae. Soluta.</div>
+									<div class="text"><p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+											eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+											praesentium animi explicabo recusandae. Soluta.
+									</p></div>
 								</div>
 							</div>
 
@@ -291,9 +316,11 @@
 
 								<div class="song_desciption right">
 									<span class="song_title">御伽の詩と永久なるミライ</span>
-									<div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
-										eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
-										praesentium animi explicabo recusandae. Soluta.</div>
+									<div class="text"><p>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ex aliquam,
+											eum et ipsam officia mollitia. Modi, totam iste sunt exercitationem consequatur placeat qui culpa
+											praesentium animi explicabo recusandae. Soluta.
+									</p></div>
 								</div>
 							</div>
 
@@ -303,7 +330,7 @@
 
 					</div>
 
-					<h2 class="section_title">Cover</h2>
+					<h2>Cover</h2>
 					<div class="cover">
 						<iframe id="cover_iframe" name="cover_iframe" width="560" height="315"
 							src="" title="YouTube video player" frameborder="1"
