@@ -1,6 +1,5 @@
 var currentIndex = 0;
 var cImg = document.getElementsByClassName("carousel_img");
-// var cBtn = document.getElementsByClassName("car_btn");
 var cBtn = document.getElementsByName("car_btn");
 var timer = setInterval(showCarouselImage, 3000);
 /**
@@ -76,12 +75,20 @@ function showCarouselImageOfIndex(index) {
 	 timer = setInterval(showCarouselImage, 3000);
 }
 
+/**
+ * zoom in
+ * @param {} obj 
+ */
 function zoomInImage(obj) {
 	document.getElementById("bigImage").src = obj.src;
 	document.getElementsByClassName("bigImage_container")[0].style.display = "block";
 	document.getElementsByClassName("menu_btn_container")[0].style.display = "none";
 }
 
+/**
+ * zoom out
+ * @param {} obj 
+ */
 function zoomOutImage() {
 	document.getElementById("bigImage").src = "";
 	document.getElementsByClassName("bigImage_container")[0].style.display = "none";
