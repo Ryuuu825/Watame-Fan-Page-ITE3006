@@ -57,12 +57,13 @@
 }
 
 .bububu {
+	font-size: 36px;
 	font-weight: 700;
 	color: white;
 }
 
 .hi {
-	font-size: 2vw;
+	font-size: 24px;
 	color: white;
 	vertical-align: middle;
 }
