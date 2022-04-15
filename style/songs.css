@@ -4,6 +4,10 @@
     margin: auto;
 }
 
+h1 {
+	margin-bottom: 0px;
+}
+
 /* The CSS menu */
 .css_menu ul {
     display: flex;
@@ -11,12 +15,12 @@
 }
 
 .css_menu ul li {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 5px;
     padding: 5px;
-
+    margin: auto;
     /* Make the button bg able to change from blue to yellow */
-    background: linear-gradient(to right, #063f5c 50%, #ffdf8db9 50%);
+    /* background: linear-gradient(to right, #063f5c 50%, #ffdf8db9 50%); */
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all .5s ease-out;
@@ -34,13 +38,12 @@
     text-decoration: none;
     color: black;
     transition: font-size 0.3s ease-in-out;
-    padding: 20px;
     font-size: 40px;
 }
 
 /* Change the text color and size when the user hover on it */
 .css_menu ul li a:hover {
-    font-size: 45px;
+
     color: rgb(197, 206, 80);
 }
 
@@ -48,7 +51,6 @@
 /* The CSS sub menu, which is hided by default */
 .sub_menu ul {
     display: none;
-    height: 0px;
     transition: height 0.3s ease-in-out;
     border: 1px solid black;
     background-color: #FFDF8D;
@@ -67,7 +69,6 @@
     position: absolute;
     border-radius: 10px;
     z-index: 1;
-    padding: 20px;
     text-align: center;
 }
 
@@ -77,7 +78,7 @@
 
 /* clear the transition */
 .sub_menu ul li a:hover {
-    font-size: 20px;
+    font-size: 24px;
     color: grey;
 
 }
@@ -88,7 +89,7 @@
 }
 
 .sub_menu ul li:hover {
-    background-color: #dbbd72;
+    background-color: #FFD466;
     color: black;
 }
 
@@ -102,7 +103,7 @@
 
 .container_bg {
     margin: 30px auto;
-    padding: 3vw 0;
+/*    padding: 3vw 0;*/
     background-color: #FFECBB;
     border: 1px solid #FFF;
     border-radius: 30px;
@@ -296,17 +297,6 @@ h2 {
     transition: font-size 0.3s ease-in-out;
     font-size: 30px;
     cursor: pointer;
-}
-
-.back {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-}
-
-.back img {
-    width: 100px;
-    height: 100px;
 }
 
 .pop_up_container {
