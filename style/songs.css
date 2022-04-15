@@ -123,10 +123,6 @@
     border-bottom: 1px solid black;
     color: rgb(255, 14, 14);
     font-weight: bold;
-    font-size: 30px;
-    /* Chinese word */
-    line-height: 1.5em;
-    margin-bottom: 20px;
 }
 
 .prev,
@@ -175,11 +171,15 @@
 .album_content {
     display: flex;
     position: relative;
-    width: 90%;
+		flex-flow: row wrap;
+    width: 100%;
+		justify-content: space-evenly;
+		align-items: center;
 }
 
 
 .song_desciption {
+		flex: 1;
     display: flex;
     flex-direction: column;
     /* center the two div */
@@ -194,14 +194,13 @@
 }
 
 .song_desciption .text {
-    padding-left: 10%;
-    padding-top: 10px;
     display: block;
     overflow-y: hidden;
 }
 
 .text p {
     font-size: 30px;
+		margin: 2vw;
 }
 
 .left {
@@ -339,17 +338,6 @@
     transform: scaleX(-1);
     content: url("../source/Topbutton2.png");
 }
-
-@media screen and (min-width: 1300px) {
-    .main_container {
-        /* Make the container fixed size when it is too big */
-        width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-
 
 @media screen and (max-width:1280px) {
     .thrumbnail_container {
