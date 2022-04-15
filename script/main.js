@@ -10,8 +10,8 @@ function changeIcon(obj) {
  * show or hide navigation menu
  */
 function toggleNav() {
-	var isVisible = document.getElementById("sideNav").style.visibility = $("sideNav").style.visibility === "visible" ? 'hidden' : 'visible';
-	$("sideNav").style.height = document.getElementById("sideNav").style.height === "100%" ? '0' : '100%';
+	var isVisible = document.getElementById("sideNav").style.visibility = document.getElementById("sideNav").style.visibility === "visible" ? 'hidden' : 'visible';
+	document.getElementById("sideNav").style.height = document.getElementById("sideNav").style.height === "100%" ? '0' : '100%';
 	if (isVisible == "visible") {
 		disableScrolling();
 	} else {
