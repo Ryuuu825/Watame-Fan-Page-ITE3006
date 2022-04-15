@@ -288,6 +288,7 @@ h2 {
 .cover ul li {
     line-height: 1.8em;
     width: 250px;
+		margin: auto;
 }
 
 .cover ul li a {
