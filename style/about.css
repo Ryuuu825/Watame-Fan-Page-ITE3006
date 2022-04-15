@@ -58,25 +58,26 @@
 }
 
 
-.contact_container #reset_btn, #submit_btn {
+.contact_container #reset_btn,
+#submit_btn {
 	cursor: pointer;
 	height: 80px;
 	width: 90%;
 	background-color: #FFFBF1;
 	border-radius: 50px;
 	border: 1px solid #F59A23;
-} 
+}
 
-#submit_btn:hover , 
+#submit_btn:hover,
 #reset_btn:hover {
 	transform: scale(1.01);
 	transition: 0.5s;
 	background-color: #FFD466;
 }
 
-.phone_container ,
-.email_container ,
-.msg_container{
+.phone_container,
+.email_container,
+.msg_container {
 	position: relative;
 }
 
@@ -85,7 +86,7 @@
 .label {
 	width: 70%;
 	position: absolute;
-	right:0;
+	right: 0;
 
 	display: none;
 	justify-content: end;
@@ -126,4 +127,3 @@ textarea {
 		text-align: center;
 	}
 }
-
