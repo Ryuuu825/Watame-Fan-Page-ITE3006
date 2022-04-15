@@ -72,7 +72,8 @@
 /* clear the transition */
 .sub_menu ul li a:hover {
     font-size: 20px;
-    color: blac
+    color: grey;
+
 }
 
 .sub_menu ul li {
@@ -81,8 +82,10 @@
 }
 
 .sub_menu ul li:hover {
-    background-color: #c0a258;
+    background-color: #dbbd72;
+    color: black;
 }
+
 /* Recommend part */
 #recommend {
     /* [prev Slide next] this will be a row */
@@ -235,7 +238,6 @@
     transform: scale(1.03);
 }
 
-
 .album_song_break {
     margin: 30px;
 }
@@ -353,7 +355,6 @@
 }
 
 
-
 @media screen and (max-width:1280px) {
     .thrumbnail_container {
         width: 100%;
@@ -372,6 +373,7 @@
         flex-direction: column;
     }
 
+    /* Hide the buttom */
     .prev,
     .next {
         display: none;
@@ -380,12 +382,8 @@
     /* show all hided slide */
     .slide {
         display: flex;
+    }
 
-    }
-    .slide iframe {
-        width: 100%;
-    }
-    
     .slide .song_title {
         margin-top: 50px;
     }
@@ -401,10 +399,6 @@
         align-items: center;
     }
 
-    .iframe-container iframe {
-        width: 100%;
-        height: 100%;
-    }
 
     .left {
         width: 100%;
