@@ -40,6 +40,10 @@ footer {
 	border-top: 1px solid #F1F1F1;
 }
 
+/* 
+* page title style
+*/
+/* start */
 .page_title {
 	width: auto;
 	text-align: center;
@@ -49,7 +53,12 @@ footer {
 	margin-top: 0;
 	padding-top: 3vw;
 }
+/* end */
 
+/* 
+* menu button style
+*/
+/* start */
 .menu_btn_container {
 	cursor: pointer;
 	position: fixed;
@@ -117,7 +126,12 @@ footer {
 .change #bar2 {
 	transform: rotate(45deg) translate(-6px, -7px);
 }
+/* end */
 
+/* 
+* side navigation menu style
+*/
+/* start */
 .side_nav {
 	display: flex wrap;
 	padding: 0;
@@ -206,7 +220,7 @@ footer {
 .role2_container {
 	position: relative;
 	display: flex;
-	width: auto;
+	width: 100%;
 	justify-content: center;
 }
 
@@ -222,7 +236,12 @@ footer {
 .side_role2 img {
 	transform: scaleX(-1);
 }
+/* end */
 
+/* 
+* footer style
+*/
+/* start */
 .footer_nav {
 	display: flex;
 	width: inherit;
@@ -278,15 +297,7 @@ footer {
 	margin: 5px;
 	font-size: 28px;
 }
-
-.role_container {
-	width: 100%;
-}
-
-.role2_container {
-	width: 100%;
-}
-
+/* end */
 
 @media screen and (max-width:1280px) {
 	.menu_btn {

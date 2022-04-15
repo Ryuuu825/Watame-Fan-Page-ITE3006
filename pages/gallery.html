@@ -22,12 +22,14 @@
 <body onload="w3.includeHTML();showStartImage(0);">
 	<div class="container">
 		<div w3-include-html="Header.html"></div>
+		<!-- Main -->
 		<main>
 			<div class="page_title">
 				<h1>Gallery</h1>
 			</div>
 			<div class="main_container">
 				<div class="carousel_bg">
+					<!-- carousel image -->
 					<div class="carousel_container">
 						<div class="carousel_img"><img onclick="zoomInImage(this);" src="../source/watame_img/carousel/1.jpg"
 								alt=""></div>
@@ -50,7 +52,7 @@
 								alt="">
 						</div>
 					</div>
-
+					<!-- carousel button -->
 					<div class="carousel_button">
 						<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(0)"></span>
 						<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(1)"></span>
@@ -63,6 +65,7 @@
 				</div>
 				<div class="gallery_bg">
 					<div class="gallery_container">
+						<!-- image list 1 -->
 						<div class="waterfall">
 							<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a0.jpg" alt="">
 							</div>
@@ -81,6 +84,8 @@
 							<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a9.jpg" alt="">
 							</div>
 						</div>
+
+						<!-- image list 2 -->
 						<div class="waterfall">
 							<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a11.jpg" alt="">
 							</div>
@@ -110,6 +115,8 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- zoom in -->
 			<div class="bigImage_container" onclick="zoomOutImage()">
 				<div class="closeButton" onclick="zoomOutImage()">
 					<img src="../source/close.png" alt="">
