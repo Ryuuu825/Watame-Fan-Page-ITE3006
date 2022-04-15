@@ -289,6 +289,15 @@ footer {
 
 
 @media screen and (max-width:1280px) {
+	.menu_btn {
+		transform: scale(0.75);
+	}
+
+	.menu_btn_container{
+		top: 1%;
+		right: 1%;
+	}
+
 	.side_nav {
 		overflow: hidden;
 	}
@@ -320,18 +329,52 @@ footer {
 		width: 400px;
 	}
 
+	.footer_nav a {
+		font-size: 28px;
+	}
+
+	.footer_Inner span {
+		font-size: 24px;
+	}
+
+	.footer_nav img {
+		width: 80px;
+		height: 80px;
+	}
+
 }
 
 @media screen and (max-width:680px) {
+	.menu_btn {
+		transform: scale(0.6);
+	}
+
+	.menu_btn_container{
+		top: 0;
+		right: 0;
+	}
+
 	.side_menu a {
 		font-size: 42px;
 	}
 
 	.footer_nav li {
 		width: 100%;
+		margin: 0;
+		padding: 0;
 	}
 
 	.footer_nav a {
-		font-size: 36px;
+		font-size: 24px;
 	}
+
+	.footer_Inner span {
+		font-size: 22px;
+	}
+
+	.footer_nav img {
+		width: 50px;
+		height: 50px;
+	}
+
 }
