@@ -1,3 +1,9 @@
+.main_container {
+    /* Make the container fixed size when it is too big */
+    max-width: 1200px;
+    margin: auto;
+}
+
 /* The CSS menu */
 .css_menu ul {
     display: flex;
@@ -86,6 +92,26 @@
     color: black;
 }
 
+.container_droplist{
+		max-width: 1200px;
+		width: 80%;
+		margin: auto;
+    background-color: #FFECBB;
+    border: 1px solid #FFF;
+}
+
+.container_bg {
+    margin: 30px auto;
+    padding: 3vw 0;
+    background-color: #FFECBB;
+    border: 1px solid #FFF;
+    border-radius: 30px;
+}
+
+h2 {
+    margin: 10px;
+}
+
 /* Recommend part */
 #recommend {
     /* [prev Slide next] this will be a row */
@@ -111,9 +137,10 @@
     height: auto;
     padding-top: 50%;
     position: relative;
- }
- .iframe-responsive {
-     /* The iframe will use up all the space in the container */
+}
+
+.iframe-responsive {
+    /* The iframe will use up all the space in the container */
     position: absolute;
     width: 100%;
     height: 100%;
@@ -122,8 +149,8 @@
     bottom: 0;
     left: 0;
     border: none;
- }
- 
+}
+
 .song_title {
     text-align: center;
     border-bottom: 1px solid black;
@@ -144,16 +171,21 @@
 
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
 }
 
 .slide .song_desciption {
     font-size: 30px;
 }
 
+#album {
+    margin-bottom: 30px;
+}
 
-#bar {
+/* Make the bar to left, the word inside to right */
+
+.album_bar {
     width: 80%;
     height: auto;
     border-radius: 5px;
@@ -163,25 +195,27 @@
     margin-bottom: 30px;
 }
 
-/* Make the bar to left, the word inside to right */
-#album1 #bar {
+.bar_right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#album1 #bar1 {
     background-color: #72BEA3;
-    padding-right: 10px;
     text-align: right;
 }
 
 /* Opposite with album1 bar */
-#album2 #bar {
+#album2 #bar2 {
     background-color: #D44FDF;
-    padding-left: 10px;
     text-align: left;
-    margin-left: 20%;
 }
 
 .album_content {
     display: flex;
     position: relative;
-    width: 90%;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 
@@ -200,46 +234,46 @@
 }
 
 .song_desciption .text {
-    padding-left: 10%;
-    padding-top: 10px;
     display: block;
     overflow-y: hidden;
 }
+
 
 .text p {
     font-size: 30px;
 }
 
+
 .left {
-    width: 50%;
+    width: 45%;
     order: 1;
 }
 
 .right {
-    width: 50%;
+    width: 45%;
     order: 2;
 }
 
 .thrumbnail_container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto; 
+    width: 50%;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.3);
 }
 
 .thrumbnail_container img {
-    width: 90%;
-    height:80%;
+    max-width: 100%;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
+    display: block;
 }
 
-.thrumbnail_container img:hover {
+.thrumbnail_container:hover {
     cursor: pointer;
     transform: scale(1.03);
 }
 
 .album_song_break {
-    margin: 30px;
+    border: 0;
+    border-top: 1px solid dimgray;
 }
 
 /* The start of the cover */
@@ -253,6 +287,7 @@
 
 .cover ul li {
     line-height: 1.8em;
+    width: 250px;
 }
 
 .cover ul li a {
@@ -293,9 +328,9 @@
     height: 50px;
 }
 
-.closeButton img{
-    width:100%;
-    height:100%;
+.closeButton img {
+    width: 100%;
+    height: 100%;
 }
 
 .pop_up_iframe_container {
@@ -314,14 +349,12 @@
     z-index: 3;
 }
 
-
-
 .back {
     position: fixed;
     width: 200px;
     height: 200px;
-    bottom:0;
-    left:0;
+    bottom: 0;
+    left: 0;
     padding: 0;
     margin: 0;
 }
@@ -345,30 +378,21 @@
     content: url("../source/Topbutton2.png");
 }
 
-@media screen and (min-width: 1300px) {
-    .main_container {
-        /* Make the container fixed size when it is too big */
-        width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-
 @media screen and (max-width:1280px) {
+
+    .container_bg {
+        width: 80%;
+    }
+
     .thrumbnail_container {
         width: 100%;
-        height: 100%;
-        display: block;
-        position: relative;
-        text-align: center;
+        margin: 20px auto;
     }
 
-    .thrumbnail_container img{
-        width: 80%;
-        height: 80%;
+    .thrumbnail_container img {
+        width: 100%;
     }
-    
+
     #recommend {
         flex-direction: column;
     }
@@ -385,7 +409,7 @@
     }
 
     .slide .song_title {
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
     .slide .song_desciption {
@@ -393,38 +417,37 @@
         font-size: 35px;
     }
 
-    .album_content {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-
     .left {
-        width: 100%;
+        width: 80%;
     }
 
     .right {
+        width: 80%;
+    }
+
+    .song_desciption {
+        display: block;
+        text-align: center;
         width: 100%;
     }
 
-    #album1 #bar,
-    #album2 #bar {
+    .text {
+        width: 90%;
+        text-align: left;
+        margin: auto;
+    }
+
+
+    #album1 #bar1,
+    #album2 #bar2 {
         width: 100%;
-        padding: 10px;
         text-align: center;
-        margin-left: 0px;
     }
 
     .album_content {
         display: block;
         width: 100%;
-        padding-top: 40px;
-    }
-
-    .song_desciption .text {
-        display: block;
-        padding: 0px 100px; 
+        padding-top: 30px;
     }
 
     .cover {
@@ -438,10 +461,8 @@
     }
 
     .cover ul li {
-        font-size: 15px;
         display: block;
-        text-align: center;        
-        padding-top: 20px;
+        text-align: center;
     }
 
 }
