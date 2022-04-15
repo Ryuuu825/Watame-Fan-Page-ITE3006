@@ -66,14 +66,7 @@
 	background-color: #FFFBF1;
 	border-radius: 50px;
 	border: 1px solid #F59A23;
-	font-size: 52px;
 } 
-
-.reset {
-	font-size: 25px;
-	padding: 5px;
-}
-
 
 #submit_btn:hover , 
 #reset_btn:hover {
@@ -82,33 +75,38 @@
 	background-color: #FFD466;
 }
 
-.phone_container {
+.phone_container ,
+.email_container ,
+.msg_container{
 	position: relative;
 }
 
 
+
 .label {
-	background-color: #ff9800;
-	margin-top: 10px;
-	border-radius: 10px;
 	width: 70%;
-	margin-left:auto;
+	position: absolute;
+	right:0;
 
 	display: none;
-	justify-content: center;
+	justify-content: end;
 	align-items: center;
+	color: red;
 }
 
 .msg {
 	font-size: 20px;
-	margin-right: 10px;
 }
 
 .close {
 	display: flex;
 	align-items: center;
-	margin-right: 10px;
+	margin-left: 10px;
 	cursor: pointer;
+}
+
+textarea {
+	padding-top: 20px;
 }
 
 

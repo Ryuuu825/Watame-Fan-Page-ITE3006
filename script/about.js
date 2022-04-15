@@ -1,37 +1,41 @@
-<<<<<<< Updated upstream
-// check the phone number which the first one should be +, along with area code and phone number
-const phone_regex = ''
-
 function checkForm() {
-	if (/^[\+][\d]{3}[ ][\d]+/.test(document.contact_form.phone.value) )
-	{
-		alert('Thank you for your message!');
-		return false;
-	}
-		
-	else 
-	{
-		document.getElementsByClass('label').style.display = 'flex';
-		return false;
-	}
+	let canSend = true;
 
-	return flase
-=======
-
-
-function checkForm() {
-	alert('Called check form');
-	if (/^[\+][\d]{3}[ ][\d]+/.test(document.contact_form.phone.value) )
+	if (! /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*$/.test(document.contact_form.email.value)) 
 	{
-		alert('Thank you for your message!');
+		document.getElementsByClassName('label')[0].style.display = 'flex';
+		document.contact_form.email.style.border = "3px solid red";
+		canSend = false;
 	}
 	else 
 	{
-		alert('Please enter a valid phone number');
-		document.getElementsByClass('label').style.display = 'flex';
+		document.getElementsByClassName('label')[0].style.display = 'none';
+		document.contact_form.email.style.border = "1px solid #ccc";
 	}
+	if (! /^[\+][\d]{3}[ ][\d]+/.test(document.contact_form.phone.value) )
+	{
+		document.getElementsByClassName('label')[1].style.display = 'flex';
+		document.contact_form.phone.style.border = '3px solid red';
+		document.contact_form.phone.value = "";
 
->>>>>>> Stashed changes
-		
-
+		canSend = false;
+	}
+	else 
+	{
+		document.getElementsByClassName('label')[1].style.display = 'none';
+		document.contact_form.phone.style.border = '1px solid #ccc';
+	}
+	if (document.contact_form.message.value.length < 10)
+	{
+		document.contact_form.message.style.border = '3px solid red';
+		document.getElementsByClassName('label')[2].style.display = 'flex';
+		canSend = false;
+	}
+	else 
+	{
+		document.contact_form.message.style.border = '1px solid #ccc';
+		document.getElementsByClassName('label')[2].style.display = 'none';
+	}
+	return canSend;
 }
+
