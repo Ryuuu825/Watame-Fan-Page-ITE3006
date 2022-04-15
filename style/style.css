@@ -307,10 +307,6 @@ footer {
 		align-items: center;
 	}
 
-	.side_menu a {
-		font-size: 72px;
-	}
-
 	.side_role2 {
 		width: 100%;
 		height: 100%;
@@ -328,7 +324,7 @@ footer {
 
 @media screen and (max-width:680px) {
 	.side_menu a {
-		font-size: 52px;
+		font-size: 42px;
 	}
 
 	.footer_nav li {

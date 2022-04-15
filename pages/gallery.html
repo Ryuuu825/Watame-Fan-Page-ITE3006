@@ -16,10 +16,10 @@
 	<script type="text/javascript" src="../script/main.js"></script>
 	<script type="text/javascript" src="../script/gallery.js"></script>
 	<link rel="icon" href="../favicon.png">
-	
+
 </head>
 
-<body onload="w3.includeHTML();showStartImage();">
+<body onload="w3.includeHTML();showStartImage(0);">
 	<div class="container">
 		<div w3-include-html="Header.html"></div>
 		<main>
@@ -27,39 +27,91 @@
 				<h1>Gallery</h1>
 			</div>
 			<div class="main_container">
-				<div class="carousel_container">
-					<div class="carousel_img"><img onclick="diplayBigImage(this);" src="../source/watame_img/carousel/1.jpg"
-							alt=""></div>
-					<div class="carousel_img"><img onclick="diplayBigImage(this);" src="../source/watame_img/carousel/3.jpg" alt="">
+				<div class="carousel_bg">
+					<div class="carousel_container">
+						<div class="carousel_img"><img onclick="zoomInImage(this);" src="../source/watame_img/carousel/1.jpg"
+								alt=""></div>
+						<div class="carousel_img"><img onclick="zoomInImage(this);" src="../source/watame_img/carousel/3.jpg"
+								alt="">
+						</div>
+						<div class="carousel_img"><img onclick="zoomInImage(this);" src="../source/watame_img/carousel/2.jpg"
+								alt="">
+						</div>
+						<div class="carousel_img"><img onclick="zoomInImage(this);" src="../source/watame_img/carousel/4.jpg"
+								alt="">
+						</div>
+						<div class="carousel_img"><img onclick="zoomInImage(this);" src="../source/watame_img/carousel/5.jpg"
+								alt="">
+						</div>
+						<div class="carousel_img"><img onclick="zoomInImage(this);" src="../source/watame_img/carousel/6.jpg"
+								alt="">
+						</div>
+						<div class="carousel_img"><img onclick="zoomInImage(this);" src="../source/watame_img/carousel/7.jpg"
+								alt="">
+						</div>
 					</div>
-					<div class="carousel_img"><img onclick="diplayBigImage(this);" src="../source/watame_img/carousel/2.jpg" alt="">
-					</div>
-					<div class="carousel_img"><img onclick="diplayBigImage(this);" src="../source/watame_img/carousel/4.jpg" alt="">
-					</div>
-					<div class="carousel_img"><img onclick="diplayBigImage(this);" src="../source/watame_img/carousel/5.jpg" alt="">
-					</div>
-					<div class="carousel_img"><img onclick="diplayBigImage(this);" src="../source/watame_img/carousel/6.jpg" alt="">
-					</div>
-					<div class="carousel_img"><img onclick="diplayBigImage(this);" src="../source/watame_img/carousel/7.jpg" alt="">
-					</div>
-				</div>
-				<div class="carousel_button">
-					<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(0)"></span>
-					<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(1)"></span>
-					<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(2)"></span>
-					<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(3)"></span>
-					<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(4)"></span>
-					<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(5)"></span>
-					<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(6)"></span>
-				</div>
 
-				<div class="bigImage_container" onclick="hideBigImage()">
-					<div class="closeButton" onclick="hideBigImage()">
-						<img src="../source/close.png" alt="">
+					<div class="carousel_button">
+						<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(0)"></span>
+						<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(1)"></span>
+						<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(2)"></span>
+						<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(3)"></span>
+						<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(4)"></span>
+						<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(5)"></span>
+						<span name="car_btn" class="car_btn" onclick="showCarouselImageOfIndex(6)"></span>
 					</div>
-					<div class="bigImage">
-						<img id="bigImage" src="../source/watame_img/carousel/1.jpg" alt="">
+				</div>
+				<div class="gallery_bg">
+					<div class="gallery_container">
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a1.jpg" alt="">
+						</div>
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a3.jpg" alt="">
+						</div>
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a2.jpg" alt="">
+						</div>
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a4.jpg" alt="">
+						</div>
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a5.jpg" alt="">
+						</div>
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a6.jpg" alt="">
+						</div>
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a7.jpg" alt="">
+						</div>
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a8.jpg" alt="">
+						</div>
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a9.jpg" alt="">
+						</div>
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a10.jpg" alt="">
+						</div>
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a11.jpg" alt="">
+						</div>
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a12.jpg" alt="">
+						</div>
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a13.jpg" alt="">
+						</div>
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a14.jpg" alt="">
+						</div>
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a15.jpg" alt="">
+						</div>
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a16.png" alt="">
+						</div>
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a17.jpg" alt="">
+						</div>
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a18.jpg" alt="">
+						</div>
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a19.jpg" alt="">
+						</div>
+						<div class="gallery_image"><img onclick="zoomInImage(this);" src="../source/watame_img/a20.png" alt="">
+						</div>
 					</div>
+				</div>
+			</div>
+			<div class="bigImage_container" onclick="zoomOutImage()">
+				<div class="closeButton" onclick="zoomOutImage()">
+					<img src="../source/close.png" alt="">
+				</div>
+				<div class="bigImage">
+					<img id="bigImage" src="../source/watame_img/carousel/1.jpg" alt="">
 				</div>
 			</div>
 		</main>

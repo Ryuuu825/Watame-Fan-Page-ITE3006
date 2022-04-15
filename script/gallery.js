@@ -2,7 +2,7 @@ var currentIndex = 0;
 var cImg = document.getElementsByClassName("carousel_img");
 // var cBtn = document.getElementsByClassName("car_btn");
 var cBtn = document.getElementsByName("car_btn");
-var timer;
+var timer = setInterval(showCarouselImage, 3000);
 /**
  * init the first image
  */
@@ -19,11 +19,11 @@ function showStartImage() {
 	/**
 	 * set a system timer to show the carouse image
 	 */
-	timer = setInterval(showCarouselImage, 3000);
+
 }
 
 /**
- * carouse image
+ * carouses image
  */
 function showCarouselImage() {
 	/**
@@ -36,11 +36,11 @@ function showCarouselImage() {
 	if (currentIndex - 1 >= 0) {
 		cImg[currentIndex - 1].style.order = "2";
 		cImg[currentIndex - 1].style.display = "none"; //hide the perious image
-		cBtn[currentIndex - 1].classList.toggle("car_btn_change");
+		cBtn[currentIndex - 1].className = "car_btn";
 	} else {
 		cImg[cImg.length - 1].style.order = "2";
 		cImg[cImg.length - 1].style.display = "none"; //hide the perious image
-		cBtn[cImg.length - 1].classList.toggle("car_btn_change");
+		cBtn[cImg.length - 1].className = "car_btn";
 	}
 
 	cImg[currentIndex].style.order = "1";
@@ -55,26 +55,34 @@ function showCarouselImage() {
 	}
 }
 
+/**
+ * click the button to change the carouses image
+ * @param {*} index 
+ */
 function showCarouselImageOfIndex(index) {
 	//stop the timer
 	clearInterval(timer);
-	cBtn[currentIndex - 1].className = "car_btn";
-	cImg[currentIndex - 1].style.order = "2";
-	cImg[currentIndex - 1].style.display = "none";
+	for (i=0;i<cImg.length;i++){
+		cImg[i].style.order = "2";
+		cImg[i].style.display = "none";
+		cBtn[i].className = "car_btn";
+	}
 	currentIndex = index;
 	/**
 	 * reset the start up image
 	 */
 	 showStartImage();
+	 //re-start the timer
+	 timer = setInterval(showCarouselImage, 3000);
 }
 
-function diplayBigImage(obj) {
+function zoomInImage(obj) {
 	document.getElementById("bigImage").src = obj.src;
 	document.getElementsByClassName("bigImage_container")[0].style.display = "block";
 	document.getElementsByClassName("menu_btn_container")[0].style.display = "none";
 }
 
-function hideBigImage() {
+function zoomOutImage() {
 	document.getElementById("bigImage").src = "";
 	document.getElementsByClassName("bigImage_container")[0].style.display = "none";
 	document.getElementsByClassName("menu_btn_container")[0].style.display = "block";
