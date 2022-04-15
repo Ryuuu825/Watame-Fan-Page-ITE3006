@@ -1,4 +1,4 @@
-let index = 1;
+let index = 0; // the index of current slide
 let slides = document.getElementsByClassName("slide");
 let menu_option = document.getElementsByClassName("option");
 let all_iframe = document.getElementsByTagName('iframe')
@@ -7,19 +7,18 @@ let all_iframe = document.getElementsByTagName('iframe')
 function load_youtube_video()
 {
 
+	// all the link of youtube video that will be loaded
 	var src = [
 		'_T4euQ8qnn8' , 
 		'6VGkeUaX-zk' ,
 		'P_ptI5iH7Vg' ,
 		'j5n1zqsvfXo' ,
-		'6K-LSyE1Ywg' 
+		'6K-LSyE1Ywg'  // the first one in the cover song list
 	]
 	for (i = 0; i < src.length; i++)
 	{
 		all_iframe[i].src = "https://www.youtube.com/embed/" + src[i] + "?enablejsapi=1";
 	}
-
-	
 }
 
 // show next slide
@@ -28,14 +27,14 @@ function nextSlide(num)
 	index += num;
 	if(index > slides.length)
 	{
-		index = 1;
+		index = 0;
 	}
-	else if(index < 1)
+	else if(index < 0)
 	{
 		index = slides.length;
 	}
 
-	showSlide(index-1);
+	showSlide(index);
 }
 
 // show the slide
@@ -44,12 +43,12 @@ function showSlide(num)
 
 	for (let i = 0; i < slides.length; i++)
 	{
-		slides[i].style.display = "none";
-				
+		// hide all the slide first
+		slides[i].style.display = "none";			
 	}
 	slides[num].style.display = "block";
 
-	// stop the video
+	// stop the streaming video
 	stopAllVideo();
 }
 
@@ -57,6 +56,7 @@ function stopAllVideo()
 {
 	for (let i = 0; i < all_iframe.length; i++)
 	{
+		// send a post message to youtube api to stop the video
 		all_iframe[i].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
 	}
 	
@@ -81,19 +81,22 @@ function loadCoverSong(num)
 		all_cover_option[i].style.fontWeight = "normal";
 		all_cover_option[i].style.fontSize = "30px";
 	}
+	// change the color of the selected option
 	all_cover_option[num].style.color = "blue";
 	all_cover_option[num].style.fontWeight = "bold";
 	all_cover_option[num].style.fontSize = "35px";
+
+	// change the iframe src
 	cover_iframe.src = "https://www.youtube.com/embed/" + coverList[num];
 }
 
+// show the pop up container
 function showPopUp()
 {
 	let container = document.getElementsByClassName("pop_up_container")[0];
 	container.style.display = "block";
-	document.getElementsByClassName("menu_btn_container")[0].style.display = "none";
-
-	
+	// display the menu button
+	document.getElementsByClassName("menu_btn_container")[0].style.display = "none";	
 }
 
 function hidePopUp()
@@ -104,19 +107,12 @@ function hidePopUp()
 
 	container.style.display = "none";
 	document.getElementsByClassName("menu_btn_container")[0].style.display = "block";
-
 }
 
+// play a video in the pop up window iframe
 function playSong(link)
 {
 	showPopUp();
 	let iframe = document.getElementById("pop_up");
 	iframe.src = "https://www.youtube.com/embed/" + link;
-
-}
-
-function showGif(num, link)
-{
-	var img_tag = document.getElementsByClassName("gif")[num];
-	img_tag.src = link;
 }
