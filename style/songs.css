@@ -12,7 +12,7 @@ h1 {
 .parent_menu {
     max-width: 1200px;
     margin: 10px auto;
-    background-color: #FFD466;
+    background-color: #FFECBB;
     border: 1px solid #FFF;
     display: flex;
     border-radius: 20px;
@@ -34,6 +34,7 @@ h1 {
     /* Make the button bg able to change from blue to yellow */
     /* background: linear-gradient(to right, #063f5c 50%, #ffdf8db9 50%); */
     transition: all .5s ease-out;
+    border-radius: 20px;
 }
 
 .recommend_list_btn {
@@ -41,11 +42,7 @@ h1 {
 }
 
 .parent_list:hover {
-    background-color: #FFECBB;
-}
-
-#first_parent {
-    border-radius: 20px 0 0 20px;
+    background-color: #FFD466;
 }
 
 .parent_list a {
@@ -71,7 +68,6 @@ h1 {
 
 .sub_menu li{
     font-size: 24px;
-    border-top: 1px solid #FFF;
 }
 
 .sub_menu .first_list{
@@ -84,14 +80,14 @@ h1 {
 }
 
 .sub_menu li:hover {
-    background-color: #ddd;
+    background-color: #FFECBB;
 }
 
 .sub_menu {
     display: none;
     transition: height 0.3s ease-in-out;
     border: 1px solid black;
-    background-color: #FFECBB;
+    background-color: #FFD466;
 }
 
 .container_bg {
