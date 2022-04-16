@@ -5,51 +5,55 @@
 }
 
 h1 {
-	margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 /* The CSS menu */
-.css_menu ul {
+.parent_menu {
+    max-width: 1200px;
+    margin: 10px auto;
+    background-color: #FFD466;
+    border: 1px solid #FFF;
     display: flex;
-    justify-content: space-evenly;
 }
 
-.css_menu ul li {
+.parent_menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.parent_menu .parent_list {
     /* border: 1px solid black; */
-    border-radius: 5px;
-    padding: 5px;
-    margin: auto;
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
     /* Make the button bg able to change from blue to yellow */
     /* background: linear-gradient(to right, #063f5c 50%, #ffdf8db9 50%); */
-    background-size: 200% 100%;
-    background-position: right bottom;
     transition: all .5s ease-out;
 }
 
-.css_menu ul li:hover {
-    background-position: left bottom;
+.parent_menu .parent_list:hover {
+    background-color: #FFECBB;
 }
 
 /* 
     Clear the default decoration of the a tag 
     and the text inside it.
 */
-.css_menu ul li a {
-    text-decoration: none;
-    color: black;
-    transition: font-size 0.3s ease-in-out;
+.parent_list a {
+    display: block;
+    margin: auto;
+    text-align: center;
+    /* transition: font-size 0.3s ease-in-out; */
     font-size: 40px;
+    /* padding:20px; */
 }
 
 /* Change the text color and size when the user hover on it */
-.css_menu ul li a:hover {
-
-    color: rgb(197, 206, 80);
-}
 
 
 /* The CSS sub menu, which is hided by default */
-.sub_menu ul {
+.sub_menu {
     display: none;
     transition: height 0.3s ease-in-out;
     border: 1px solid black;
@@ -84,7 +88,6 @@ h1 {
 }
 
 .sub_menu ul li {
-    padding-top: 10px;
     border: none;
 }
 
@@ -93,28 +96,23 @@ h1 {
     color: black;
 }
 
-.container_droplist{
-		max-width: 1200px;
-		width: 80%;
-		margin: auto;
-    background-color: #FFECBB;
-    border: 1px solid #FFF;
-}
-
 .container_bg {
-    margin: 30px auto;
-/*    padding: 3vw 0;*/
+    margin: auto;
     background-color: #FFECBB;
     border: 1px solid #FFF;
     border-radius: 30px;
+	position: relative;
 }
-
-h2 {
-    margin: 10px;
-}
-
 /* Recommend part */
-#recommend {
+.horizontal_title {
+	position: absolute;
+    writing-mode: vertical-lr;
+    margin: 0;
+    left: 0;
+    top: 25%;
+}
+
+.recommend_content {
     /* [prev Slide next] this will be a row */
     display: flex;
     flex-direction: row;
@@ -133,7 +131,6 @@ h2 {
 /* Enable the iframe resize itself when the screen size changing */
 .iframe-container {
     width: 100%;
-
     /* The height of the iframe does not specify */
     height: auto;
     padding-top: 50%;
@@ -160,7 +157,7 @@ h2 {
     font-size: 30px;
     /* Chinese word */
     line-height: 1.5em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .prev,
@@ -289,7 +286,7 @@ h2 {
 .cover ul li {
     line-height: 1.8em;
     width: 250px;
-		margin: auto;
+    margin: auto;
 }
 
 .cover ul li a {
@@ -371,8 +368,14 @@ h2 {
 
 @media screen and (max-width:1280px) {
 
-    .container_bg {
+    
+    .parent_menu, .container_bg {
         width: 80%;
+    }
+
+    .horizontal_title {
+        writing-mode: horizontal-tb;
+        position: static;
     }
 
     .thrumbnail_container {
@@ -384,7 +387,7 @@ h2 {
         width: 100%;
     }
 
-    #recommend {
+    .recommend_content {
         flex-direction: column;
     }
 
@@ -408,11 +411,7 @@ h2 {
         font-size: 35px;
     }
 
-    .left {
-        width: 80%;
-    }
-
-    .right {
+    .left, .right {
         width: 80%;
     }
 
