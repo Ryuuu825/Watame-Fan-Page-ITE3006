@@ -16,7 +16,6 @@
 	<script src="../script/songs.js"></script>
 	<link rel="icon" href="../favicon.png">
 
-
 </head>
 
 <body onload="w3.includeHTML();load_youtube_video()">
@@ -31,44 +30,45 @@
 			<div class="main_container">
 				<!-- Drop list -->
 				<ul class="parent_menu">
-					<li class="parent_list">
+					<li id="first_parent" class="parent_list">
 						<a href="#recommend" onclick="setBG(0)">Recommend</a>
 						<ul class="sub_menu">
-							<li>
-								<a href="#recommend2" onclick="showSlide(0)">Tambourine Club</a>
+							<li class="first_list">
+								<a href="#recommend2" onclick="showSlide(0);hideSubMenu()">Tambourine Club</a>
 							</li>
 							<li>
-								<a href="#recommend1" onclick="showSlide(1);">My Song</a>
+								<a href="#recommend1" onclick="showSlide(1);hideSubMenu()">My Song</a>
 							</li>
 							<li>
-								<a href="#recommend1" onclick="showSlide(2);">Sololive</a>
+								<a href="#recommend1" onclick="showSlide(2);hideSubMenu()">Sololive</a>
 							</li>
-
-							<li>
-								<a href="#recommend1" onclick="showSlide(3)">クソザコ回線でも</a>
+							<li class="last_list">
+								<a href="#recommend1" onclick="showSlide(3);hideSubMenu()">クソザコ回線でも</a>
 							</li>
 						</ul>
 					</li>
 					<li class="parent_list">
 						<a href="#album">Album</a>
 						<ul class="sub_menu">
-							<li>
-								<a href="#album1">Album 1</a>
+							<li class="first_list">
+								<a href="#album1" onclick="hideSubMenu()">Album 1</a>
 							</li>
-							<li>
-								<a href="#album2">Album 2</a>
+							<li class="last_list">
+								<a href="#album2" onclick="hideSubMenu()">Album 2</a>
 							</li>
 						</ul>
 					</li>
 					<li class="parent_list">
 						<a href="#cover_iframe">Cover</a>
-						<ul class="sub_menu">
-							<li><a href="#cover_iframe" onclick="loadCoverSong(0)">怪物</a></li>
-							<li><a href="#cover_iframe" onclick="loadCoverSong(1)">ハロ／ハワユ</a></li>
-							<li><a href="#cover_iframe" onclick="loadCoverSong(2)">King</a></li>
-							<li><a href="#cover_iframe" onclick="loadCoverSong(3)">わため工場</a></li>
-							<li><a href="#cover_iframe" onclick="loadCoverSong(4)">Balalaika</a></li>
-						</ul>
+						<div class="sub_menu">
+							<ul>
+								<li class="first_list"><a href="#cover_iframe" onclick="loadCoverSong(0);hideSubMenu()">怪物</a></li>
+								<li><a href="#cover_iframe" onclick="loadCoverSong(1);hideSubMenu()">ハロ／ハワユ</a></li>
+								<li><a href="#cover_iframe" onclick="loadCoverSong(2);hideSubMenu()">King</a></li>
+								<li><a href="#cover_iframe" onclick="loadCoverSong(3);hideSubMenu()">わため工場</a></li>
+								<li class="last_list"><a href="#cover_iframe" onclick="loadCoverSong(4);hideSubMenu()">Balalaika</a></li>
+							</ul>
+						</div>
 					</li>
 				</ul>
 
