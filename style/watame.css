@@ -5,7 +5,7 @@
 }
 
 .interact #watame_sound_text {
-    margin: 30px;
+    margin: 20px;
     height: 50px;
     font-weight: bold;
     text-align: center;
@@ -40,18 +40,24 @@
 @media screen and (max-width:1280px) {
 	.interact .bk_btn button {
         width: 80%;
+        height: 70px;
     }
 }
 
 @media screen and (max-width: 680px) {
 	.interact .bk_btn button {
         width: 80%;
-    }
-
-    .watame_face {
-        margin: 0 auto;
-        height: 80%;
-        text-align: center;
+        height: 60px;
     }
     
+    .watame_face {
+        margin: 0 auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .watame_face img {
+        height: auto;
+        max-height: 187px;
+    }
 }
