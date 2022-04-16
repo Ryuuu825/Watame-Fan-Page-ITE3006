@@ -21,6 +21,12 @@ function load_youtube_video()
 	}
 }
 
+function hideSubMenu() {
+	var obj = document.getElementsByClassName("sub_menu");
+	for(i=0;i<obj.length;i++)
+		obj[i].className = "sub_menu";
+}
+
 // show next slide
 function nextSlide(num)
 {
