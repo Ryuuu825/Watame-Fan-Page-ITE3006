@@ -65,7 +65,7 @@
 }
 
 .social_media {
-    width: 20%;
+    width: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,14 +78,15 @@
 
 img {
     width: 100%;
-    height: 100%;
 }
 
 .img_fg {
     position: absolute;
     width: auto;
     z-index: 2;
+    max-height: 600px;
 }
+
 .img_bg {
     position: absolute;
     left: 20%;
@@ -93,9 +94,16 @@ img {
     width: auto;
     opacity: 0.3;
     z-index: 1;
+    max-height: 600px;
 }
 
+.social_media img {
+    max-width: 100px;
+}
 
+.member_type img {
+    min-width: 55px;
+}
 /* The card */
 .strong {
     font-weight: bold;
