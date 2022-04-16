@@ -63,6 +63,11 @@ function resetForm(result)
 		document.contact_form.email.style.border = "1px solid #F59A23";
 		document.contact_form.phone.style.border = "1px solid #F59A23";
 		document.contact_form.message.style.border = "1px solid #F59A23";
+		return true;
+	}
+	else 
+	{
+		return false; // disable default reset button
 	}
 
 
