@@ -47,13 +47,13 @@ function hideSubMenu() {
 function nextSlide(num)
 {
 	index += num;
-	if(index > slides.length)
+	if(index >= slides.length)
 	{
 		index = 0;
 	}
 	else if(index < 0)
 	{
-		index = slides.length;
+		index = slides.length-1;
 	}
 
 	showSlide(index);
@@ -66,9 +66,9 @@ function showSlide(num)
 	for (let i = 0; i < slides.length; i++)
 	{
 		// hide all the slide first
-		slides[i].style.display = "none";			
+		slides[i].className = "slide";			
 	}
-	slides[num].style.display = "block";
+	slides[num].className += " slide_display";
 
 	// stop the streaming video
 	stopAllVideo();
