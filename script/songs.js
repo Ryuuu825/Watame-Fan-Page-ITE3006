@@ -31,13 +31,13 @@ function hideSubMenu() {
 function nextSlide(num)
 {
 	index += num;
-	if(index > slides.length)
+	if(index >= slides.length)
 	{
 		index = 0;
 	}
 	else if(index < 0)
 	{
-		index = slides.length;
+		index = slides.length - 1;
 	}
 
 	showSlide(index);
