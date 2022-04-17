@@ -31,7 +31,6 @@ h1 {
 	flex-direction: row;
 	overflow: hidden;
 	border-radius: 50% 20% / 10% 30%;
-	
 	box-shadow: 10px 10px 15px rgba(1, 1, 1, 0.3);
 }
 

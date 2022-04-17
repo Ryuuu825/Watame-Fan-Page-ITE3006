@@ -9,6 +9,21 @@ h1 {
 }
 
 /* The songs menu */
+.slideSong_btn {
+    display: none;
+    align-items: center;
+}
+
+.slideSong_btn img{
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+}
+
+.slideSong_btn span {
+    vertical-align: middle;
+}
+
 .parent_menu {
     max-width: 1200px;
     margin: 10px auto;
@@ -417,7 +432,7 @@ h1 {
 
     .slide .song_desciption {
         padding-top: 20px;
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .left,
@@ -468,15 +483,30 @@ h1 {
 }
 
 @media screen and (max-width: 680px) {
-    p {
-        font-size: 16px;
+    .slideSong_btn {
+        display: flex;
+        align-items: center;
+    }
+
+    .parent_list {
+        display: none;
+    }
+
+    .slide .song_desciption {
+        padding-top: 20px;
+        font-size: 24px;
     }
 
     .parent_menu {
         flex-direction: column;
     }
 
+    .parent_list_slide {
+        display: block;
+    }
+
     .parent_menu li a {
+        text-align: start;
         padding: 10px;
     }
 

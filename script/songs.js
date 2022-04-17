@@ -122,3 +122,14 @@ function playSong(link)
 	let iframe = document.getElementById("pop_up");
 	iframe.src = "https://www.youtube.com/embed/" + link;
 }
+
+function showSlideMenu() {
+	var x = document.getElementsByClassName("parent_list");
+	for(i=0;i<x.length;i++){
+		if (x[i].className === "parent_list") {
+			x[i].className += " parent_list_slide";
+		} else {
+			x[i].className = "parent_list";
+		}
+	}
+}
