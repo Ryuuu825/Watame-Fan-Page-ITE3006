@@ -7,6 +7,7 @@
 	position: relative;
 	width: 28%;
 	z-index: 1;
+	animation: lineInFromLeft 1s;
 }
 
 .watame_body img {
@@ -20,6 +21,7 @@
 	right: 0;
 	width: 100%;
 	text-align: right;
+	animation: lineInFromRight 1s;
 }
 
 .watame_nav .nav_container {
@@ -34,7 +36,6 @@
 	border-radius: 20px 0 0 20px;
 }
 
-
 .watame_welcome {
 	position: absolute;
 	top: 2%; 
@@ -42,6 +43,7 @@
 	width: 20%;
 	text-align: center;
 	z-index: 1;
+	animation: fadeIn 3s ;
 }
 
 .watame_welcome img {
@@ -68,3 +70,32 @@
 	vertical-align: middle;
 }
 
+@keyframes lineInFromLeft {
+	0% {
+		left: -400px;
+	}
+
+	100% {
+		left: 0;
+	}
+}
+
+@keyframes lineInFromRight {
+	0% {
+		right: -800px;
+	}
+
+	100% {
+		right: 0;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

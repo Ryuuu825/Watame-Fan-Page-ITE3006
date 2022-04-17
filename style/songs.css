@@ -417,7 +417,7 @@ h1 {
 
     .slide .song_desciption {
         padding-top: 20px;
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .left,
@@ -468,8 +468,9 @@ h1 {
 }
 
 @media screen and (max-width: 680px) {
-    p {
-        font-size: 16px;
+    .slide .song_desciption {
+        padding-top: 20px;
+        font-size: 24px;
     }
 
     .parent_menu {
