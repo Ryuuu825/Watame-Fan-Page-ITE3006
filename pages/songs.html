@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="../style/font.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Montserrat:wght@200&display=swap"
+		rel="stylesheet">
 	<script type="text/javascript" src="../script/main.js"></script>
 	<link rel="stylesheet" href="../style/songs.css">
 
@@ -29,7 +30,8 @@
 			</div>
 			<div class="main_container">
 				<!-- Drop list -->
-				<ul class="parent_menu">
+				<ul class="parent_menu" id="parent_menu">
+					<li class="slideSong_btn" onclick="showSlideMenu()"><img src="../source/menu.png" alt=""><span>Menu</span></li>
 					<li id="first_parent" class="parent_list">
 						<a href="#recommend" onclick="setBG(0)">Recommend</a>
 						<ul class="sub_menu">
@@ -66,7 +68,8 @@
 								<li><a href="#cover_iframe" onclick="loadCoverSong(1);hideSubMenu()">ハロ／ハワユ</a></li>
 								<li><a href="#cover_iframe" onclick="loadCoverSong(2);hideSubMenu()">King</a></li>
 								<li><a href="#cover_iframe" onclick="loadCoverSong(3);hideSubMenu()">わため工場</a></li>
-								<li class="last_list"><a href="#cover_iframe" onclick="loadCoverSong(4);hideSubMenu()">Balalaika</a></li>
+								<li class="last_list"><a href="#cover_iframe" onclick="loadCoverSong(4);hideSubMenu()">Balalaika</a>
+								</li>
 							</ul>
 						</div>
 					</li>
@@ -84,7 +87,9 @@
 										Tambourine Club
 									</div>
 									<div class="iframe-container">
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen></iframe>
 									</div>
 									<div class="song_desciption">
 										We miss rushia
@@ -96,7 +101,9 @@
 										My Song
 									</div>
 									<div class="iframe-container">
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen></iframe>
 									</div>
 									<div class="song_desciption">
 										Lastest release song~
@@ -108,7 +115,9 @@
 										Sololive
 									</div>
 									<div class="iframe-container">
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen></iframe>
 									</div>
 									<div class="song_desciption">
 										WATAME first sololive!!!
@@ -120,7 +129,9 @@
 										クソザコ回線でも
 									</div>
 									<div class="iframe-container">
-										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+										<iframe class="iframe-responsive" title="YouTube video player" frameborder="0"
+											allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen></iframe>
 									</div>
 									<div class="song_desciption">
 										WATAME use rap to introduce herself
@@ -144,7 +155,9 @@
 
 							<div class="album_content">
 								<div class="thrumbnail_container left" onclick="playSong('dLL6Z8LGFkQ')">
-									<img src="https://i.ytimg.com/vi/dLL6Z8LGFkQ/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBbe-pOOsDw2OjA7_FclVt_n_RiJA" alt="">
+									<img
+										src="https://i.ytimg.com/vi/dLL6Z8LGFkQ/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBbe-pOOsDw2OjA7_FclVt_n_RiJA"
+										alt="">
 								</div>
 
 								<div class="song_desciption right">
@@ -163,7 +176,9 @@
 
 							<div class="album_content">
 								<div class="thrumbnail_container right" onclick="playSong('lxx_nwm_8PU')">
-									<img src="https://i.ytimg.com/vi/lxx_nwm_8PU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCTiPwV1Lvb1OmpECdcPAc1CbDmVg" alt="">
+									<img
+										src="https://i.ytimg.com/vi/lxx_nwm_8PU/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCTiPwV1Lvb1OmpECdcPAc1CbDmVg"
+										alt="">
 								</div>
 
 								<div class="song_desciption left">
@@ -183,7 +198,9 @@
 
 							<div class="album_content">
 								<div class="thrumbnail_container left" onclick="playSong('DGun2cWbPEM')">
-									<img src="https://i.ytimg.com/vi/DGun2cWbPEM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
+									<img
+										src="https://i.ytimg.com/vi/DGun2cWbPEM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw"
+										alt="">
 								</div>
 
 								<div class="song_desciption right">
@@ -203,7 +220,9 @@
 
 							<div class="album_content">
 								<div class="thrumbnail_container right" onclick="playSong('mZ0sJQC8qkE')">
-									<img src="https://i.ytimg.com/vi/mZ0sJQC8qkE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCTeX2AERGzxkmyzlA1xxNmjRXfjw" alt="">
+									<img
+										src="https://i.ytimg.com/vi/mZ0sJQC8qkE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCTeX2AERGzxkmyzlA1xxNmjRXfjw"
+										alt="">
 								</div>
 
 								<div class="song_desciption left">
@@ -231,7 +250,9 @@
 
 							<div class="album_content">
 								<div class="thrumbnail_container left" onclick="playSong('PaCYw28Ta-w')">
-									<img src="https://i.ytimg.com/vi/PaCYw28Ta-w/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
+									<img
+										src="https://i.ytimg.com/vi/PaCYw28Ta-w/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw"
+										alt="">
 								</div>
 
 								<div class="song_desciption right">
@@ -251,7 +272,9 @@
 
 							<div class="album_content">
 								<div class="thrumbnail_container right" onclick="playSong('L_JvgkZ04t0')">
-									<img src="https://i.ytimg.com/vi/L_JvgkZ04t0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
+									<img
+										src="https://i.ytimg.com/vi/L_JvgkZ04t0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw"
+										alt="">
 								</div>
 
 								<div class="song_desciption right">
@@ -271,7 +294,9 @@
 
 							<div class="album_content">
 								<div class="thrumbnail_container right" onclick="playSong('l44ih2KWJAo')">
-									<img src="https://i.ytimg.com/vi/l44ih2KWJAo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
+									<img
+										src="https://i.ytimg.com/vi/l44ih2KWJAo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw"
+										alt="">
 								</div>
 
 								<div class="song_desciption left">
@@ -291,7 +316,9 @@
 
 							<div class="album_content">
 								<div class="thrumbnail_container right" onclick="playSong('P8OjkcLzYCM')">
-									<img src="https://i.ytimg.com/vi/P8OjkcLzYCM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
+									<img
+										src="https://i.ytimg.com/vi/P8OjkcLzYCM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw"
+										alt="">
 								</div>
 
 								<div class="song_desciption left">
@@ -311,7 +338,9 @@
 
 							<div class="album_content">
 								<div class="thrumbnail_container left" onclick="playSong('ndNWnIAdhZo')">
-									<img src="https://i.ytimg.com/vi/ndNWnIAdhZo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
+									<img
+										src="https://i.ytimg.com/vi/ndNWnIAdhZo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw"
+										alt="">
 								</div>
 
 								<div class="song_desciption right">
@@ -332,7 +361,9 @@
 							<div class="album_content">
 
 								<div class="thrumbnail_container left" onclick="playSong('5KsXVs8Vg7U')">
-									<img src="https://i.ytimg.com/vi/5KsXVs8Vg7U/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw" alt="">
+									<img
+										src="https://i.ytimg.com/vi/5KsXVs8Vg7U/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBfC7fj6ZLKBxHgmIqA_TQGxzmGvw"
+										alt="">
 								</div>
 
 								<div class="song_desciption right">
@@ -356,7 +387,10 @@
 
 					<h2>Cover</h2>
 					<div class="cover">
-						<iframe id="cover_iframe" name="cover_iframe" width="50%" height="335" src="" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe id="cover_iframe" name="cover_iframe" width="50%" height="335" src="" title="YouTube video player"
+							frameborder="1"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
 
 						<ul>
 							<li><a class="cover_option" onclick="loadCoverSong(0)">怪物</a></li>
@@ -373,7 +407,9 @@
 						<img src="../source/close.png" alt="">
 					</div>
 					<div class="pop_up_iframe_container">
-						<iframe id="pop_up" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe id="pop_up" title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
 					</div>
 				</div>
 
