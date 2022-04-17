@@ -31,8 +31,6 @@ h1 {
     display: inline-block;
     position: relative;
     text-align: center;
-    /* Make the button bg able to change from blue to yellow */
-    /* background: linear-gradient(to right, #063f5c 50%, #ffdf8db9 50%); */
     transition: all .5s ease-out;
     border-radius: 20px;
 }
@@ -67,7 +65,12 @@ h1 {
 }
 
 .sub_menu li{
-    font-size: 24px;
+    
+}
+
+.sub_menu li a {
+    font-size: 20px;
+    padding: 10px;
 }
 
 .sub_menu .first_list{
