@@ -53,7 +53,7 @@ function nextSlide(num)
 	}
 	else if(index < 0)
 	{
-		index = slides.length-1;
+		index = slides.length - 1;
 	}
 
 	showSlide(index);
