@@ -1,6 +1,10 @@
+/**
+ * check the data validity
+ * @returns 
+ */
 function checkForm() {
 	let canSend = true;
-
+	//check the message
 	if (document.contact_form.message.value.length < 10) {
 		document.contact_form.message.style.border = '3px solid #DC3232';
 		document.contact_form.message.focus(); // focus on the field
@@ -10,7 +14,7 @@ function checkForm() {
 		document.contact_form.message.style.border = '1px solid #F59A23';
 		document.getElementsByClassName('label')[2].style.display = 'none';
 	}
-
+	//check the phone
 	if (!/^[\+][\d]{3}[ ][\d]+/.test(document.contact_form.phone.value)) {
 		document.getElementsByClassName('label')[1].style.display = 'flex';
 		document.contact_form.phone.style.border = '3px solid #DC3232';
@@ -23,7 +27,7 @@ function checkForm() {
 		document.getElementsByClassName('label')[1].style.display = 'none';
 		document.contact_form.phone.style.border = '1px solid #F59A23';
 	}
-
+	//check the email
 	if (!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*$/.test(document.contact_form.email.value)) {
 		document.getElementsByClassName('label')[0].style.display = 'flex';
 		document.contact_form.email.style.border = "3px solid #DC3232";
@@ -40,10 +44,19 @@ function checkForm() {
 	return canSend;
 }
 
+/**
+ * change input box border style
+ * @param {} target 
+ */
 function changeBorderColor(target) {
 	target.style.border = '1px solid #F59A23';
 }
 
+/**
+ * change the style of doms while reseting form
+ * @param {} result 
+ * @returns 
+ */
 function resetForm(result) {
 	if (result) {
 		document.getElementsByClassName('label')[0].style.display = 'none';
@@ -57,6 +70,4 @@ function resetForm(result) {
 	} else {
 		return false; // disable default reset button
 	}
-
-
 }

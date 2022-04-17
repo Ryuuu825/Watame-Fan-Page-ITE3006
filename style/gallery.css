@@ -179,8 +179,8 @@ h1 {
 /* start */
 .back {
 	position: fixed;
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	bottom:0;
 	left:0;
 	padding: 0;
@@ -189,8 +189,11 @@ h1 {
 }
 
 .back a {
+	display: inline-block;
 	height: inherit;
 	width: inherit;
+	/* position: absolute; */
+	/* bottom: 0; */
 }
 
 .back img {
@@ -202,7 +205,7 @@ h1 {
 
 .back img:hover {
 	height: auto;
-	width: 250px;
+	width: 180px;
 	transform: scaleX(-1);
 	content: url("../source/Topbutton2.png");
 }
@@ -236,5 +239,17 @@ h1 {
 	.waterfall {
 		flex: none;
 		width: 100%;
+	}
+
+	.back {
+    width: 100px;
+	}
+
+	.back img {
+    width: 100px;
+	}
+
+	.back img:hover {
+    width: 120px;
 	}
 }
