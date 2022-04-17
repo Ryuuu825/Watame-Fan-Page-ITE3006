@@ -73,18 +73,26 @@
 }
 
 .bububu {
-	font-size: 36px;
+	font-size: 3vw;
 	font-weight: 700;
 	color: white;
 }
 
 .hi {
-	font-size: 24px;
+	font-size: 2vw;
 	color: white;
 	vertical-align: middle;
 }
 
+@media screen and (max-width: 1280px) {
+	.bububu {
+		font-size: 2vw;
+	}
 
+	.hi {
+		font-size: 1vw;
+	}
+}
 /* 
  * The following are animation effects of the banner and the photo
  */
