@@ -1,3 +1,17 @@
+/**
+ * Author: Lee Kai Pui, Pan Rubin
+ * Group: 01
+ * Assignment: EA2
+ * Module: ITE3006
+ * Course: IT114105
+ * 
+ * File: index.css
+ * Description: The css file of the index.html
+ * Create Date: 18-FEB-2022
+ */
+
+
+
 .main_container {
 	position: relative;
 	width: 100%;
@@ -70,6 +84,10 @@
 	vertical-align: middle;
 }
 
+
+/* 
+ * The following are animation effects of the banner and the photo
+ */
 @keyframes lineInFromLeft {
 	0% {
 		left: -400px;

@@ -1,3 +1,18 @@
+/**
+ * Author: Lee Kai Pui, Pan Rubin
+ * Group: 01
+ * Assignment: EA2
+ * Module: ITE3006
+ * Course: IT114105
+ * 
+ * File: profile.css
+ * Description: The css file of the profile.html
+ * Create Date: 04-MAR-2022
+ */
+
+
+
+
 .main_container {
     max-width: 1200px;
     margin: auto;
@@ -51,6 +66,7 @@
     margin: auto;
     font-size: 20px;
     padding-bottom: 10%;
+    padding-top: 20px;
 }
 
 
@@ -67,6 +83,11 @@
 .social_media {
     text-align: center;
     margin-right: 1vw;
+}
+
+.social_media img {
+    min-width: 55px;
+    max-width: 80px;
 }
 
 .social_media:hover {
@@ -95,14 +116,11 @@
     max-height: 600px;
 }
 
-.social_media img {
-    min-width: 55px;
-    max-width: 80px;
-}
 
 .member_type img {
     min-width: 55px;
 }
+
 /* The card */
 .strong {
     font-weight: bold;
@@ -139,7 +157,6 @@
 .info li {
     border-bottom: 1px solid black;
     width: 70%;
-    text-align: center;
     /* make auto space between title and content */
     display: flex;
     justify-content: space-around;
@@ -164,6 +181,7 @@
     font-size: 20px;
 }
 
+/* The image in the right side */
 .right_container .img_container {
     width: 100%;
     height: 100%;
@@ -175,9 +193,10 @@
 .img_container img {
     max-width: 80%;
     max-height: 100%;
-
 }
 
+
+/* The member sheep part */
 .membersheep {
     width: 80%;
     margin-left: auto;
@@ -200,6 +219,7 @@
 }
 
 .member_type li {
+    /* 100% divided by 5 img = 20%, add some space between. Therefore use 10% */
     width: 10%;
     height: 10%;
 }
@@ -235,6 +255,10 @@
     margin-left: 10%;
 }
 
+.pricing #output {
+    padding-left: 10px;
+}
+
 
 /* Common emoji in stream chat */
 .stream_icon {
@@ -248,6 +272,7 @@
     margin-bottom: 10px;
 }
 
+/* A unorder list, each li is also an unorder list */
 .stream_icon_container {
     display: flex;
     flex-direction: column;
@@ -292,12 +317,14 @@
     }
 
     .left_container {
+        order:2;
         width: 100%;
     }
     
     .right_container {
         text-align: center;
         width: 100%;
+        order:1;
     }
 
     .right_container img {
@@ -318,6 +345,7 @@
         margin: auto;
         width: 80%;
         order: 1;
+        margin-top: 20px;
     }
 
     .social_media img {

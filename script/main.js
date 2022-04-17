@@ -1,4 +1,19 @@
 /**
+ * Author: Lee Kai Pui, Pan Rubin
+ * Group: 01
+ * Assignment: EA2
+ * Module: ITE3006
+ * Course: IT114105
+ * 
+ * File: main.js
+ * Description: The script file of the main architecture of the website
+ * Create Date: 02-MAR-2022
+ */
+
+
+
+
+/**
  * set button bar style
  * @param {} obj 
  */

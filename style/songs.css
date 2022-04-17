@@ -1,3 +1,18 @@
+/**
+ * Author: Lee Kai Pui, Pan Rubin
+ * Group: 01
+ * Assignment: EA2
+ * Module: ITE3006
+ * Course: IT114105
+ * 
+ * File: songs.css
+ * Description: The css file of the songs.html
+ * Create Date: 20-FEB-2022
+ */
+
+
+
+
 .main_container {
     /* Make the container fixed size when it is too big */
     max-width: 1200px;
@@ -164,7 +179,7 @@ h1 {
     color: rgb(255, 14, 14);
     font-weight: bold;
     font-size: 30px;
-    /* Chinese word */
+    /* for Chinese word */
     line-height: 1.5em;
     margin-bottom: 10px;
 }
@@ -269,6 +284,7 @@ h1 {
 
 .thrumbnail_container img {
     max-width: 100%;
+    /* The scale */
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
     display: block;
 }
@@ -278,6 +294,7 @@ h1 {
     transform: scale(1.03);
 }
 
+/* The break between the album song */
 .album_song_break {
     border: 0;
     border-top: 1px solid dimgray;

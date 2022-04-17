@@ -1,3 +1,19 @@
+/**
+ * Author: Lee Kai Pui, Pan Rubin
+ * Group: 01
+ * Assignment: EA2
+ * Module: ITE3006
+ * Course: IT114105
+ * 
+ * File: gallery.js
+ * Description: The script file of the gallery.html
+ * Create Date: 10-APR-2022
+ */
+
+
+
+
+
 var currentIndex = 0;
 var cImg = document.getElementsByClassName("carousel_img");
 var cBtn = document.getElementsByName("car_btn");

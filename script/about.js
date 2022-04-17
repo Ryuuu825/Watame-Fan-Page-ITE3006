@@ -1,10 +1,26 @@
 /**
+ * Author: Lee Kai Pui, Pan Rubin
+ * Group: 01
+ * Assignment: EA2
+ * Module: ITE3006
+ * Course: IT114105
+ * 
+ * File: about.js
+ * Description: The script file of the about.html
+ * Create Date: 10-APR-2022
+ */
+
+
+
+
+
+/**
  * check the data validity
  * @returns 
  */
 function checkForm() {
 	let canSend = true;
-	//check the message
+	//check the char in message is larger than 10
 	if (document.contact_form.message.value.length < 10) {
 		document.contact_form.message.style.border = '3px solid #DC3232';
 		document.contact_form.message.focus(); // focus on the field
@@ -14,7 +30,8 @@ function checkForm() {
 		document.contact_form.message.style.border = '1px solid #F59A23';
 		document.getElementsByClassName('label')[2].style.display = 'none';
 	}
-	//check the phone
+
+	//check does phone match the pattern -- +852 12345678
 	if (!/^[\+][\d]{3}[ ][\d]+/.test(document.contact_form.phone.value)) {
 		document.getElementsByClassName('label')[1].style.display = 'flex';
 		document.contact_form.phone.style.border = '3px solid #DC3232';
@@ -27,6 +44,7 @@ function checkForm() {
 		document.getElementsByClassName('label')[1].style.display = 'none';
 		document.contact_form.phone.style.border = '1px solid #F59A23';
 	}
+
 	//check the email
 	if (!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*$/.test(document.contact_form.email.value)) {
 		document.getElementsByClassName('label')[0].style.display = 'flex';
