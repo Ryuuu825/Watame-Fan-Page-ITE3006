@@ -29,6 +29,12 @@ h1 {
     align-items: center;
 }
 
+.slideSong_btn:hover {
+    cursor: pointer;
+    background-color: #FFD466;
+    border-radius: 20px;
+}
+
 .slideSong_btn img{
     width: 45px;
     height: 45px;
