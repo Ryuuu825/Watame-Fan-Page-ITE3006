@@ -1,3 +1,19 @@
+/**
+ * Author: Lee Kai Pui, Pan Rubin
+ * Group: 01
+ * Assignment: EA2
+ * Module: ITE3006
+ * Course: IT114105
+ * 
+ * File: songs.js
+ * Description: The script file of the songs.html
+ * Create Date: 20-FEB-2022
+ */
+
+
+
+
+
 let index = 0; // the index of current slide
 let slides = document.getElementsByClassName("slide");
 let menu_option = document.getElementsByClassName("option");
@@ -105,6 +121,9 @@ function showPopUp()
 	document.getElementsByClassName("menu_btn_container")[0].style.display = "none";	
 }
 
+/**
+ * Hide the pop up window
+ */
 function hidePopUp()
 {
 	let container = document.getElementsByClassName("pop_up_container")[0];
@@ -115,7 +134,10 @@ function hidePopUp()
 	document.getElementsByClassName("menu_btn_container")[0].style.display = "block";
 }
 
-// play a video in the pop up window iframe
+/**
+ * Play a video in the pop up window's iframe
+ * @param {*} Link The link of the youtube video 
+ */
 function playSong(link)
 {
 	showPopUp();

@@ -1,3 +1,18 @@
+/**
+ * Author: Lee Kai Pui, Pan Rubin
+ * Group: 01
+ * Assignment: EA2
+ * Module: ITE3006
+ * Course: IT114105
+ * 
+ * File: profile.js
+ * Description: The script file of the profile.html
+ * Create Date: 04-MAR-2022
+ */
+
+
+
+
 // Ask the user before leaving the page
 function askForward(id)
 {

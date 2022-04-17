@@ -1,3 +1,16 @@
+/**
+ * Author: Lee Kai Pui, Pan Rubin
+ * Group: 01
+ * Assignment: EA2
+ * Module: ITE3006
+ * Course: IT114105
+ * 
+ * File: font.css
+ * Description: The css file of the font used in the website
+ * Create Date: 03-MAR-2022
+ */
+
+
 * {
 	font-family: 'Comic Neue', BOLD;
 	font-size: 32px;
