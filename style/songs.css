@@ -126,7 +126,7 @@ h1 {
 }
 
 .container_bg {
-    margin: 2vw auto;
+    margin: 1vw auto;
     background-color: #FFECBB;
     border: 1px solid #FFF;
     border-radius: 30px;
@@ -156,6 +156,10 @@ h1 {
     flex-direction: column;
     align-items: center;
     width: 70%;
+}
+
+.slide_display {
+    display: flex;
 }
 
 /* Enable the iframe resize itself when the screen size changing */
