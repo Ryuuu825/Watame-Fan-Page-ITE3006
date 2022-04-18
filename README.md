@@ -33,7 +33,9 @@ Course:
 
 ```
 .
-├── README.md              
+├── README.md 
+├── doc
+│   └── report.docx        <- The word doc describe our assignment
 ├── index.html             <- The entry point
 ├── pages                  <- The pages
 │   ├── Footer.html
