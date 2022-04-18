@@ -11,8 +11,6 @@
  */
 
 
-
-
 // Ask the user before leaving the page
 function askForward(id)
 {
