@@ -1,0 +1,143 @@
+/**
+* Author: Ken, Ben
+ * Group: 01
+ * Assignment: EA2
+ * Module: ITE3006
+ * Course: IT114105
+ * 
+ * File: about.css
+ * Description: The css file of the about.html
+ * Create Date: 10-APR-2022
+ */
+
+
+
+.content_container,
+.contact_container {
+	margin: auto;
+	margin-bottom: 10;
+	padding: 1vw 3vw;
+	width: 80%;
+	background-color: #FFECBB;
+	border: 1px solid #FFF;
+	height: auto;
+	border-radius: 30px;
+	max-width: 1000px;
+}
+
+.content_container p {
+	text-align: left;
+	margin: 1vw auto;
+}
+
+.content_container img {
+	width: 100px;
+	height: auto;
+	vertical-align: middle;
+}
+
+.contact_container {
+	padding: 3vw;
+	text-align: center;
+}
+
+.contact_container table {
+	margin: auto;
+}
+
+.contact_container td {
+	height: 100px;
+	padding: 15px;
+	vertical-align: middle;
+}
+
+.contact_container label {
+	height: auto;
+}
+
+.contact_container .info {
+	vertical-align: middle;
+	width: 100%;
+	height: 80px;
+	padding-left: 20px;
+	border: 1px solid #F59A23;
+	border-radius: 20px;
+	text-align: left;
+	background-color: #FFFBF1;
+}
+
+.contact_container #message {
+	resize: none;
+	height: 250px;
+}
+
+
+.contact_container #reset_btn,
+#submit_btn {
+	cursor: pointer;
+	height: 80px;
+	width: 90%;
+	background-color: #FFFBF1;
+	border-radius: 50px;
+	border: 1px solid #F59A23;
+}
+
+#submit_btn:hover,
+#reset_btn:hover {
+	transform: scale(1.01);
+	transition: 0.5s;
+	background-color: #FFD466;
+}
+
+.phone_container,
+.email_container,
+.msg_container {
+	position: relative;
+}
+
+
+
+.label {
+	width: 70%;
+	position: absolute;
+	right: 0;
+
+	display: none;
+	justify-content: end;
+	align-items: center;
+	color: #DC3232;
+}
+
+.msg {
+	font-size: 20px;
+}
+
+.close {
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+textarea {
+	padding-top: 20px;
+}
+
+
+@media screen and (max-width: 1280px) {
+	.contact_container td {
+		display: block;
+		height: auto;
+		margin: 15px 20px 15px 0px;
+		padding: 0px;
+	}
+
+	.contact_container {
+		text-align: left;
+	}
+
+	.contact_container .form_btn {
+		margin-top: 20px;
+		text-align: center;
+	}
+}

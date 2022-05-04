@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>About</title>
+	<script src="../script/w3.js"></script>
+	<link rel="stylesheet" href="../style/style.css">
+	<link rel="stylesheet" href="../style/font.css">
+	<link rel="stylesheet" href="../style/about.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Montserrat:wght@200&display=swap"
+		rel="stylesheet">
+	<script type="text/javascript" src="../script/main.js"></script>
+	<script type="text/javascript" src="../script/about.js"></script>
+	<link rel="icon" href="../favicon.png">
+
+</head>
+
+<body onload="w3.includeHTML();">
+	<div class="container">
+		<!--	header	-->
+		<div w3-include-html="Header.html"></div>
+
+		<!--	main	-->
+		<main>
+			<div class="page_title">
+				<h1>About Us</h1>
+			</div>
+			<div class="content_container">
+				<p>&nbsp&nbsp&nbsp&nbsp This is an unofficial fansite created for the Vtuber Tsunomaki Watame.
+					<img src="../source/watabee.webp" alt="">
+				</p>
+				<p>&nbsp&nbsp&nbsp&nbsp In here, all of us love Watame. We hope more people recognize the hard-working, talented Sheep that we
+					love.<img src="../source/mv1.gif" alt=""></p>
+				<p>&nbsp&nbsp&nbsp&nbsp If you're interested in joining us. Please use the form below to contact us. Worry not, we will not eat you.
+					At least not on the first day...
+					<img src="../source/mv2.gif" alt="">
+				</p>
+			</div>
+			<h2>Contact Us</h2>
+			<div class="contact_container">
+				<form name="contact_form" action="#" autocomplete="on" onsubmit="return checkForm();">
+					<table>
+						<tr>
+							<td><label for="name">Name*: </label></td>
+							<!-- Match the English name such as "Tony Siu" -->
+							<td><input class="info" type="text" id="name" name="name" maxlength="20"
+									pattern="^[A-Z][A-Za-z]+(([ ][A-Z])[A-Za-z]*)*$" title="Capital first character"
+									placeholder="Enter your name..." required ></td>
+						</tr>
+						<tr class="email_container">
+							<td><label for="email">E-mail*: </label></td>
+							<td>
+								<input class="info" type="text" id="email" name="email" maxlength="40" title="e.g. abc@domain.com"
+									placeholder="Enter your E-mail..." onclick="changeBorderColor(this)">
+								<div class="label">
+									<span class="msg">
+										Please enter a valid E-mail address.
+									</span>
+									<span class="close" onclick="this.parentElement.style.display='none';">
+										&times;
+									</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="phone_container">
+							<td><label for="phone">Phone*: </label></td>
+							<td>
+								<input class="info" type="tel" id="phone" name="phone" placeholder="Enter your phone..." onclick="changeBorderColor(this)">
+								<div class="label">
+									<span class="msg">
+										We would like to have your country code to contact you. e.g. +852 12345678
+									</span>
+									<span class="close" onclick="this.parentElement.style.display='none';">
+										&times;
+									</span>
+								</div>
+							</td>
+						</tr>
+						<tr class="msg_container">
+							<td><label for="message">Message*: </label></td>
+							<td>
+								<textarea class="info" name="message" id="message" rows="5" cols="50" title="At least 10 letters"
+									placeholder="Enter your message no more than 200 letters..."  maxlength="200" onclick="changeBorderColor(this)"
+									></textarea>
+								<div class="label">
+									<span class="msg">
+										Please enter your message with at least 10 letters.
+									</span>
+									<span class="close" onclick="this.parentElement.style.display='none';">
+										&times;
+									</span>
+								</div> 
+								
+								</td>
+						</tr>
+						<tr class="btn">
+							<td class="form_btn" >
+								<input id="reset_btn" type="reset" value="Reset" onclick="return resetForm(confirm('Are you sure you want to reset the form?'))">
+							</td>
+							<td  class="form_btn" >
+								<input id="submit_btn" type="submit" value="Send">
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</main>
+
+		<!--	footer	-->
+		<div w3-include-html="Footer.html"></div>
+	</div>
+</body>
+
+</html>

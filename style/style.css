@@ -1,0 +1,405 @@
+/**
+* Author: Ken, Ben
+ * Group: 01
+ * Assignment: EA2
+ * Module: ITE3006
+ * Course: IT114105
+ * 
+ * File: main.js
+ * Description: The css file of the main architecture of the website
+ * Create Date: 02-MAR-2022
+ */
+
+
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	overflow-x: hidden;
+}
+
+ul {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+.container {
+	margin: 0;
+	width: 100%;
+	height: auto;
+	background-color: #FFDF8D;
+	background-image: url("../source/ff.png");
+	background-repeat: repeat;
+}
+
+header {
+	width: 100%;
+	height: auto;
+}
+
+main {
+	width: 100%;
+	height: auto;
+}
+
+footer {
+	margin-top: 55px;
+	width: 100%;
+	height: auto;
+	background-color: #FFD466;
+	text-align: center;
+	border-top: 1px solid #F1F1F1;
+}
+
+/* 
+* page title style
+*/
+/* start */
+.page_title {
+	width: auto;
+	text-align: center;
+}
+
+.page_title h1 {
+	margin-top: 0;
+	padding-top: 3vw;
+}
+/* end */
+
+/* 
+* menu button style
+*/
+/* start */
+.menu_btn_container {
+	cursor: pointer;
+	position: fixed;
+	width: auto;
+	height: auto;
+	top: 2%;
+	right: 2%;
+	z-index: 100;
+}
+
+#menu_btn {
+	position: absolute;
+	text-align: center;
+	width: auto;
+	height: auto;
+	box-sizing: content-box;
+	top: 0px;
+	right: 0px;
+}
+
+.menu_btn img {
+	position: relative;
+	width: 150px;
+	height: auto;
+	opacity: 80%;
+}
+
+
+.menu_btn .menu_icon {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	height: 150px;
+	margin: 0 auto;
+	top: 45%;
+	left: 28%;
+	bottom: 35%;
+	right: 28%;
+	z-index: 1;
+}
+
+.menu_btn .bar {
+	position: relative;
+	width: 65px;
+	height: 10px;
+	background-color: white;
+	margin: 5px auto;
+	transition: 0.4s;
+	border-radius: 5px;
+	right: 4px;
+}
+
+.menu_btn:hover .bar {
+	transform: scale(1.1);
+}
+
+.menu_btn:hover img {
+	transform: scale(1.1);
+}
+
+.change #bar1 {
+	transform: rotate(-45deg) translate(-6px, 7px);
+}
+
+.change #bar2 {
+	transform: rotate(45deg) translate(-6px, -7px);
+}
+/* end */
+
+/* 
+* side navigation menu style
+*/
+/* start */
+.side_nav {
+	display: flex wrap;
+	padding: 0;
+	height: 0;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+	background-color: #FFD466;
+	overflow: hidden;
+	visibility: hidden;
+	transition: all 0.5s;
+	font-size: 0;
+}
+
+.side_role1 {
+	display: inline-block;
+	width: 35%;
+	vertical-align: middle;
+}
+
+.side_menu {
+	display: inline-block;
+	width: 30%;
+	vertical-align: middle;
+	z-index: 10;
+}
+
+.side_role2 {
+	display: inline-block;
+	width: 35%;
+	vertical-align: middle;
+}
+
+.role_container {
+	position: relative;
+	width: 100%
+}
+
+.role {
+	width: 100%;
+}
+
+.side_role1 #role {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: auto;
+	height: 60vh;
+}
+
+.shadow {
+	width: 100%;
+}
+
+.side_role1 #role_shadow {
+	opacity: 30%;
+	width: auto;
+	height: 100vh;
+}
+
+.menu_list_container {
+	position: relative;
+	width: 100%;
+}
+
+.side_menu ul {
+	text-align: center;
+}
+
+.side_menu a {
+	text-decoration: none;
+	margin: 10px auto;
+	display: block;
+	width: auto;
+	color: black;
+	transition: 0.3s;
+	font-size: 58px;
+	z-index: 200;
+}
+
+.side_menu a:hover {
+	transform: scale(1.3);
+	color: floralwhite;
+}
+
+.role2_container {
+	position: relative;
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.role2 {
+	width: 500px;
+	text-align: center;
+}
+
+.side_role2 #role2 {
+	width: 100%;
+}
+
+.side_role2 img {
+	transform: scaleX(-1);
+}
+/* end */
+
+/* 
+* footer style
+*/
+/* start */
+.footer_nav {
+	display: flex;
+	width: inherit;
+	height: auto;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer_nav ul {
+	width: inherit;
+}
+
+.footer_nav li {
+	display: inline-flex;
+	padding: 10px 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer_nav a {
+	text-decoration: none;
+	color: #000;
+	transition: 0.2s;
+	font-size: 32px;
+}
+
+.footer_nav a:hover {
+	transform: scale(1.1);
+	text-decoration: none;
+	color: floralwhite;
+}
+
+.footer_nav img {
+	width: 100px;
+	height: 100px;
+}
+
+.footer_nav img:hover {
+	transform: scale(1.03);
+}
+
+.footer_Inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	border-top: 1px solid #F1F1F1;
+	height: auto;
+}
+
+.footer_Inner span {
+	margin: 5px;
+	font-size: 28px;
+}
+/* end */
+
+@media screen and (max-width:1280px) {
+	.menu_btn {
+		transform: scale(0.75);
+	}
+
+	.menu_btn_container{
+		top: 1%;
+		right: 1%;
+	}
+
+	.side_nav {
+		overflow: hidden;
+	}
+
+	.side_role1 {
+		display: none;
+	}
+
+	.side_menu {
+		position: absolute;
+		display: flex;
+		margin:auto;
+		width: 100%;
+		height: 100%;
+		justify-self: center;
+		align-items: center;
+	}
+
+	.side_role2 {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items:flex-end;
+		opacity: 0.3;
+	}
+
+	.side_role2 #role2 {
+		content: url(../source/u6.png);
+		width: 400px;
+	}
+
+	.footer_nav a {
+		font-size: 28px;
+	}
+
+	.footer_Inner span {
+		font-size: 24px;
+	}
+
+	.footer_nav img {
+		width: 80px;
+		height: 80px;
+	}
+
+}
+
+@media screen and (max-width:680px) {
+	.menu_btn {
+		transform: scale(0.6);
+	}
+
+	.menu_btn_container{
+		top: 0;
+		right: 0;
+	}
+
+	.side_menu a {
+		font-size: 42px;
+	}
+
+	.footer_nav li {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.footer_nav a {
+		font-size: 24px;
+	}
+
+	.footer_Inner span {
+		font-size: 22px;
+	}
+
+	.footer_nav img {
+		width: 50px;
+		height: 50px;
+	}
+
+}

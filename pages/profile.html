@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<script src="../script/w3.js"></script>
+	<link rel="stylesheet" href="../style/style.css">
+	<link rel="stylesheet" href="../style/font.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="../script/main.js"></script>
+    <link rel="stylesheet" href="../style/profile.css">
+    <script src="../script/profile.js"></script>
+	<link rel="icon" href="../favicon.png">
+
+</head>
+
+<body onload="w3.includeHTML();">
+	<div class="container">
+		<div w3-include-html="Header.html"></div>
+		<main>
+			<div class="page_title">
+				<h1>Profile</h1>
+			</div>
+			<div class="main_container">
+                <div class="desc_container">
+                    <div class="left_container">
+                        <div class="text">
+                            <p class="name">
+                                <span class="eng">Tsunomaki Watame</span>
+                                <span class="jp">角巻 わため</span>
+                                <span class="zh">角卷綿芽</span>
+                            </p>
+                            <p class="desc">
+                                &nbsp&nbsp&nbsp&nbsp Loves singing, and as she continued uploading song covers and having weekly singing streams titled "Watameh Night Fever!!," she started wanting to stand on Tokyo Budokan's stage someday.
+                            </p>
+                        </div>
+
+                        <div class="social_media_container">
+                            <div class="social_media">
+                                <a href="https://www.youtube.com/channel/UCqm3BQLlJfvkTsX_hvm0UmA" target="_blank" onclick="return askForward(0)" class="askable">
+                                    <img src="../source/youtube.png" alt="">
+                                </a>
+                            </div>
+                            <div class="social_media">
+                                <a href="https://twitter.com/tsunomakiwatame" target="_blank" onclick="return askForward(1)" class="askable">
+                                    <img src="../source/twitter.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right_container">
+                        <img src="../source/u6.png" alt="" class="img_fg" >
+                        <img src="../source/u6.png" alt="" class="img_bg">
+                    </div>
+                </div>
+
+
+                <div class="card">
+                   <div class="left">
+                        <ul class="info">
+                            <li class="header">Detail</li>
+                            <li>
+                                <span class="title">Birthday:</span> 
+                                <span class="info_value">June 6th</span>
+                            </li>
+                            <li>
+                                <span class="title">Heigth:</span>
+                                <span class="info_value">151 cm</span>
+                            </li>
+                            <li>
+                                <span class="title">Weight:</span>
+                                <span class="info_value">Unknown ;)</span>
+                            </li>
+                            <li>
+                                <span class="title">Debut Date:</span>
+                                <span class="info_value">December 29 , 2019</span>
+                            </li>
+                        </ul>
+                   </div>
+
+                   <div class="right_container">
+                       <div class="img_container">
+                           <img src="../source/profile_icon.jpg" alt="">
+                        </div>
+                   </div>
+                </div>
+
+                <div class="membersheep">
+                    <div class="title">
+                        <p>
+                            Wanna Join the fun?
+                            <br>
+                            Sipn up for MemberSheep!
+                        </p>
+                    </div>
+
+                    <ul class="member_type">
+                        <li><img src="../source/member1.png" alt=""></li>
+                        <li><img src="../source/member2.png" alt=""></li>
+                        <li><img src="../source/member3.png" alt=""></li>
+                        <li><img src="../source/member4.png" alt=""></li>
+                        <li><img src="../source/member5.png" alt=""></li>
+                    </ul>
+
+                    <div class="text">
+                        &nbsp&nbsp&nbsp&nbsp Sign up for Membersheep if you want to send some support to Watame. As a member, you can gain access to current and pass member-only content: monthly wallpapers from well known artist, video, ASMR.
+                    </div>
+                </div>
+
+                <div class="pricing">
+                    <span style="font-size: 20px;">See the pricing: $</span>
+                    <span id="output">28</span>
+                    <select class="input" id="input" onchange="calculatePrice()">
+                        <option value="Hong Kong">Hong Kong</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Taiwan">Taiwan</option>
+                    </select>
+                </div>
+
+			</div>
+
+
+            <div class="stream_icon">
+                <div class="section_title">Common emoji in stream chat</div>
+                <ul class="stream_icon_container">
+                    <li>
+                        <div class="desc">
+                            Watame Singing
+                        </div>
+
+                        <ul class="image">
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/light.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/eye.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/light.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="desc">
+                            Watame Singing(2)
+                        </div>
+
+                        <ul class="image">
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/left.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/right.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/left.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="desc">
+                            Watame number one
+                        </div>
+                        
+                        <ul class="image">
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/one.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/smile.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/heart.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="desc">
+                            LOL
+                        </div>
+                        
+                        <ul class="image">
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/lmao.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/lmao.png" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img_container">
+                                    <img src="../source/stream_img/lmao.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+		</main>
+        <div w3-include-html="Footer.html"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+/**
+* Author: Ken, Ben
+ * Group: 01
+ * Assignment: EA2
+ * Module: ITE3006
+ * Course: IT114105
+ * 
+ * File: watame.css
+ * Description: The css file of the watame.html
+ * Create Date: 18-FEB-2022
+ */
+
+
+
+.interact .bk_btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.interact #watame_sound_text {
+    margin: 20px;
+    height: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.interact .bk_btn button {
+    cursor: pointer;
+	width: 30%;
+	height: 80px;
+	background-color: #FFFBF1;
+	margin: auto;
+	border-radius: 50px;
+	border: 1px solid #F59A23;
+	font-size: 42px;
+}
+
+.interact .bk_btn button:hover {
+    background-color: #ffdb83;
+}
+
+.watame_face {
+    margin: 0 auto;
+    height: 400px;
+    text-align: center;
+}
+
+.watame_face img {
+    width: auto;
+    height: inherit;
+}
+
+@media screen and (max-width:1280px) {
+	.interact .bk_btn button {
+        width: 80%;
+        height: 70px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+	.interact .bk_btn button {
+        width: 80%;
+        height: 60px;
+    }
+    
+    .watame_face {
+        margin: 0 auto;
+        height: auto;
+        text-align: center;
+    }
+
+    .watame_face img {
+        height: auto;
+        max-height: 187px;
+    }
+}

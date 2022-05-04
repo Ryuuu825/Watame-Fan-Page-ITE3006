@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	<script src="../script/w3.js"></script>
+	<link rel="stylesheet" href="../style/style.css">
+	<link rel="stylesheet" href="../style/font.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="../script/main.js"></script>
+	<link rel="stylesheet" href="../style/watame.css">
+	<script type="text/javascript" src="../script/watame.js"></script>
+	<link rel="icon" href="../favicon.png">
+	
+</head>
+
+<body onload="w3.includeHTML();">
+	<div class="container">
+		<!--	header	-->
+		<div w3-include-html="Header.html"></div>
+
+		<!--	main	-->
+		<main>
+			<div class="page_title">
+				<h1>What does Watame say?</h1>
+			</div>
+
+			<div class="main_container">
+
+                <div class="watame_face">
+                    <img
+                        id="watame_face_photo"
+                        src="../source/watame.png"
+                        alt=""
+                    />
+                </div>
+
+                <div class="interact">
+                    <div id="watame_sound_text">baa?</div>
+
+                    <div class="bk_btn">
+                        <button id="btn_change_sound" onclick="watame_say()">
+                            Click me to listen
+                        </button>
+                    </div>
+
+                    <audio
+                        src="../source/Tsunomaki Watame - I'm sorry for my internet_Trim.mp3"
+                        id="watame_sound"
+                    ></audio>
+                </div>
+            </div>
+		</main>
+
+		<!--	footer	-->
+		<div w3-include-html="Footer.html"></div>
+	</div>
+</body></html>

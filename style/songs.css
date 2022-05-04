@@ -1,0 +1,567 @@
+/**
+* Author: Ken, Ben
+ * Group: 01
+ * Assignment: EA2
+ * Module: ITE3006
+ * Course: IT114105
+ * 
+ * File: songs.css
+ * Description: The css file of the songs.html
+ * Create Date: 20-FEB-2022
+ */
+
+
+
+
+.main_container {
+    /* Make the container fixed size when it is too big */
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 0px;
+}
+
+/* The songs menu */
+.slideSong_btn {
+    display: none;
+    align-items: center;
+}
+
+.slideSong_btn:hover {
+    cursor: pointer;
+    background-color: #FFD466;
+    border-radius: 20px;
+}
+
+.slideSong_btn img{
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+}
+
+.slideSong_btn span {
+    vertical-align: middle;
+}
+
+.parent_menu {
+    max-width: 1200px;
+    margin: 10px auto;
+    background-color: #FFECBB;
+    border: 1px solid #FFF;
+    display: flex;
+    border-radius: 20px;
+}
+
+/* 
+    Clear the default decoration of the a tag 
+    and the text inside it.
+*/
+.parent_menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.parent_list {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    transition: all .5s ease-out;
+    border-radius: 20px;
+}
+
+.recommend_list_btn {
+    border-radius: 20px 0 0 20px;
+}
+
+.parent_list:hover {
+    background-color: #FFD466;
+}
+
+.parent_list a {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 12px;
+    border: none;
+}
+
+/* Display the sub menu when the user hover on only one of the option */
+.parent_list:hover .sub_menu {
+    width: 220%;
+    display: block;
+    position: absolute;
+    border-radius: 20px 20px 20px 20px;
+    border: 1px solid #FFF;
+    z-index: 1;
+    text-align: center;
+    margin-top: 0px;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sub_menu li a {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.sub_menu .first_list {
+    border-top: 0px;
+    border-radius: 20px 20px 0 0;
+}
+
+.sub_menu .last_list {
+    border-radius: 0px 0px 20px 20px;
+}
+
+.sub_menu li:hover {
+    background-color: #FFECBB;
+}
+
+.sub_menu {
+    display: none;
+    transition: height 0.3s ease-in-out;
+    border: 1px solid black;
+    background-color: #FFD466;
+}
+
+.container_bg {
+    margin: 1vw auto;
+    background-color: #FFECBB;
+    border: 1px solid #FFF;
+    border-radius: 30px;
+    position: relative;
+}
+
+/* Recommend part */
+.horizontal_title {
+    position: absolute;
+    writing-mode: vertical-lr;
+    margin: 0;
+    left: 0;
+    top: 25%;
+}
+
+.recommend_content {
+    /* [prev Slide next] this will be a row */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* The centent in the slide [title , iframe, desc]  */
+.slide {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+.slide_display {
+    display: flex;
+}
+
+/* Enable the iframe resize itself when the screen size changing */
+.iframe-container {
+    width: 100%;
+    /* The height of the iframe does not specify */
+    height: auto;
+    padding-top: 50%;
+    position: relative;
+}
+
+.iframe-responsive {
+    /* The iframe will use up all the space in the container */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: none;
+}
+
+.song_title {
+    text-align: center;
+    border-bottom: 1px solid black;
+    color: rgb(255, 14, 14);
+    font-weight: bold;
+    font-size: 30px;
+    /* for Chinese word */
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.slide .song_desciption {
+    font-size: 30px;
+}
+
+#album {
+    margin-bottom: 30px;
+}
+
+/* Make the bar to left, the word inside to right */
+
+.album_bar {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.bar_right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#album1 #bar1 {
+    background-color: #72BEA3;
+    text-align: right;
+}
+
+/* Opposite with album1 bar */
+#album2 #bar2 {
+    background-color: #D44FDF;
+    text-align: left;
+}
+
+.album_content {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+.song_desciption {
+    display: flex;
+    flex-direction: column;
+    /* center the two div */
+    align-items: center;
+    justify-content: center;
+}
+
+.song_desciption .title {
+    text-align: center;
+    display: block;
+    font-size: 40px;
+}
+
+.song_desciption .text {
+    display: block;
+    overflow-y: hidden;
+}
+
+
+.text p {
+    font-size: 30px;
+}
+
+
+.left {
+    width: 45%;
+    order: 1;
+}
+
+.right {
+    width: 45%;
+    order: 2;
+}
+
+.thrumbnail_container {
+    display: flex;
+    width: 50%;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.3);
+}
+
+.thrumbnail_container img {
+    max-width: 100%;
+    /* The scale */
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
+    display: block;
+}
+
+.thrumbnail_container:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+/* The break between the album song */
+.album_song_break {
+    border: 0;
+    border-top: 1px solid dimgray;
+}
+
+/* The start of the cover */
+.cover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.cover ul li {
+    line-height: 1.8em;
+    width: 250px;
+    margin: auto;
+}
+
+.cover ul li a {
+    color: black;
+    transition: font-size 0.3s ease-in-out;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.pop_up_container {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+.closeButton {
+    cursor: pointer;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+}
+
+.closeButton img {
+    width: 100%;
+    height: 100%;
+}
+
+.pop_up_iframe_container {
+    /* Fill up all the places */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop_up_iframe_container iframe {
+    width: 80%;
+    height: 60%;
+    border: none;
+    z-index: 3;
+}
+
+.back {
+    position: fixed;
+    width: 150px;
+    height: 150px;
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.back {
+	position: fixed;
+	width: 150px;
+	height: 150px;
+	bottom:0;
+	left:0;
+	padding: 0;
+	margin: 0;
+	z-index: 1;
+}
+
+.back a {
+	display: inline-block;
+	height: inherit;
+	width: inherit;
+	/* position: absolute; */
+	/* bottom: 0; */
+}
+
+.back img {
+	width: 150px;
+	height: auto;
+	position: fixed;
+	bottom: 0;
+}
+
+.back img:hover {
+	height: auto;
+	width: 180px;
+	transform: scaleX(-1);
+	content: url("../source/Topbutton2.png");
+}
+
+@media screen and (max-width:1280px) {
+
+
+    .parent_menu,
+    .container_bg {
+        width: 80%;
+    }
+
+    .horizontal_title {
+        writing-mode: horizontal-tb;
+        position: static;
+    }
+
+    .thrumbnail_container {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .thrumbnail_container img {
+        width: 100%;
+    }
+
+    .recommend_content {
+        flex-direction: column;
+    }
+
+    /* Hide the buttom */
+    .prev,
+    .next {
+        display: none;
+    }
+
+    /* show all hided slide */
+    .slide {
+        display: flex;
+    }
+
+    .slide .song_title {
+        margin-top: 20px;
+    }
+
+    .slide .song_desciption {
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
+    .left,
+    .right {
+        width: 80%;
+    }
+
+    .song_desciption {
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .text {
+        width: 90%;
+        text-align: left;
+        margin: auto;
+    }
+
+
+    #album1 #bar1,
+    #album2 #bar2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .album_content {
+        display: block;
+        width: 100%;
+        padding-top: 30px;
+    }
+
+    .cover {
+        display: block;
+    }
+
+    .cover iframe {
+        margin-left: 10%;
+        width: 80%;
+        height: 510px;
+    }
+
+    .cover ul li {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+    .slideSong_btn {
+        display: flex;
+        align-items: center;
+    }
+
+    .parent_list {
+        display: none;
+    }
+
+    .slide .song_desciption {
+        padding-top: 20px;
+        font-size: 24px;
+    }
+
+    .parent_menu {
+        flex-direction: column;
+    }
+
+    .parent_list_slide {
+        display: block;
+    }
+
+    .parent_menu li a {
+        text-align: start;
+        padding: 10px;
+    }
+
+    .parent_list:hover .sub_menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .sub_menu .first_list {
+        border-top: 0px;
+        border-radius: 0;
+    }
+
+    .sub_menu .last_list {
+        border-radius: 0px;
+    }
+
+    .back {
+        width: 100px;
+    }
+
+    .back img {
+        width: 100px;
+    }
+
+    .back img:hover {
+        width: 120px;
+    }
+}

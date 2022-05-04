@@ -1,0 +1,368 @@
+/**
+* Author: Ken, Ben
+ * Group: 01
+ * Assignment: EA2
+ * Module: ITE3006
+ * Course: IT114105
+ * 
+ * File: profile.css
+ * Description: The css file of the profile.html
+ * Create Date: 04-MAR-2022
+ */
+
+
+
+
+.main_container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* A center flex container */
+.desc_container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.left_container {
+    width: 50%;
+}
+
+.text {
+    width: 80%;
+    height: fit-content;
+    margin: 10% auto;
+    background-color: rgba(255, 247, 226, 0.8);
+    border-radius: 15px;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin: auto 10%;
+}
+
+/* Different size of different lanuage */
+.name .eng {
+    font-size: 20px;
+    margin-top: 10%;
+}
+
+.name .jp {
+    font-size: 40px;
+    font-weight: bold;
+}
+.name .zh {
+    font-size: 30px;
+}
+
+.desc {
+    /* center the div */
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    padding-bottom: 10%;
+    padding-top: 20px;
+}
+
+
+.social_media_container {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 10%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social_media {
+    text-align: center;
+    margin-right: 1vw;
+}
+
+.social_media img {
+    min-width: 55px;
+    max-width: 80px;
+}
+
+.social_media:hover {
+    transform: scale(1.05);
+}
+
+.right_container {
+    width:50%;
+    position: relative;
+}
+
+.img_fg {
+    position: absolute;
+    width: auto;
+    z-index: 2;
+    max-height: 600px;
+}
+
+.img_bg {
+    position: absolute;
+    left: 20%;
+    top: -10%;
+    width: auto;
+    opacity: 0.3;
+    z-index: 1;
+    max-height: 600px;
+}
+
+
+.member_type img {
+    min-width: 55px;
+}
+
+/* The card */
+.strong {
+    font-weight: bold;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 500px;
+    margin: 100px auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #FFE9B3;
+    position: relative;
+}
+
+.card .left {
+    width: 50%;
+    height: 50%;
+    /* center the div vertically */
+    display: block;
+    margin: auto;
+}
+
+/* reset the default style */
+.info {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info li {
+    border-bottom: 1px solid black;
+    width: 70%;
+    /* make auto space between title and content */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.info li:last-child {
+    border-bottom: none;
+}
+
+.info .header {
+    font-size: 30px;
+    font-weight: bold;
+}
+.title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.info .info_value {
+    font-size: 20px;
+}
+
+/* The image in the right side */
+.right_container .img_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_container img {
+    max-width: 80%;
+    max-height: 100%;
+}
+
+
+/* The member sheep part */
+.membersheep {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.membersheep .title {
+    display: block;
+    text-align: center;
+}
+
+.membersheep .title p {
+    font-size: 30px;
+}
+
+.member_type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.member_type li {
+    /* 100% divided by 5 img = 20%, add some space between. Therefore use 10% */
+    width: 10%;
+    height: 10%;
+}
+
+.member_type li img {
+    width: 100%;
+    height: 100%;
+}
+
+.membersheep .text {
+    margin-top: 20px;
+    /* reset the opacity of the bg color to 0 */
+    background-color: rgba(255, 255, 255,0); 
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.pricing {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing .input {
+    height: 40px;
+    border-radius: 15px;
+    border: 1px solid black;
+    font-size: 24px;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.pricing select option {
+    font-size: 16px;
+}
+
+.pricing #output {
+    padding-left: 10px;
+}
+
+
+/* Common emoji in stream chat */
+.stream_icon {
+    margin-top: 100px;
+}
+
+.section_title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* A unorder list, each li is also an unorder list */
+.stream_icon_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin:auto;
+    width: 80%;
+}
+
+/* clear the style */
+.stream_icon_container .desc {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom:0px;
+}
+
+.stream_icon_container li {
+    margin-top: 10px;
+}
+ 
+.stream_icon_container ul {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 680px) {
+    .card {
+        flex-direction: column;
+        height: auto;
+        padding: 1vw;
+    }
+    .text {
+        margin: 1vw auto;
+    }
+    .img_bg {
+        display: none;
+    }
+
+    .desc_container {
+        flex-direction: column;
+    }
+
+    .left_container {
+        order:2;
+        width: 100%;
+    }
+    
+    .right_container {
+        text-align: center;
+        width: 100%;
+        order:1;
+    }
+
+    .right_container img {
+        max-width: 100%;
+        position: static;
+    }
+
+    .card {
+        margin: 30px auto;
+    }
+
+    .card .left {
+        width: 100%;
+        order: 2;
+    }
+
+    .card .right_container {
+        margin: auto;
+        width: 80%;
+        order: 1;
+        margin-top: 20px;
+    }
+
+    .social_media img {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .social_media_container {
+        flex-direction: column;
+    }
+    
+    .social_media img {
+        width: 50px;
+    }
+}

@@ -1,0 +1,55 @@
+/**
+* Author: Ken, Ben
+ * Group: 01
+ * Assignment: EA2
+ * Module: ITE3006
+ * Course: IT114105
+ * 
+ * File: font.css
+ * Description: The css file of the font used in the website
+ * Create Date: 03-MAR-2022
+ */
+
+
+* {
+	font-family: 'Comic Neue', BOLD;
+	font-size: 32px;
+}
+
+h1 {
+	font-size: 64px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 52px;
+	text-align: center;
+}
+
+@media screen and (max-width:680px) {
+	h1 {
+		font-size: 60px;
+	}
+
+	h2 {
+		font-size: 48px;
+	}
+
+	p {
+		font-size: 32px;
+	}
+}
+
+@media screen and (max-width:400px) {
+	h1 {
+		font-size: 48px;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+
+	p {
+		font-size: 32px;
+	}
+}
