@@ -1,10 +1,10 @@
 # ITE3006 EA2
 
-```
-Contribtuors: 
-- Ken
-- Ben
 
+Contribtuors: 
+- [Ken](https://github.com/Ryuuu825)
+- [Ben](https://github.com/yuban-poon)
+```
 Class:
 - 1B
 
